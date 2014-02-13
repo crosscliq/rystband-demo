@@ -1,0 +1,11 @@
+first_name,last_name,email,phone,zipcode,age,gender,created,"SMS OPT IN","EMAIL OPT IN"
+French,Chris,notemail@eail.com,3294234234,,60,Male,,NO,NO
+Christopher,French,chris@ammonitenetworks.com,8017068019,,60,Male,,NO,NO
+"Fake Person",French,chris@ammonitenetwinsgsg.com,8017922869,,60,Male,,NO,NO
+,,,,84092,60,Female,,NO,NO
+"Chris ",French,asdfasdf@asdlf.com,8017922869,3456,45,Male,,NO,YES
+Chrisasdfasdf,Frenchasdfasd,chris@ammonitenetasdfasdfworks.com,80181231123,456456,45,Male,,NO,YES
+Chris,French,chris@ammoasdfas.com,8017922869,234234,45,Male,,YES,YES
+c,c,c@c.com,c,11234,45,Male,,YES,YES
+asdf,asdf,asdf@asdf.com,asdf,234234,45,Male,,YES,YES
+testing,afasdf,cajsdf@asdf.com,89823232,asdf,45,Male,,YES,YES
