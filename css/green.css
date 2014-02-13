@@ -1,0 +1,21 @@
+/******************************************************************
+	Red Color
+******************************************************************/
+a {
+	color: #f504bf;
+}
+.color {
+	color: #fb038f;
+}
+.color-bg {
+	background-color: rgba(214, 133, 229, 0.4);
+}
+.logo {
+	background-image: url(../img/logo.png); 
+}
+body {
+	background-image: url(../img/bg.jpg); 
+}
+body.blur {
+	background-image: url(../img/bg_blur.jpg); 
+}
