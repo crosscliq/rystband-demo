@@ -5,10 +5,10 @@ class Devices extends \Dash\Controllers\BaseAuth
 {
     
     public function display() {
-        \Base::instance()->set('pagetitle', 'Users');
+        \Base::instance()->set('pagetitle', 'Devices');
         \Base::instance()->set('subtitle', '');
         
-        $model = new \Dash\Models\Event\Users;
+        $model = new \Dash\Models\Event\Devices;
         $state = $model->populateState()->getState();
         \Base::instance()->set('state', $state );
         
@@ -21,7 +21,7 @@ class Devices extends \Dash\Controllers\BaseAuth
         
         $view = new \Dsc\Template;
         $view->setLayout('event.php');
-        echo $view->render('Dash/Views::event/users/list.php');
+        echo $view->render('Dash/Views::event/devices/list.php');
     }
 
 }

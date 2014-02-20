@@ -76,8 +76,11 @@ switch ($global_app_name)
         $f3->route('GET /gatekeeper', '\Rystband\Controllers\Gatekeeper->display');
         $f3->route('GET /gatekeeper/ticket/ok/@ticketid', '\Rystband\Controllers\Gatekeeper->ok');
         $f3->route('GET /gatekeeper/ticket/bad/@ticketid', '\Rystband\Controllers\Gatekeeper->bad');
-       
 
+          //Meet greet Reg pages
+        $f3->route('GET /device/@devicename', '\Rystband\Controllers\Device->display');
+        $f3->route('GET /device/@devicename/@action', '\Rystband\Controllers\Device->@action');
+      
         $f3->route('GET /mc', '\Rystband\Controllers\Mc->display');
 
         $f3->route('GET /games/raffle', '\Rystband\Controllers\Games\Raffle->display');

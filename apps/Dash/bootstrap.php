@@ -93,7 +93,7 @@ switch ($global_app_name)
         $f3->route('GET|POST /@eventid/devices/page/@page', '\Dash\Controllers\Event\Devices->display');
         $f3->route('GET|POST /@eventid/devices/delete', '\Dash\Controllers\Event\Devices->delete');
         $f3->route('GET /@eventid/device/create', '\Dash\Controllers\Event\Device->create');
-        $f3->route('GET /@eventid/device/read/@id', '\Dash\Controllers\Event\Device->add');
+        $f3->route('POST /@eventid/device/create', '\Dash\Controllers\Event\Device->add');
         $f3->route('GET /@eventid/device/edit/@id', '\Dash\Controllers\Event\Device->edit');
         $f3->route('POST /@eventid/device/edit/@id', '\Dash\Controllers\Event\Device->update');
         
