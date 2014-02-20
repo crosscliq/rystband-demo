@@ -10,6 +10,12 @@ $primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-calendar' , '
 $primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-user' , 'details' => array('url' => '/'.$PARAMS['eventid']."/users"), 'title' => 'Users' );
 $primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-user' , 'details' => array('url' => '/'.$PARAMS['eventid']."/roles"), 'title' => 'Roles' );
 
+$primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-user' , 'details' => array('url' => '/'.$PARAMS['eventid']."/social"), 'title' => 'Social' );
+$primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-user' , 'details' => array('url' => '/'.$PARAMS['eventid']."/devices"), 'title' => 'Devices' );
+//$primary[] = array('published' => 1,'class' => '', 'icon' => 'icon-user' , 'details' => array('url' => '/'.$PARAMS['eventid']."/roles"), 'title' => 'Roles' );
+
+
+
 
 ?>
       <ul id="nav">
