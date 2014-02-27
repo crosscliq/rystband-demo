@@ -101,7 +101,7 @@
 			</div>
 			<h2 class="dots">...</h2>
 			<div class="button-wrapper bottom">
-				<a class="button download" target="_blank" href="features.html">MORE FEATURES</a>
+				<a class="button download" target="_blank" href="features">MORE FEATURES</a>
 			</div>
 		</section>
 		<!-- End Features -->

@@ -1,8 +1,8 @@
 
 body {
-background-color: #54364a;
-background-size: cover;
-background-image:url(../images/e.jpg);
+background:#54364a url(../images/e.jpg) !important;
+background-size: cover !important;
+
 }
 .mix { display:none; opacity:0; }
 .mix small { font-size:.8em; }

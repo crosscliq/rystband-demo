@@ -1,0 +1,971 @@
+2014/02/13 15:16:49 [error] 29433#0: *1 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 15:16:49 [error] 29433#0: *1 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 15:16:49 [error] 29433#0: *1 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 15:16:57 [error] 29433#0: *1 FastCGI sent in stderr: "PHP message: HTTP 404 (POST /login)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "POST /login HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/13 15:17:05 [error] 29433#0: *11 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /signup)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /signup HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/13 15:17:19 [error] 29433#0: *1 FastCGI sent in stderr: "PHP message: HTTP 404 (POST /login)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "POST /login HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/13 15:21:12 [error] 29433#0: *36 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/images/e.jpg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/images/e.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com", referrer: "http://event1.rystband.com/welcome"
+2014/02/13 15:21:13 [error] 29433#0: *37 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com"
+2014/02/13 15:21:18 [error] 29433#0: *37 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/images/e.jpg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/images/e.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com", referrer: "http://event1.rystband.com/signup"
+2014/02/13 16:39:24 [error] 29433#0: *65 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/13 16:39:25 [error] 29433#0: *65 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/13 16:39:25 [error] 29433#0: *65 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/13 16:39:40 [error] 29433#0: *65 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/13 16:39:40 [error] 29433#0: *65 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/13 19:03:51 [error] 29433#0: *90 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 208.54.38.177, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:03:55 [error] 29433#0: *92 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 208.54.38.177, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:35:15 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 19:35:16 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 19:35:16 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/13 19:35:42 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /admin)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /admin HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:35:42 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:35:47 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /administrator)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /administrator HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:35:52 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /login)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:36:05 [error] 29433#0: *104 directory index of "/var/www/rystband.com/public/dash/" is forbidden, client: 69.27.7.162, server: rystband.com, request: "GET /dash/ HTTP/1.1", host: "rystband.com"
+2014/02/13 19:36:10 [error] 29433#0: *104 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dashboard)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dashboard HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/13 19:36:33 [error] 29433#0: *113 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 199.27.128.209, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/13 19:36:35 [error] 29433#0: *118 FastCGI sent in stderr: "PHP message: Trying to get property of non-object
+PHP message: - /var/www/rystband.com/apps/Rystband/Views/attendee/own.php:7 Base->{closure}(8,'Trying to get property of non-object','/var/www/rystband.com/apps/Rystband/Views/attendee/own.php',7,array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'ontartion.rystband.com','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'en-US,en;...
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2032 require('/var/www/rystband.com/apps/Rystband/Views/attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2058 View->sandbox(NULL)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:129 View->render('attendee/own.php','text/html',NULL,0)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gec
+2014/02/13 19:36:36 [error] 29433#0: *118 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "ontartion.rystband.com"
+2014/02/13 19:36:43 [error] 29433#0: *122 FastCGI sent in stderr: "PHP message: Trying to get property of non-object
+PHP message: - /var/www/rystband.com/apps/Rystband/Views/attendee/own.php:7 Base->{closure}(8,'Trying to get property of non-object','/var/www/rystband.com/apps/Rystband/Views/attendee/own.php',7,array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'ontario.rystband.com','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'en-US,en;q=...
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2032 require('/var/www/rystband.com/apps/Rystband/Views/attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2058 View->sandbox(NULL)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:129 View->render('attendee/own.php','text/html',NULL,0)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gec
+2014/02/13 19:36:44 [error] 29433#0: *122 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "ontario.rystband.com"
+2014/02/14 00:40:08 [error] 29433#0: *133 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.74.176, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/14 01:30:04 [error] 29433#0: *138 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/style.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.74.176, server: rystband.com, request: "GET /css/style.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/14 02:48:58 [error] 29433#0: *146 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/14 02:50:22 [error] 29433#0: *148 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/14 02:51:19 [error] 29433#0: *150 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/webfont.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.74.176, server: rystband.com, request: "GET /css/webfont.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/14 02:55:54 [error] 29433#0: *152 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/green.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.74.176, server: rystband.com, request: "GET /css/green.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/14 15:00:22 [error] 29433#0: *169 FastCGI sent in stderr: "PHP message: HTTP 405 (HEAD /)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 192.96.204.42, server: rystband.com, request: "HEAD / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://www.domaintuno.com/d/rystband.com"
+2014/02/14 20:30:18 [error] 29433#0: *231 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/15 02:29:38 [error] 29433#0: *318 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 70.208.22.146, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/15 02:31:02 [error] 29433#0: *320 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 70.208.22.146, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/15 05:33:25 [error] 29433#0: *331 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 67.161.221.113, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/16 05:33:30 [error] 6227#0: *3 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.29.190.59, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/16 05:33:30 [error] 6227#0: *4 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.29.190.59, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/16 05:33:30 [error] 6227#0: *4 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.29.190.59, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/17 00:40:02 [error] 6227#0: *90 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.66.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/17 04:17:46 [error] 6227#0: *120 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 04:17:46 [error] 6227#0: *127 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:17:47 [error] 6227#0: *124 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:18:09 [error] 6227#0: *124 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:18:26 [error] 6227#0: *120 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:20:17 [error] 6227#0: *139 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:21:21 [error] 6227#0: *155 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 04:21:35 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:21:45 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/17 04:22:20 [error] 6227#0: *155 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 04:22:33 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:22:33 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:22:34 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:22:36 [error] 6227#0: *162 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:23:46 [error] 6227#0: *183 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 04:23:47 [error] 6227#0: *188 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:24:57 [error] 6227#0: *187 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:36:34 [error] 6227#0: *217 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:39:21 [error] 6227#0: *226 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:39:44 [error] 6227#0: *235 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:41:03 [error] 6227#0: *233 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:42:13 [error] 6227#0: *235 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:44:19 [error] 6227#0: *253 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:45:10 [error] 6227#0: *257 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:45:11 [error] 6227#0: *258 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:45:35 [error] 6227#0: *263 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:45:40 [error] 6227#0: *269 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:46:03 [error] 6227#0: *270 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:47:28 [error] 6227#0: *283 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:47:29 [error] 6227#0: *285 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:47:29 [error] 6227#0: *294 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:47:30 [error] 6227#0: *280 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 04:47:54 [error] 6227#0: *304 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:48:05 [error] 6227#0: *298 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:49:03 [error] 6227#0: *304 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:49:08 [error] 6227#0: *304 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:49:42 [error] 6227#0: *302 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:51:32 [error] 6227#0: *324 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:52:07 [error] 6227#0: *337 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:52:17 [error] 6227#0: *337 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:52:40 [error] 6227#0: *335 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:52:57 [error] 6227#0: *335 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:53:56 [error] 6227#0: *335 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:54:38 [error] 6227#0: *358 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 207.108.183.54, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:54:51 [error] 6227#0: *335 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:55:21 [error] 6227#0: *335 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:56:04 [error] 6227#0: *369 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 04:56:05 [error] 6227#0: *372 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:56:44 [error] 6227#0: *369 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:56:50 [error] 6227#0: *371 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:57:32 [error] 6227#0: *371 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 04:57:39 [error] 6227#0: *371 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 24.10.133.60, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event/edit/52fce2d813ec0272058b4bdc"
+2014/02/17 08:13:25 [error] 6227#0: *418 FastCGI sent in stderr: "PHP message: Trying to get property of non-object
+PHP message: - /var/www/rystband.com/apps/Rystband/Views/attendee/own.php:7 Base->{closure}(8,'Trying to get property of non-object','/var/www/rystband.com/apps/Rystband/Views/attendee/own.php',7,array('AGENT'=>'GoogleBot 1.0','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'blog.RYSTBAND.COM','Accept'=>'text/html, */*','Accept-Encoding'=>'identity','User-Agent'=>'GoogleBot 1.0'),'HALT'=>true,'HIGHLIGHT'=>true,'HOST'=>'blog.RYSTBAND.COM','IP'=>'31.202.247.234','JAR'=>array('expire'=>0,'path'=>'/','domain'=>'rystband.com','secure'=>false,'httponly'=>true),'LANGUAGE'=>'en-GB,en','LOCALES'=>'./','LOGS'=>'../logs/','ONERROR'=>NULL,'PACKAGE'=>'Fat-Free Framework','PARAMS'=>array('/welcome'),'PATH'=>'/welcome','PATTERN'=>'...
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2032 require('/var/www/rystband.com/apps/Rystband/Views/attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2058 View->sandbox(NULL)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:129 View->render('attendee/own.php','text/html',NULL,0)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'GoogleBot 1.0','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/
+2014/02/17 16:12:44 [error] 6227#0: *435 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 16:13:13 [error] 6227#0: *434 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 16:13:16 [error] 6227#0: *434 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:13:18 [error] 6227#0: *451 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 16:13:19 [error] 6227#0: *450 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 16:13:19 [error] 6227#0: *450 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 16:15:39 [error] 6227#0: *465 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:16:59 [error] 6227#0: *488 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:17:36 [error] 6227#0: *491 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:17:37 [error] 6227#0: *491 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 16:17:44 [error] 6227#0: *491 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:18:52 [error] 6227#0: *499 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:19:14 [error] 6227#0: *499 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:19:29 [error] 6227#0: *499 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:21:18 [error] 6227#0: *515 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:22:36 [error] 6227#0: *550 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:22:39 [error] 6227#0: *550 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:22:43 [error] 6227#0: *546 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:22:46 [error] 6227#0: *550 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/17 16:22:46 [error] 6227#0: *544 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/17 16:24:55 [error] 6227#0: *571 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 16:26:20 [error] 6227#0: *580 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 16:26:30 [error] 6227#0: *580 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 16:26:42 [error] 6227#0: *580 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 16:26:44 [error] 6227#0: *579 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/17 16:26:51 [error] 6227#0: *579 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/17 16:26:58 [error] 6227#0: *579 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/17 16:27:11 [error] 6227#0: *580 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/17 21:15:13 [error] 6227#0: *1150 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/17 21:15:13 [error] 6227#0: *1153 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/17 21:15:13 [error] 6227#0: *1153 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/17 21:15:50 [error] 6227#0: *1159 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 38.100.21.62, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/17 21:45:15 [error] 6227#0: *1192 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 21:45:16 [error] 6227#0: *1192 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/17 21:45:16 [error] 6227#0: *1192 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/18 02:09:20 [error] 6227#0: *1233 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 208.54.38.188, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/18 12:34:46 [error] 6227#0: *1395 FastCGI sent in stderr: "PHP message: HTTP 405 (HEAD /)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 192.96.204.42, server: rystband.com, request: "HEAD / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://www.domaintuno.com/d/rystband.com"
+2014/02/18 14:26:56 [error] 6227#0: *1403 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/18 14:26:57 [error] 6227#0: *1406 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/18 14:26:57 [error] 6227#0: *1401 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/18 14:29:14 [error] 6227#0: *1412 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/18 14:29:14 [error] 6227#0: *1414 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/features.html"
+2014/02/18 22:01:04 [error] 6227#0: *1477 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/18 22:01:04 [error] 6227#0: *1476 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/18 22:01:04 [error] 6227#0: *1476 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.238.131.53, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/19 13:17:19 [error] 6227#0: *1607 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/19 13:17:25 [error] 6227#0: *1609 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/19 16:18:32 [error] 6227#0: *1613 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/19 16:18:33 [error] 6227#0: *1614 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/19 16:18:33 [error] 6227#0: *1615 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/19 21:03:39 [error] 6227#0: *1670 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/19 21:03:40 [error] 6227#0: *1672 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/19 21:03:40 [error] 6227#0: *1672 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/19 22:07:42 [error] 6227#0: *1715 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sample)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.85.157, server: rystband.com, request: "GET /sample HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/19 22:08:47 [error] 6227#0: *1717 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sample)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.85.157, server: rystband.com, request: "GET /sample HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/19 22:10:27 [error] 6227#0: *1719 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sample)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.85.157, server: rystband.com, request: "GET /sample HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 00:39:56 [error] 6227#0: *1724 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/20 13:54:58 [error] 6227#0: *1792 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 157.55.32.97, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/20 14:08:23 [error] 6227#0: *1802 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 16:00:53 [error] 6227#0: *1808 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:00:54 [error] 6227#0: *1808 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:00:54 [error] 6227#0: *1808 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:13:00 [error] 6227#0: *1818 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:13:06 [error] 6227#0: *1818 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:13:06 [error] 6227#0: *1818 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:18:12 [error] 6227#0: *1828 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/20 16:18:12 [error] 6227#0: *1828 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/20 16:20:18 [error] 6227#0: *1831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/logo)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /img/logo HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 16:20:18 [error] 6227#0: *1831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 16:20:21 [error] 6227#0: *1831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /img/ HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 16:57:33 [error] 6227#0: *1858 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:57:34 [error] 6227#0: *1858 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 16:57:34 [error] 6227#0: *1858 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 17:12:30 [error] 6227#0: *1863 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /imgages/e.jpg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /imgages/e.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/20 17:12:30 [error] 6227#0: *1863 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/20 17:12:34 [error] 6227#0: *1863 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /images/e.jpg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /images/e.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/20 17:12:37 [error] 6227#0: *1863 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /i)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /i HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/20 17:12:41 [error] 6227#0: *1874 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/20 17:29:21 [error] 6227#0: *1876 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 18:11:40 [error] 6227#0: *1878 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 18:11:40 [error] 6227#0: *1878 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 18:11:40 [error] 6227#0: *1878 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 18:11:43 [error] 6227#0: *1878 directory index of "/var/www/rystband.com/public/dash/" is forbidden, client: 69.27.7.162, server: rystband.com, request: "GET /dash/ HTTP/1.1", host: "rystband.com"
+2014/02/20 18:21:34 [error] 6227#0: *1906 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/sales/css/webfont.css"
+2014/02/20 18:21:34 [error] 6227#0: *1909 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/sales/css/webfont.css"
+2014/02/20 18:52:59 [error] 6227#0: *2003 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 18:53:00 [error] 6227#0: *2003 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 18:53:00 [error] 6227#0: *2003 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/20 19:59:11 [error] 6227#0: *2269 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 166.70.76.252, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/20 20:13:45 [error] 6227#0: *2330 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /event1/social)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 68.101.206.139, server: rystband.com, request: "GET /event1/social HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/20 20:25:19 [error] 6227#0: *2401 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 04:27:46 [error] 6230#0: *3232 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 04:28:09 [error] 6230#0: *3234 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 06:04:15 [error] 6230#0: *3243 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 06:31:54 [error] 6230#0: *3245 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.58.178.59, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 06:31:55 [error] 6230#0: *3245 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.58.178.59, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "m.rystband.com"
+2014/02/21 06:31:57 [error] 6230#0: *3245 FastCGI sent in stderr: "PHP message: Trying to get property of non-object
+PHP message: - /var/www/rystband.com/apps/Rystband/Views/attendee/own.php:7 Base->{closure}(8,'Trying to get property of non-object','/var/www/rystband.com/apps/Rystband/Views/attendee/own.php',7,array('AGENT'=>'BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-agent','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('From'=>'wc@verisignlabs.com','User-Agent'=>'BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-agent','Host'=>'m.rystband.com'),'HALT'=>true,'HIGHLIGHT'=>true,'HOST'=>'m.rystband.com','IP'=>'69.58.178.59','JAR'=>array('expire'=>0,'path'=>'/','domain'=>'rystband.com','secure'=>false,'httponly'=>true),'LANGUAGE'=>'en-GB,en','LOCALES'=>'./','LOGS'=>'../l...
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2032 require('/var/www/rystband.com/apps/Rystband/Views/attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2058 View->sandbox(NULL)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:129 View->render('attendee/own.php','text/html',NULL,0)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-
+2014/02/21 06:31:59 [error] 6230#0: *3245 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.58.178.59, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 10:05:48 [error] 6230#0: *3255 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 12:53:04 [error] 6230#0: *3259 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.64.114, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 13:45:04 [error] 6230#0: *3263 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 20:19:39 [error] 6230#0: *4362 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 172.56.8.108, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 20:19:42 [error] 6230#0: *4362 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 172.56.8.108, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 20:19:43 [error] 6230#0: *4362 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 172.56.8.108, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 20:36:33 [error] 6230#0: *4400 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/21 20:49:28 [error] 6228#0: *4434 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 98.175.110.93, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/21 20:49:29 [error] 6228#0: *4433 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 98.175.110.93, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/21 20:49:29 [error] 6228#0: *4433 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 98.175.110.93, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/21 21:28:55 [error] 6230#0: *4682 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:29:12 [error] 6230#0: *4681 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:29:19 [error] 6230#0: *4677 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:29:20 [error] 6230#0: *4677 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/21 21:29:35 [error] 6230#0: *4681 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:29:51 [error] 6230#0: *4681 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:29:59 [error] 6230#0: *4677 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:30:03 [error] 6230#0: *4677 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:31:04 [error] 6230#0: *4682 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:31:23 [error] 6230#0: *4677 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:31:28 [error] 6230#0: *4682 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:31:47 [error] 6230#0: *4682 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/21 21:31:50 [error] 6230#0: *4682 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 21:41:49 [error] 6230#0: *4719 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/social"
+2014/02/21 22:36:43 [error] 6230#0: *5130 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/21 22:36:43 [error] 6230#0: *5130 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/21 22:36:52 [error] 6230#0: *5130 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/21 22:38:22 [error] 6230#0: *5138 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/21 22:38:27 [error] 6230#0: *5138 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/21 22:42:59 [error] 6230#0: *5147 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/sales/css/webfont.css"
+2014/02/21 22:42:59 [error] 6230#0: *5148 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/sales/css/webfont.css"
+2014/02/21 22:43:43 [error] 6230#0: *5158 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:43:43 [error] 6230#0: *5158 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:43:44 [error] 6230#0: *5158 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:44:46 [error] 6230#0: *5183 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:44:47 [error] 6230#0: *5183 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:44:47 [error] 6230#0: *5183 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:44:52 [error] 6228#0: *5197 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:44:55 [error] 6230#0: *5183 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:45:06 [error] 6228#0: *5197 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:46:12 [error] 6228#0: *5233 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:46:13 [error] 6228#0: *5233 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 22:46:16 [error] 6228#0: *5241 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:46:22 [error] 6228#0: *5247 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:46:23 [error] 6228#0: *5247 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:46:34 [error] 6228#0: *5259 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:46:35 [error] 6228#0: *5259 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:46:49 [error] 6228#0: *5271 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:46:49 [error] 6228#0: *5271 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/21 22:47:57 [error] 6228#0: *5275 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:48:04 [error] 6228#0: *5275 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/21 22:48:09 [error] 6228#0: *5279 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.ttf)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.ttf HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/features"
+2014/02/21 22:48:09 [error] 6228#0: *5277 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.svg)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.svg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/features"
+2014/02/21 22:48:10 [error] 6228#0: *5277 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/features"
+2014/02/21 22:48:14 [error] 6228#0: *5277 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/21 22:48:51 [error] 6228#0: *5289 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:48:56 [error] 6228#0: *5295 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:49:27 [error] 6228#0: *5292 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:49:31 [error] 6228#0: *5293 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/21 22:51:46 [error] 6228#0: *5303 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 206.71.71.63, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/22 07:35:40 [error] 6228#0: *5340 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/22 11:00:29 [error] 6228#0: *5344 FastCGI sent in stderr: "PHP message: HTTP 405 (HEAD /)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 192.96.204.42, server: rystband.com, request: "HEAD / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://www.domaintuno.com/d/rystband.com"
+2014/02/22 12:56:52 [error] 6228#0: *5350 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 195.78.109.86, server: rystband.com, request: "GET /wp-login.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/22 18:56:19 [error] 6228#0: *5395 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/22 18:56:19 [error] 6228#0: *5395 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/22 19:02:57 [error] 6228#0: *5432 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/22 19:02:57 [error] 6228#0: *5432 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 10:36:35 [error] 6228#0: *5513 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/23 11:37:26 [error] 6228#0: *5515 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 11:41:23 [error] 6228#0: *5518 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/style.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /css/style.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 11:41:24 [error] 6228#0: *5518 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /js/jquery.min.js)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /js/jquery.min.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 11:41:24 [error] 6228#0: *5518 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/webfont.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /css/webfont.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 11:41:25 [error] 6228#0: *5518 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /js/jquery-ui.min.js)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /js/jquery-ui.min.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 13:37:34 [error] 6228#0: *5526 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /css/green.css)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /css/green.css HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 13:40:29 [error] 6228#0: *5528 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /js/custom.js)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /js/custom.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 15:15:40 [error] 6228#0: *5530 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/23 18:24:37 [error] 6228#0: *5533 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.76.96, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/23 18:24:37 [error] 6228#0: *5533 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.76.96, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/24 04:40:04 [error] 6228#0: *5563 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 05:23:42 [error] 6228#0: *5569 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 195.250.34.144, server: rystband.com, request: "GET /wp-login.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 05:23:43 [error] 6228#0: *5569 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /administrator/)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 195.250.34.144, server: rystband.com, request: "GET /administrator/ HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 05:23:43 [error] 6228#0: *5569 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 195.250.34.144, server: rystband.com, request: "GET /admin.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 06:53:10 [error] 6228#0: *5573 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.73, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 06:57:01 [error] 6228#0: *5575 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/24 14:17:20 [error] 6228#0: *5588 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 14:27:28 [error] 6228#0: *5590 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 15:52:58 [error] 6228#0: *5601 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 17:49:33 [error] 6228#0: *5726 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/24 17:54:21 [error] 6228#0: *5735 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/24 17:54:29 [error] 6228#0: *5734 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/24 17:54:43 [error] 6228#0: *5734 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/24 17:56:09 [error] 6228#0: *5736 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 17:57:35 [error] 6228#0: *5750 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/24 17:59:20 [error] 6228#0: *5754 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 17:59:44 [error] 6228#0: *5758 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:00:20 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:00:53 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:01:03 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:01:10 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:01:14 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:01:21 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:01 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:16 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:28 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:34 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:42 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:50 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:02:55 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:03:00 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:03:06 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:03:08 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 18:03:11 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:03:18 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:03:47 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:04:24 [error] 6228#0: *5756 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:04:56 [error] 6228#0: *5757 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:06:12 [error] 6228#0: *5805 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:06:35 [error] 6228#0: *5811 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:07:09 [error] 6228#0: *5805 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:07:21 [error] 6228#0: *5811 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:07:26 [error] 6228#0: *5811 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:07:41 [error] 6228#0: *5807 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:43:19 [error] 6228#0: *5842 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/24 18:43:25 [error] 6228#0: *5842 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 18:43:30 [error] 6228#0: *5842 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 18:43:32 [error] 6228#0: *5842 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/social"
+2014/02/24 19:03:14 [error] 6228#0: *5905 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:13:13 [error] 6228#0: *6213 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/24 20:13:14 [error] 6228#0: *6213 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/24 20:29:20 [error] 6228#0: *6227 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 20:29:22 [error] 6228#0: *6227 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:33:30 [error] 6228#0: *6244 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:39:48 [error] 6228#0: *6323 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:39:50 [error] 6228#0: *6323 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 20:40:14 [error] 6228#0: *6323 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:40:33 [error] 6228#0: *6323 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/roles"
+2014/02/24 20:42:28 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/users"
+2014/02/24 20:42:29 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/users"
+2014/02/24 20:42:36 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/roles"
+2014/02/24 20:42:42 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 20:43:06 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 20:43:22 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/roles"
+2014/02/24 20:43:23 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: Unable to open categories/checkboxes.php
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:129 View->render('categories/checkboxes.php','text/html',NULL,0)
+PHP message: - /var/www/rystband.com/apps/Dash/Views/event/roles/create.php:118 Dsc\Template->renderLayout('categories/checkboxes.php')
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:2032 require('/var/www/rystband.com/apps/Dash/Views/event/roles/create.php')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:64 View->sandbox(array('AGENT'=>'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36','Referer'=>'http://dashboard.rystband.com/event1/roles','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'en-US,en;q=0.8,it;q=0.6','Cookie'=>'__cfduid=dd22e760638f70a632dcbd81456...
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:122 Dsc\Template->renderSpecificLayout('/var/www/rystband.com/public/../apps/Dash/Views/','event/roles/create.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('Dash/Views::event/roles/create.php','text/html',NULL)
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Event/Role.php:59 Dsc\Templa
+2014/02/24 20:43:23 [error] 6228#0: *6372 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /event1/role/ckeditor/ckeditor.js)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /event1/role/ckeditor/ckeditor.js HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/role/create"
+2014/02/24 20:43:29 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/roles"
+2014/02/24 20:43:31 [error] 6228#0: *6357 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/24 23:34:10 [error] 6228#0: *6762 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/24 23:51:17 [error] 6228#0: *6772 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/24 23:51:20 [error] 6228#0: *6772 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/25 02:35:08 [error] 6228#0: *6803 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 04:58:16 [error] 6228#0: *6833 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 67.172.233.188, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 06:11:08 [error] 6228#0: *6839 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/25 06:11:08 [error] 6228#0: *6839 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /features.html)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /features.html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/25 13:31:55 [error] 6228#0: *6875 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 13:53:14 [error] 6228#0: *6877 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 8.35.200.41, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/25 16:14:28 [error] 6228#0: *6913 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:24:07 [error] 6228#0: *6918 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:43:50 [error] 6228#0: *6965 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:46:16 [error] 6228#0: *7033 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:46:56 [error] 6228#0: *7070 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:47:11 [error] 6228#0: *7070 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:50:16 [error] 6228#0: *7073 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:50:49 [error] 6228#0: *7073 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:50:50 [error] 6228#0: *7076 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:50:55 [error] 6228#0: *7073 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 16:50:58 [error] 6228#0: *7073 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /ryst_samples.zip)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 50.77.47.174, server: rystband.com, request: "GET /ryst_samples.zip HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 18:51:10 [error] 6228#0: *7324 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/login"
+2014/02/25 18:51:16 [error] 6228#0: *7324 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/"
+2014/02/25 18:51:18 [error] 6228#0: *7324 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/dashboard"
+2014/02/25 18:51:19 [error] 6228#0: *7324 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dash/js/jquery.min.map)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dash/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com", referrer: "http://dashboard.rystband.com/event1/social"
+2014/02/25 19:33:55 [error] 6228#0: *7641 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/25 20:59:52 [error] 6228#0: *7839 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/26 00:39:42 [error] 18883#0: *156 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 66.249.75.234, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/26 06:26:27 [error] 18883#0: *198 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/26 08:18:29 [error] 18883#0: *206 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 174.27.252.41, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/26 13:27:08 [error] 18883#0: *213 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 65.181.124.121, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/26 13:56:54 [error] 18883#0: *220 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.eot)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.23.36.119, server: rystband.com, request: "GET /sales/fonts/dripicons.eot? HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/26 13:56:54 [error] 18883#0: *217 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 99.23.36.119, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/02/26 15:26:50 [error] 18883#0: *225 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/image1.png)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/26 21:00:31 [error] 18884#0: *559 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Remote server has closed the connection
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 109.200.159.118, server: rystband.com, request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://onload.pw"
+2014/02/26 21:00:32 [error] 18884#0: *561 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Remote server has closed the connection
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 109.200.159.118, server: rystband.com, request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://onload.pw"
+2014/02/26 21:00:32 [error] 18884#0: *563 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Remote server has closed the connection
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 109.200.159.118, server: rystband.com, request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://onload.pw"
+2014/02/26 21:00:32 [error] 18884#0: *565 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 109.200.159.118, server: rystband.com, request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://onload.pw"
+2014/02/26 23:53:04 [error] 18884#0: *632 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 216.145.11.94, server: rystband.com, request: "GET /robots.txt HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/26 23:53:04 [error] 18884#0: *634 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 216.145.11.94, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://whois.domaintools.com/rystband.com"
+2014/02/27 00:25:21 [error] 18884#0: *636 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 64.74.215.28, server: rystband.com, request: "GET /robots.txt HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 00:25:21 [error] 18884#0: *638 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 64.74.215.28, server: rystband.com, request: "GET / HTTP/1.0", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 02:58:20 [error] 18884#0: *640 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 67.177.19.190, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/27 03:23:19 [error] 18884#0: *651 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 67.177.19.190, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/27 04:09:47 [error] 18883#0: *676 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/27 04:39:27 [error] 18883#0: *678 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 37.187.26.110, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/02/27 05:07:00 [error] 18883#0: *680 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 05:07:01 [error] 18883#0: *682 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 05:07:02 [error] 18883#0: *684 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 05:07:03 [error] 18883#0: *686 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Previous connection attempts failed, server blacklisted
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 05:07:04 [error] 18883#0: *688 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Previous connection attempts failed, server blacklisted
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 05:07:05 [error] 18883#0: *690 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Previous connection attempts failed, server blacklisted
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 96.242.31.129, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 14:43:26 [error] 18883#0: *712 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 64.74.215.44, server: rystband.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/02/27 14:53:16 [error] 18883#0: *714 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 76.23.54.39, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/27 16:07:04 [error] 18883#0: *716 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Base.php:13 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dash\Models\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Events.php:18 Dsc\Model->__construct(array('filter_fields'=>array('name','start_date','end_date'),'order_directions'=>array('1','-1')))
+PHP message: - index.php:45 Dash\Models\Events->__construct()" while reading response header from upstream, client: 216.52.242.14, server: rystband.com, request: "GET /img/image1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/02/27 18:48:29 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/02/27 18:48:32 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Users.php:11 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Base.php:12 Dash\Models\Users->createDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dsc\Models\Db\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-users/src/Users/Admin/Models/Users.php:19 Dsc\Model->__construct(array('filter_fields'=>array('username','email','first_name','last_name'),'order_directions'=>array('1','-1')))
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Auth.php:109 Users\Admin\Models\Users->__construct()
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Dash\Controllers\Auth->doLogin',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'email=chris%40ammonitenetworks.com&password=F0rgetting01','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Content-Length'=>'56','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Origin'=>'http://dashboard.rystband.com','User-Ag
+2014/02/27 18:48:43 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Users.php:11 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Base.php:12 Dash\Models\Users->createDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dsc\Models\Db\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-users/src/Users/Admin/Models/Users.php:19 Dsc\Model->__construct(array('filter_fields'=>array('username','email','first_name','last_name'),'order_directions'=>array('1','-1')))
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Auth.php:109 Users\Admin\Models\Users->__construct()
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Dash\Controllers\Auth->doLogin',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'email=chris%40ammonitenetworks.com&password=F0rgetting01','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Content-Length'=>'56','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Origin'=>'http://dashboard.rystband.com','User-Ag
+2014/02/27 18:48:51 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Users.php:11 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Base.php:12 Dash\Models\Users->createDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dsc\Models\Db\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-users/src/Users/Admin/Models/Users.php:19 Dsc\Model->__construct(array('filter_fields'=>array('username','email','first_name','last_name'),'order_directions'=>array('1','-1')))
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Auth.php:109 Users\Admin\Models\Users->__construct()
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Dash\Controllers\Auth->doLogin',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'email=chris%40ammonitenetworks.com&password=F0rgetting01','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Content-Length'=>'56','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Origin'=>'http://dashboard.rystband.com','User-Ag
+2014/02/27 18:49:53 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Users.php:11 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Base.php:12 Dash\Models\Users->createDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dsc\Models\Db\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-users/src/Users/Admin/Models/Users.php:19 Dsc\Model->__construct(array('filter_fields'=>array('username','email','first_name','last_name'),'order_directions'=>array('1','-1')))
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Auth.php:109 Users\Admin\Models\Users->__construct()
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Dash\Controllers\Auth->doLogin',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'email=chris%40ammonitenetworks.com&password=F0rgetting01','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Content-Length'=>'56','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Origin'=>'http://dashboard.rystband.com','User-Ag
+2014/02/27 18:50:02 [error] 18883#0: *752 FastCGI sent in stderr: "PHP message: Failed to connect to: 127.0.0.1:27017: Connection refused
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/db/mongo.php:88 MongoClient->__construct('mongodb://127.0.0.1:27017',array())
+PHP message: - /var/www/rystband.com/apps/Dash/Models/Users.php:11 DB\Mongo->__construct('mongodb://127.0.0.1:27017','rystband')
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Base.php:12 Dash\Models\Users->createDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Models/Db/Mongo.php:21 Dsc\Models\Db\Base->getDb()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Model.php:54 Dsc\Models\Db\Mongo->getMapper()
+PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-users/src/Users/Admin/Models/Users.php:19 Dsc\Model->__construct(array('filter_fields'=>array('username','email','first_name','last_name'),'order_directions'=>array('1','-1')))
+PHP message: - /var/www/rystband.com/apps/Dash/Controllers/Auth.php:109 Users\Admin\Models\Users->__construct()
+PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1292 Base->call('\Dash\Controllers\Auth->doLogin',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36','AJAX'=>false,'ALIASES'=>array(),'AUTOLOAD'=>'/var/www/rystband.com/public/../lib/;/var/www/rystband.com/public/../apps/;','BASE'=>'','BODY'=>'email=chris%40ammonitenetworks.com&password=F0rgetting01','CACHE'=>'','CASELESS'=>true,'DEBUG'=>2,'DIACRITICS'=>array(),'DNSBL'=>'','EMOJI'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'EXEMPT'=>NULL,'FALLBACK'=>'en','HEADERS'=>array('Host'=>'dashboard.rystband.com','Connection'=>'keep-alive','Content-Length'=>'56','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Origin'=>'http://dashboard.rystband.com','User-Ag
+2014/02/27 19:04:01 [error] 18883#0: *771 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /admin/img/favicon.ico)
+PHP message: - index.php:69 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /admin/img/favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "admin.rystband.com"
