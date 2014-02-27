@@ -1,23 +1,18 @@
 <?php
-// server should keep session data for AT LEAST 1 hour
 ini_set('session.gc_maxlifetime', 36000);
 session_set_cookie_params(36000);
-
 if(!empty($_COOKIE['id'])) {
 session_id($_COOKIE['id']);
 }
 
-
 $app = require('../vendor/bcosca/fatfree/lib/base.php');
-
-
 
 $app->set('PATH_ROOT', __dir__ . '/../');
 $app->set('AUTOLOAD',
         $app->get('PATH_ROOT') . 'lib/;' .
         $app->get('PATH_ROOT') . 'apps/;'
 );
-// common config
+
 $app->config( $app->get('PATH_ROOT') . 'config/common.config.ini');
 
 require $app->get('PATH_ROOT') . 'vendor/autoload.php';
@@ -39,6 +34,7 @@ if ($app->get('event.db') == 'www') {
     $app->set('APP_NAME', 'sales');
 }
 
+
 if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !empty($app->get('event.db')) ) {
 //WE are loading an event
 //HERE WE CAN CHECK THIS IT IS A VALID EVENT REGISTERED AND SUCH
@@ -59,14 +55,23 @@ $logger = new \Log( $app->get('application.logfile') );
 if ($app->get('DEBUG')) {
     ini_set('display_errors',1);
 }
+
 // bootstap each mini-app
-$custom = $app->get('PATH_ROOT').'apps/Custom/';
+\Dsc\Apps::instance()->bootstrap();
 
-\Dsc\Apps::instance()->bootstrap(null, array($custom ));
+// load routes
+\Dsc\System::instance()->get('router')->registerRoutes();
 
+// trigger the preflight event
 \Dsc\System::instance()->preflight();
 
+/*
+$db_name = \Base::instance()->get('db.mongo.name');
+$db = new \DB\Mongo('mongodb://localhost:27017', $db_name);
+new \DB\Mongo\Session($db);
+*/
 
 $app->run();
+
 
 ?>
