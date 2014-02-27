@@ -109,7 +109,7 @@
 		</div>
 	           
                     <div><br/>
-   			  <input class="btn btn-primary pull-right" type="submit" type="hidden" name="submitType" value="Save">      
+   			  <input class="btn btn-info pull-right" type="submit" type="hidden" name="submitType" value="Save">      
                     </div>
 
 		</div>

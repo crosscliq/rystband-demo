@@ -6,7 +6,7 @@ $maps = new \Dash\Models\Bingmap;?>
 <div class="content container">
                               <div class="row">
                                 <div class="col-lg-12">
-				      <a href="/event/edit/<?=$event['details']['_id'];?>" class="btn btn-s btn-success pull-right"><i class="icon-edit"></i> Edit</a>
+				      <a href="/event/edit/<?=$event['details']['_id'];?>" class="btn btn-s btn-info pull-right"><i class="icon-edit"></i> Edit</a>
                                   <h1 class="page-title"><?php echo $event['details']->name;?><small> <?php echo $event['details']->category;?></small></h1>
                                 </div>
                               </div>
@@ -21,17 +21,32 @@ $maps = new \Dash\Models\Bingmap;?>
                 		  <div class="col-xs-4"> <small class="text-muted block"><i class="icon-calendar"></i> End Date</small> <span><?php echo $event['details']->dates['end_date'];?><br/><?php echo $event['details']->dates['end_time'];?></span></div>
 		  		  <div class="col-xs-4"> <small class="text-muted block"><i class="icon-map-marker"></i> Address</small> <span><?php echo $event['details']->address['street']; ?> <?php echo $event['details']->address['zip']; ?> <?php echo $event['details']->address['country']; ?></span></small> </div>
               		</div>
-              		<div class="row">
-
-                		  <div class="col-xs-12"><A class="text-info" href="http://<?php echo $event['details']->event_id; ?>.msft.cc/home"><i class="icon-link"></i>  http://<?php echo $event['details']->event_id; ?>.msft.css/home</a></div></div>
+              		<div class="row" style="margin:0px;">
+			         <div class="col-xs-4"><h3 class="text-info" style="margin:0px;">#HASHTAG</h3></div>
+                		  <div class="col-xs-8">Event URL:<br/><A class="text-info" href="http://<?php echo $event['details']->event_id; ?>.msft.cc/home"><i class="icon-link"></i>  http://<?php echo $event['details']->event_id; ?>.msft.css/home</a></div></div>
             		</div>
            		  <div class="">
-			   <div class="text-center padder m-t">  <img style="width:100%;opacity:0.6;" src="<?php echo $maps->width('400')->height('345')->location($event['details']['address']['city'] . ', ' . $event['details']['address']['state'])->getImageURL(); ?>" >
+			   <div class="text-center padder m-t">  <img style="width:100%;opacity:0.6;" src="<?php echo $maps->width('400')->height('181')->location($event['details']['address']['city'] . ', ' . $event['details']['address']['state'])->getImageURL(); ?>" >
 			  </div>
             		 </div>
 
+            		<div class="widget-footer lt">
+					<legend><i class="icon-user"></i> Social</legend>
+              		<div class="row">
+	              		<div class="shortcuts"> 
+					<div class="shortcut"><h2 class="wbTotal"><?php echo $event['wristbands']['total']; ?></h2><span class="shortcut-label"><i class="icon-facebook-sign"></i> <small>Facebook</small><br/>Likes</span> </div>
+					<div class="shortcut"><h2 class="tTotal"><?php echo $event['tickets']['total']; ?></h2><span class="shortcut-label"><i class="icon-facebook-sign"></i> <small>Facebook</small><br/>Shares</span> </div>
+					<div class="shortcut"><h2 class="aTotal"><?php echo $event['attendees']['total']; ?></h2><span class="shortcut-label"><i class="icon-twitter-sign"></i> <small>Twitter</small><br/>Posts</span> </div>
+					<div class="shortcut"><h2 class="eTotal"><?php echo $event['wristbands']['withNOAttendeesAndTickets']; ?></h2><span class="shortcut-label"><i class="icon-camera"></i> <small>Instagram</small><br/>Posts</span> </div>
+				</div>
+
+				</div>
+			</div>
+                		 
+
           		</div>
 		</div> 
+
 		<div class="col-md-3 col-xs-12 col-sm-6">
               <div class="stats-heading">Wristbands</div>
               <div class="stats-body-alt" style="height:170px;"> 

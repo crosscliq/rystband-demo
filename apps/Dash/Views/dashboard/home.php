@@ -11,15 +11,15 @@
     <section id="events" class="color-light text-center">     
         
           <div class="row">
-	     <div class="col-sm-2"><a class="btn btn-success" href="/event/create">Create Event</a></div>
+	     <div class="col-sm-2"><a class="btn btn-info" href="/event/create">Create Event</a></div>
             <div class="col-sm-4 col-md-offset-6">
               <div id="filters" class="text-center btn-group">
             
                   <div  class=" btn-group btn-group-justified">
-                    <a class="filter btn btn-primary active" data-filter="all" href="#">All</a>
-                    <a class="filter btn btn-primary" data-filter="NSO" href="#">NSO</a>
-                    <a class="filter btn btn-primary" data-filter="XBOX" href="#">Xbox</a>
-                    <a class="filter btn btn-primary" data-filter="HR" href="#">HR</a>
+                    <a class="filter btn btn-info active" data-filter="all" href="#">All</a>
+                    <a class="filter btn btn-info" data-filter="NSO" href="#">NSO</a>
+                    <a class="filter btn btn-info" data-filter="XBOX" href="#">Xbox</a>
+                    <a class="filter btn btn-info" data-filter="HR" href="#">HR</a>
                   </div>
 		    
               </div>
