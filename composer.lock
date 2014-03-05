@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "47a8001c618a8711ce2a8263711cdb54",
+    "hash": "9258f4ddab006825641bfc396af874b5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4ded8a201bd6fcac37d630197e6443f41aa2752d"
+                "reference": "9799b703150a71f0e0a0b48ab59213c9d9354a0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4ded8a201bd6fcac37d630197e6443f41aa2752d",
-                "reference": "4ded8a201bd6fcac37d630197e6443f41aa2752d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9799b703150a71f0e0a0b48ab59213c9d9354a0f",
+                "reference": "9799b703150a71f0e0a0b48ab59213c9d9354a0f",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2014-02-26 21:44:35"
+            "time": "2014-03-03 22:55:55"
         },
         {
             "name": "bcosca/fatfree",
@@ -169,6 +169,44 @@
             "time": "2014-02-07 17:15:53"
         },
         {
+            "name": "dg/twitter-php",
+            "version": "v3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/twitter-php.git",
+                "reference": "5ca5b8cb823972e1239656c5f3b17ddd28e6d816"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/twitter-php/zipball/5ca5b8cb823972e1239656c5f3b17ddd28e6d816",
+                "reference": "5ca5b8cb823972e1239656c5f3b17ddd28e6d816",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                }
+            ],
+            "description": "Small and easy Twitter wrapper for PHP.",
+            "homepage": "https://github.com/dg/twitter-php",
+            "keywords": [
+                "oauth",
+                "twitter"
+            ],
+            "time": "2014-01-17 16:59:53"
+        },
+        {
             "name": "dioscouri/f3-activity",
             "version": "dev-master",
             "source": {
@@ -219,13 +257,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-admin.git",
-                "reference": "00fe0834436c930acd54edf2f82e08e7868d3b24"
+                "reference": "5bb372f2644d8b713956dbcdd4bd328dc5f1fbea"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-4b251c.zip",
-                "reference": "00fe0834436c930acd54edf2f82e08e7868d3b24",
-                "shasum": "b7db9b27b3fe7c7cf8e54ba4bf158301665249ac"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-7a28a6.zip",
+                "reference": "5bb372f2644d8b713956dbcdd4bd328dc5f1fbea",
+                "shasum": "fbba989d204a3219575842a485197321b6faf458"
             },
             "require": {
                 "dioscouri/f3-lib": "dev-master",
@@ -257,7 +295,7 @@
                 "F3",
                 "RAD"
             ],
-            "time": "2014-02-26 01:32:16"
+            "time": "2014-02-28 22:35:15"
         },
         {
             "name": "dioscouri/f3-assets",
@@ -265,13 +303,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-assets.git",
-                "reference": "0d79a26ed9cecff7f08ed26f7534938b9a856c34"
+                "reference": "af18c2ee22c956c69f0e6b1a5568ac1f9bac4929"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-assets-dev-master-0ed576.zip",
-                "reference": "0d79a26ed9cecff7f08ed26f7534938b9a856c34",
-                "shasum": "e4f8e3d8055a62e06ed9207773a3b85480c770f6"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-assets-dev-master-15db67.zip",
+                "reference": "af18c2ee22c956c69f0e6b1a5568ac1f9bac4929",
+                "shasum": "5381c176e1ed82d547f27ba74763e20a4cf0a558"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -302,7 +340,7 @@
                 "Media Asset Manager",
                 "RAD"
             ],
-            "time": "2014-02-26 01:58:10"
+            "time": "2014-03-01 03:07:54"
         },
         {
             "name": "dioscouri/f3-blog",
@@ -310,13 +348,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-blog.git",
-                "reference": "0c8c3b1a4fa7f04664b9010b90a54c3d2426d336"
+                "reference": "f058274be8a45855f0bd25353a099603c058e501"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-c5fefa.zip",
-                "reference": "0c8c3b1a4fa7f04664b9010b90a54c3d2426d336",
-                "shasum": "9f57c5563c7fcd558747257a82486d5cd67b7c5a"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-da9461.zip",
+                "reference": "f058274be8a45855f0bd25353a099603c058e501",
+                "shasum": "544291f696c643923e8eb707cd48e8b2552b6d29"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -347,7 +385,7 @@
                 "F3",
                 "RAD"
             ],
-            "time": "2014-02-27 05:02:32"
+            "time": "2014-03-03 21:14:53"
         },
         {
             "name": "dioscouri/f3-lib",
@@ -355,12 +393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dioscouri/f3-lib.git",
-                "reference": "89dc0d9088fdec4b6bfd109f38a0adcfd8a4f65a"
+                "reference": "38bfe53d79a7e33f8a1c6efcae8b0e0c76461954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/89dc0d9088fdec4b6bfd109f38a0adcfd8a4f65a",
-                "reference": "89dc0d9088fdec4b6bfd109f38a0adcfd8a4f65a",
+                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/38bfe53d79a7e33f8a1c6efcae8b0e0c76461954",
+                "reference": "38bfe53d79a7e33f8a1c6efcae8b0e0c76461954",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +429,7 @@
                 "F3",
                 "rad"
             ],
-            "time": "2014-02-27 17:27:16"
+            "time": "2014-03-04 03:42:33"
         },
         {
             "name": "dioscouri/f3-mailer",
@@ -399,13 +437,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-mailer.git",
-                "reference": "908720375f3348411a171672b194ab6eb5baa94f"
+                "reference": "86e4ce3ab181a3fea7e6965834d2842ff5531bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-dev-master-a6e109.zip",
-                "reference": "908720375f3348411a171672b194ab6eb5baa94f",
-                "shasum": "aa651cff4845e5a9a949d719996d8207fd36181c"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-dev-master-041f68.zip",
+                "reference": "86e4ce3ab181a3fea7e6965834d2842ff5531bf1",
+                "shasum": "6a1bea3c5ab19ae49a6b3501b29600b9aea52a65"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -444,7 +482,7 @@
                 "email",
                 "mandrill"
             ],
-            "time": "2014-02-27 18:01:16"
+            "time": "2014-02-28 21:13:42"
         },
         {
             "name": "dioscouri/f3-minify",
@@ -452,13 +490,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-minify.git",
-                "reference": "aaf00436fa1cc49fe339a8c80bf17e87c5291677"
+                "reference": "b96e2e59c5e660f781ff6019d422aad6854a6118"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-minify-dev-master-04686f.zip",
-                "reference": "aaf00436fa1cc49fe339a8c80bf17e87c5291677",
-                "shasum": "6a979757f65c0a21deff285db0b1506bf963ff7b"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-minify-dev-master-c2a4de.zip",
+                "reference": "b96e2e59c5e660f781ff6019d422aad6854a6118",
+                "shasum": "fcf4196d84fe73c5ea2940d4e3306d121537002e"
             },
             "require": {
                 "dioscouri/f3-lib": "dev-master",
@@ -489,7 +527,7 @@
                 "Package Manager",
                 "RAD"
             ],
-            "time": "2014-02-26 04:08:57"
+            "time": "2014-02-28 21:14:11"
         },
         {
             "name": "dioscouri/f3-modules",
@@ -497,13 +535,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-modules.git",
-                "reference": "64910e9a2f9cf94e1c81bffb01ba7263510fba54"
+                "reference": "e892cf209c0f0612fb3ba9d4d923540436f5af76"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-modules-dev-master-8d26e9.zip",
-                "reference": "64910e9a2f9cf94e1c81bffb01ba7263510fba54",
-                "shasum": "a922f8198867d0eadb3845718d364a79f394cb7d"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-modules-dev-master-9361fb.zip",
+                "reference": "e892cf209c0f0612fb3ba9d4d923540436f5af76",
+                "shasum": "a990cbe31830f2aa5431ac6f9f011af4103a8514"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -534,7 +572,7 @@
                 "Module Manager",
                 "RAD"
             ],
-            "time": "2014-02-27 17:58:10"
+            "time": "2014-02-28 21:14:29"
         },
         {
             "name": "dioscouri/f3-users",
@@ -542,13 +580,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-users.git",
-                "reference": "1f19f670bd78d721f4ccd792c2920216c3c5e2cf"
+                "reference": "5f94c88c98ede63c0b8eab1bbfe13364d5c0e681"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-0a9a49.zip",
-                "reference": "1f19f670bd78d721f4ccd792c2920216c3c5e2cf",
-                "shasum": "4fd16f14cbfc5066a6a0fe1c1e1266bbf83a5ff1"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-643ca9.zip",
+                "reference": "5f94c88c98ede63c0b8eab1bbfe13364d5c0e681",
+                "shasum": "a3827bfbe75760479b4ef3a3d89ee0bc7bf27646"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -579,7 +617,7 @@
                 "RAD",
                 "User Management"
             ],
-            "time": "2014-02-27 15:02:01"
+            "time": "2014-03-02 20:33:33"
         },
         {
             "name": "firephp/firephp-core",
@@ -1080,7 +1118,8 @@
         "aws/aws-sdk-php": 20,
         "pusher/pusher-php-server": 20,
         "mandrill/mandrill": 20,
-        "ddeboer/data-import": 0
+        "ddeboer/data-import": 0,
+        "dg/twitter-php": 0
     },
     "platform": [
 

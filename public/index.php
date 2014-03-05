@@ -17,13 +17,16 @@ $app->config( $app->get('PATH_ROOT') . 'config/common.config.ini');
 
 require $app->get('PATH_ROOT') . 'vendor/autoload.php';
 
-$app->set('APP_NAME', 'site');
+
+
+$app->set('APP_NAME', 'sales');
 //TODO maybe we query the event model, and get the event object from the main DB and load it. so than we can  let the DB be controlled by the dash
 
 $app->set('event.db', strtolower(explode(".",$_SERVER['HTTP_HOST'])[0]));
 if ($app->get('event.db') == 'dashboard') {
     $app->set('APP_NAME', 'dash');
 }
+
 if ($app->get('event.db') == 'admin') {
     $app->set('APP_NAME', 'admin');
 }
@@ -61,7 +64,7 @@ if ($app->get('DEBUG')) {
 
 // load routes
 \Dsc\System::instance()->get('router')->registerRoutes();
-
+ 
 // trigger the preflight event
 \Dsc\System::instance()->preflight();
 

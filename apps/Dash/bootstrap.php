@@ -10,15 +10,13 @@ switch ($global_app_name)
         \Dsc\System::instance()->getDispatcher()->addListener(\Dash\Pusherlistener::instance());
 
 
-        $f3->config( $f3->get('PATH_ROOT').'apps/Dash/config.ini');
-
-    	$f3->route('GET /', '\Dash\Controllers\Dashboard->display');
-
-        $f3->route('GET /login', '\Dash\Controllers\Auth->showLogin'); 
-        $f3->route('POST /login', '\Dash\Controllers\Auth->doLogin');
+        \Dsc\System::instance()->get('router')->mount( new \Dash\Site\Routes );
+        \Dsc\System::instance()->get('router')->mount( new \Dash\Site\EventRoutes );
+       
+       
         //$f3->route('GET /signup', '\Dash\Controllers\Auth->showSignup');
         //$f3->route('POST /signup', '\Dash\Controllers\Auth->doSignup');
-        $f3->route('GET /admins', '\Dash\Controllers\Placeholder->placeholder'); 
+     /*   $f3->route('GET /admins', '\Dash\Controllers\Placeholder->placeholder'); 
         $f3->route('GET /users', '\Dash\Controllers\Placeholder->placeholder'); 
         $f3->route('GET /prizes', '\Dash\Controllers\Placeholder->placeholder'); 
         $f3->route('GET /attendees', '\Dash\Controllers\Placeholder->placeholder'); 
@@ -88,7 +86,6 @@ switch ($global_app_name)
 
         $f3->route('GET /@eventid/social', '\Dash\Controllers\Event\Social->display');
         
-
         $f3->route('GET|POST /@eventid/devices', '\Dash\Controllers\Event\Devices->display');
         $f3->route('GET|POST /@eventid/devices/page/@page', '\Dash\Controllers\Event\Devices->display');
         $f3->route('GET|POST /@eventid/devices/delete', '\Dash\Controllers\Event\Devices->delete');
@@ -97,8 +94,6 @@ switch ($global_app_name)
         $f3->route('GET /@eventid/device/edit/@id', '\Dash\Controllers\Event\Device->edit');
         $f3->route('POST /@eventid/device/edit/@id', '\Dash\Controllers\Event\Device->update');
         
-
-
         $f3->route('GET|POST /users', '\Dash\Controllers\Users->display');
         $f3->route('GET|POST /users/@page', '\Dash\Controllers\Users->display');
         $f3->route('GET|POST /users/delete', '\Dash\Controllers\Users->delete');
@@ -109,31 +104,50 @@ switch ($global_app_name)
         $f3->route('POST /user/edit/@id', '\Dash\Controllers\User->update');
         $f3->route('DELETE /user/@id', '\Dash\Controllers\User->delete');
         $f3->route('GET /user/delete/@id', '\Dash\Controllers\User->delete');    
-        
+        */
         $f3->route('GET|POST /logout', function() {
         \Base::instance()->clear('SESSION');
         \Base::instance()->reroute('/');
         });  
-        // TODO set some app-specific settings, if desired
-        // append this app's UI folder to the path
+
+        \Dsc\System::instance()->get('theme')->setTheme('default', $f3->get('PATH_ROOT') . 'apps/Dash/Site/Theme/' );
+        \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . '/apps/Dash/Site/Views/', 'Dash/Views' );     
+        //
         $ui = $f3->get('UI');
-        $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Dash/Views/";
+        $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Dash/Site/Views/";
         $f3->set('UI', $ui);
         
         // append this app's template folder to the path
         $templates = $f3->get('TEMPLATES');
-        $templates .= ";" . $f3->get('PATH_ROOT') . "apps/Dash/Templates/";
+        $templates .= ";" . $f3->get('PATH_ROOT') . "apps/Dash/Site/Templates/";
         $f3->set('TEMPLATES', $templates);
         
+        $f3->route('GET /twitter', 'Dash\Site\Controllers\Event\Social\Twitter->run');
 
         \Modules\Factory::registerPositions( array('nav', 'footer', 'above-content', 'below-content') );
-        \Modules\Factory::registerPath( $f3->get('PATH_ROOT') . "apps/Dash/Modules/" );
+        \Modules\Factory::registerPath( $f3->get('PATH_ROOT') . "apps/Dash/Site/Modules/" );
+        
         
         break;
 
          case "admin":
+          \Dsc\System::instance()->get('router')->mount( new \Dash\Admin\Routes );
+          \Dsc\System::instance()->get('theme')->registerViewPath( __dir__ . '/Admin/Views/', 'Dash/Admin/Views' );
+
+          \Dsc\System::instance()->getDispatcher()->addListener(\Dash\Listener::instance());
           \Modules\Factory::registerPositions( array('nav', 'footer', 'above-content', 'below-content') );
-          \Modules\Factory::registerPath( $f3->get('PATH_ROOT') . "apps/Dash/Modules/" );
+          \Modules\Factory::registerPath( $f3->get('PATH_ROOT') . "apps/Dash/Admin/Modules/" );
+          \Modules\Factory::registerPositions( array('nav', 'footer', 'above-content', 'below-content') );
+          \Modules\Factory::registerPath( $f3->get('PATH_ROOT') . "apps/Dash/Site/Modules/" );
+          
          break;
+
+         case 'cli':
+            $f3->route('GET /twitter', 'Dash\Site\Controllers\Event\Social\Twitter->run');
+            $f3->route('GET /facebook', 'Dash\Site\Controllers\Event\Social\Facebook->run');
+        
+
+             # code...
+             break;
 }
 ?>

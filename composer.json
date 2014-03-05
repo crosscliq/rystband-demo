@@ -23,6 +23,7 @@
         "aws/aws-sdk-php": "dev-master",
 	    "pusher/pusher-php-server": "dev-master",
         "mandrill/mandrill": "dev-master",
-        "ddeboer/data-import": "@stable"
+        "ddeboer/data-import": "@stable",
+        "dg/twitter-php": "@stable"
     }
 }

@@ -1,5 +1,19 @@
 {
-    "52d430367f2908.56327734": {
+    "530fb0f255e749.92420107": {
+        "title": "Activity",
+        "route": "",
+        "icon": "fa fa-activiy",
+        "children": [
+            {
+                "title": "Activity",
+                "route": "\/admin\/activity",
+                "icon": "fa fa-list"
+            }
+        ],
+        "priority": 30
+    },
+    "530fb0f2561205.67242795": {
+        "priority": 40,
         "key": "f3-assets",
         "title": "Media Assets",
         "route": "",
@@ -17,7 +31,8 @@
             }
         ]
     },
-    "52d430367f7f79.65403410": {
+    "530fb0f2563760.37846204": {
+        "priority": 30,
         "key": "f3-blog",
         "title": "Blog",
         "route": "",
@@ -29,11 +44,6 @@
                 "icon": "fa fa-list"
             },
             {
-                "title": "Add New",
-                "route": "\/admin\/blog\/post\/create",
-                "icon": "fa fa-plus"
-            },
-            {
                 "title": "Categories",
                 "route": "\/admin\/blog\/categories",
                 "icon": "fa fa-folder"
@@ -42,10 +52,40 @@
                 "title": "Add New",
                 "route": "\/admin\/blog\/category\/create",
                 "hidden": true
+            },
+            {
+                "title": "Settings",
+                "route": "\/admin\/blog\/settings",
+                "icon": "fa fa-cogs"
             }
         ]
     },
-    "52d430367f9856.39032520": {
+    "530fb0f2565e64.31636016": {
+        "priority": 50,
+        "key": "fa-mailer",
+        "title": "Emails",
+        "route": "",
+        "icon": "fa fa-envelope",
+        "children": [
+            {
+                "title": "List",
+                "route": "\/admin\/emails",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Add New User",
+                "route": "\/admin\/email\/create",
+                "icon": "fa fa-plus"
+            },
+            {
+                "title": "Detail",
+                "route": "\/admin\/email\/view",
+                "hidden": true
+            }
+        ]
+    },
+    "530fb0f2568796.31190622": {
+        "priority": 40,
         "key": "f3-modules",
         "title": "Modules",
         "route": "",
@@ -63,7 +103,8 @@
             }
         ]
     },
-    "52d430367fb408.71487532": {
+    "530fb0f256b695.42633345": {
+        "priority": 30,
         "key": "fa-user",
         "title": "Users",
         "route": "",
@@ -75,28 +116,33 @@
                 "icon": "fa fa-list"
             },
             {
-                "title": "Add New User",
-                "route": "\/admin\/user",
-                "icon": "fa fa-plus"
-            },
-            {
-                "title": "Detail",
-                "route": "\/admin\/user\/view",
-                "hidden": true
-            },
-            {
                 "title": "Groups",
                 "route": "\/admin\/users\/groups",
                 "icon": "fa fa-list"
-            },
-            {
-                "title": "Add New Group",
-                "route": "\/admin\/users\/group",
-                "icon": "fa fa-plus"
             }
         ]
     },
-    "52d430367fcf33.37271834": {
+    "530fb0f256ed41.70411527": {
+        "priority": 30,
+        "key": "fa-customer",
+        "title": "Customers",
+        "route": "",
+        "icon": "fa fa-customer",
+        "children": [
+            {
+                "title": "List",
+                "route": "\/admin\/customers",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Groups",
+                "route": "\/admin\/customers\/groups",
+                "icon": "fa fa-list"
+            }
+        ]
+    },
+    "530fb0f25720f4.73653525": {
+        "priority": 99,
         "title": "Navigation",
         "route": "",
         "icon": "fa fa-tasks",
@@ -126,7 +172,8 @@
             }
         ]
     },
-    "52d430367fe316.71884177": {
+    "530fb0f2574593.71093525": {
+        "priority": 100,
         "title": "System",
         "route": "",
         "icon": "fa fa-cogs",
