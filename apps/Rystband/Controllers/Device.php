@@ -29,7 +29,7 @@ class Device extends Base
 			$item = $model->getItem();
 
 			$pusher = new \Pusher($f3->get('pusher_key'), $f3->get('pusher_secret'), $f3->get('pusher_app_id'));
-			$data = array('route' => $f3->get('PARAMS.0'));
+			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $f3->get('POST.msg'));
 			$pusher->trigger($f3->get('event.db'), 'tapped', $data);
         
 
