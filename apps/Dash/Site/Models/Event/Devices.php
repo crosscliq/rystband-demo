@@ -17,13 +17,7 @@ Class Devices Extends Eventbase {
         
         parent::__construct($config);
     }
-
-
-    public function getPrefab() {
-        $prefab = New \Dash\Site\Models\Prefabs\Device();
-        return $prefab;
-    }
-    
+  
     protected function fetchFilters()
     {   
        
@@ -135,68 +129,6 @@ Class Devices Extends Eventbase {
     }
 
 
-        public function prepareItem($item) {
-           
-            $item->tickets = $this->hydrateTickets($item->tagid);
-
-            return $item;
-
-        }
-
-
-    function hydrateTickets($tagid) {
-
-        $model = new \Dash\Site\Models\Event\Tickets;
-        $model->setState('filter.tag.id',$tagid);
-        $tickets = $model->getList();
-	if(empty( $tickets)){
-            $tickets = array();
-        }
-	else {
-        foreach ($tickets as $key => $ticket) {
-            $ticket = $ticket->cast();
-        }
-}
-
-        return $tickets;
-
-
-
-    }
-
-
-
-       public function getList( $refresh=false )
-    {
-        $fields = $this->getFields();
-        $filters = $this->getFilters();
-        $options = $this->getOptions();
-    
-        $mapper = $this->getMapper();
-        if (!empty($fields) && method_exists($mapper, 'select')) 
-        {
-            if (is_a($mapper, '\DB\Mongo\Mapper')) {
-                $items = $mapper->select($fields, $filters, $options);
-            } else {
-                $f3 = \Base::instance();
-                $items = $mapper->select($f3->csv($fields), $filters, $options);
-            }            
-        }
-        else 
-        {
-            $items = $mapper->find($filters, $options);
-        }                
-        //TODO make the foreach conditional to avoid unneed preformance hog
-        if($items) {
-         
-            foreach ($items as $key => $item) {
-                $item = $this->prepareItem($item);
-            }
-        }
-        
-        return $items;
-    }
-    
     public function getItem( $refresh=false )
     {
         $filters = $this->getFilters();
@@ -205,9 +137,6 @@ Class Devices Extends Eventbase {
         $mapper = $this->getMapper();
         $item = $mapper->findone($filters, $options);
         
-        //TODO make this conditional to avoid unneed preformance hog
-        $item = $this->prepareItem($item);
-
         return $item;
     }
 

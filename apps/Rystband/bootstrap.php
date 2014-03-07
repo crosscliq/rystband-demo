@@ -80,7 +80,7 @@ switch ($global_app_name)
           //Meet greet Reg pages
         $f3->route('GET /device/@devicename', '\Rystband\Controllers\Device->display');
         $f3->route('GET /device/@devicename/@action', '\Rystband\Controllers\Device->@action');
-      
+        
         $f3->route('GET /mc', '\Rystband\Controllers\Mc->display');
 
         $f3->route('GET /games/raffle', '\Rystband\Controllers\Games\Raffle->display');
@@ -98,6 +98,8 @@ switch ($global_app_name)
 	         \Base::instance()->reroute('/');
         });          
         
+
+        
         // append this app's UI folder to the path
         $ui = $f3->get('UI');
         $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Rystband/Views/";
@@ -106,5 +108,9 @@ switch ($global_app_name)
 	    $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
             
         break;
+
+        case 'device':
+            $f3->route('GET|POST *', '\Rystband\Controllers\Device->tap');
+            break;
 }
 ?>
