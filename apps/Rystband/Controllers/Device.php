@@ -33,11 +33,11 @@ class Device extends Base
 			$pusher->trigger($f3->get('event.db'), 'tapped', $data);
         
 
-
+			echo 1;
 
 		} catch ( \Exception $e ) {
 			\Dsc\System::instance()->addMessage( "Invalid Item: " . $e->getMessage(), 'error');
-			
+			echo 0;
 			return;
 		}
 
