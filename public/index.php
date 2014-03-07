@@ -38,11 +38,20 @@ if ($app->get('event.db') == 'www') {
 }
 
 
+if (strpos($app->get('AGENT'), 'CROSSCLIQ')) {
+	$app->set('APP_NAME', 'device');
+	$app->set('eventid', $app->get('event.db'));
+	
+}
+
+
+
+
 if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !empty($app->get('event.db')) ) {
 //WE are loading an event
 //HERE WE CAN CHECK THIS IT IS A VALID EVENT REGISTERED AND SUCH
 
-$model = new \Dash\Models\Events;
+$model = new \Dash\Site\Models\Events;
 $item = $model->setState('filter.eventid', $app->get('event.db'))->getItem();
 $app->set('SESSION.event', $item );
 
