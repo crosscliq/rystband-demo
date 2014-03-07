@@ -6,7 +6,7 @@ session_id($_COOKIE['id']);
 }
 
 $app = require('../vendor/bcosca/fatfree/lib/base.php');
-
+$app->set('HOST', $_SERVER['HTTP_HOST']);
 $app->set('PATH_ROOT', __dir__ . '/../');
 $app->set('AUTOLOAD',
         $app->get('PATH_ROOT') . 'lib/;' .
