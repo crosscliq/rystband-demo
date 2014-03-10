@@ -51,6 +51,13 @@ Class Devices Extends Eventbase {
             $this->filters['tagid'] = $filter_tagid;
         }
 
+         $filter_device_id = $this->getState('filter.device_id');
+        
+        if (strlen($filter_device_id))
+        {
+            $this->filters['device_id'] = $filter_device_id;
+        }
+
 
         $filter_profile_complete = $this->getState('filter.profile.complete');
 
@@ -156,29 +163,7 @@ Class Devices Extends Eventbase {
         return $this->getTotal();
     }
 
-     /**
-     *
-     * @return unknown
-     */
-    public function paginate()
-    {
-        $filters = $this->getFilters();
-        $options = $this->getOptions();
-        $pos = $this->getState('list.offset', 0, 'int');
-        $size = $this->getState('list.limit', 10, 'int');
-    
-        $pagination = $this->getMapper()->paginate($pos, $size, $filters, $options);
-        
-        //todo make this conditional
-        foreach ($pagination['subset'] as $key => $item) {
-        
-        $item = $this->prepareItem($item);
-        }
-       
-
-
-        return $pagination;
-    }
+   
 
 }
 

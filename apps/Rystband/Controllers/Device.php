@@ -20,18 +20,17 @@ class Device extends Base
     	$devices = new \Dash\Site\Models\Event\Devices;
 
 		$id = $this->inputfilter->clean( $f3->get('PARAMS.id'), 'alnum' );
-		$model = $devices->setState('filter.id', $id);
+		$model = $devices->setState('filter.device_id', $id);
 		
-
-
 
 		try {
 			$item = $model->getItem();
 
-			$pusher = new \Pusher($f3->get('pusher_key'), $f3->get('pusher_secret'), $f3->get('pusher_app_id'));
-			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $f3->get('POST.msg'));
-			$pusher->trigger($f3->get('event.db'), 'tapped', $data);
-        
+			$pusher = new \Pusher($item->{'pusher.public'}, $item->{'pusher.private'}, $item->{'pusher.app_id'});
+			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $item->{'message'});
+			$pusher->trigger($item->{'pusher.channel'}, $item->{'action'}, $data);
+			        
+
 
 			echo 1;
 

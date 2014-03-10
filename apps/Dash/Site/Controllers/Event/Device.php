@@ -60,7 +60,9 @@ class Device extends \Dash\Site\Controllers\BaseAuth
     }
     
      protected function displayEdit()
-    {
+    {   
+
+        
         $f3 = \Base::instance();
         $f3->set('pagetitle', 'Edit Devices');
         
