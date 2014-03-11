@@ -56,6 +56,31 @@ class Login extends Base
         \Base::instance()->reroute("/login");
         return;            
     }
+
+    public function sysauth() {
+        $key = $this->input->getString('key');
+
+        $model = new \Dash\Site\Models\Customers;
+        $model->setState('filter.authkey', $key);
+
+        try {
+            $item = $model->getItem();
+
+            if ($item)
+            {
+                \Base::instance()->set('SESSION.dash.user', $item);
+                
+                return;            
+            }
+
+        } catch ( \Exception $e ) {
+            \Dsc\System::instance()->addMessage("Invalid User: " . $e->getMessage(), 'error');
+            
+            return;
+        }
+        
+        
+    }
     
     public function logout()
     {

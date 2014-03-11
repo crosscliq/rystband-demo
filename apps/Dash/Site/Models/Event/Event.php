@@ -62,7 +62,7 @@ Class Event {
         $paginated = $model->paginate();
         $list = array();
         foreach ($paginated['subset'] as $activity ) {
-           $helper = new \Dash\Site\Helpers\Activity($activity);
+           $helper = new \Dash\Helpers\Activity($activity);
           $list[] = $helper->getData();      
         }
         $paginated['subset'] = $list;
