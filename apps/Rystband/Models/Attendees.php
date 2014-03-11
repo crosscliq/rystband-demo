@@ -49,6 +49,9 @@ class Attendees extends Eventbase
             $this->filters['_id'] = new \MongoId((string) $filter_id);
         }
 
+
+
+
         $filter_profile_complete = $this->getState('filter.profile.complete');
 
         if (strlen($filter_profile_complete))
@@ -63,6 +66,13 @@ class Attendees extends Eventbase
         if (strlen($filter_yearday))
         {   
             $this->filters['created.yday'] = $filter_yearday;
+        }
+
+        $filter_authkey = $this->getState('filter.authkey');
+
+        if (strlen($filter_authkey))
+        {   
+            $this->filters['authkey'] = $filter_authkey;
         }
 
         $filter_eventid = $this->getState('filter.eventid');
