@@ -1,7 +1,7 @@
 <?php 
 namespace Rystband\Controllers;
 
-class Tags extends BaseAuth 
+class Tags extends Base 
 {	
 
 	 protected function getModel() 
@@ -238,13 +238,31 @@ class Tags extends BaseAuth
      
     }
     
-    //If here is no session
     protected function attendeeTapper($tag, $tagid, $role) {
         $f3 =  \Base::instance();
         $f3->set('tag', $tag);
         $f3->set('tagid', $tagid);
-        $view = new \Dsc\Template;
-        echo $view->render('Rystband/Views::attendee/own.php');
+
+         $route = \Base::instance()->get('PARAMS[0]');
+         $peices = explode('/', $route);
+        $channel = end($peices);
+       
+        $f3->set('channel', $channel);
+       
+        $model = $this->getModel()->setState('filter.tagid', $tagid);
+        $tag = $model->getItem();
+
+        if(empty($tag->attendee)) {
+            $f3->set('showselfregister', true);
+            $view = new \Dsc\Template;
+            echo $view->render('Msft/Views::attendee/own.php');
+        } else {
+             $f3->set('showselfregister', false);
+            $view = new \Dsc\Template;
+            echo $view->render('Msft/Views::attendee/own.php');
+        }
+
+       
     }
 
     //if there is an empty tag on a route that reqires a tag what do we do? error page or  what?

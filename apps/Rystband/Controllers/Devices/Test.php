@@ -13,6 +13,10 @@ class Test extends Base
 
     }
 
+    public function login() {
+    	
+    }
+
 
 }
 ?> 

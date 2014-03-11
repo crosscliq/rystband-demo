@@ -18,7 +18,11 @@ class Attendees extends BaseAuth
     {
         \Base::instance()->set('pagetitle', 'Welcome');
         \Base::instance()->set('subtitle', '');
+
+       
+        \Base::instance()->set('channel', '');
         
+
 
         $view = new \Dsc\Template;
         echo $view->render('attendee/own.php');
