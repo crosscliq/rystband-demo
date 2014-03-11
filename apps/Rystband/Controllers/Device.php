@@ -29,10 +29,13 @@ class Device extends Base
 			$route = \Base::instance()->get('PARAMS[0]');
          	$peices = explode('/', $route);
         	$channel = end($peices);
+
+
        		
         	$tags = new \Rystband\Models\Tags;
         	$tags->setState('filter.tagid', $channel);
         	$tag = $tags->getItem();
+
 
 
         	$attendees = new \Rystband\Models\Attendees;
