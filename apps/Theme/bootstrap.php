@@ -36,8 +36,8 @@ switch ($global_app_name)
         }
         
         $files = array(
-            'site/css/metro-bootstrap.css',
-            'site/css/metro-bootstrap-responsive.css',
+            '/site/css/metro-bootstrap.css',
+            '/site/css/metro-bootstrap-responsive.css',
             'site/css/docs.css',
             'site/js/prettify/prettify.css',
             'site/css/style.css'
@@ -50,7 +50,7 @@ switch ($global_app_name)
         
         \Minify\Factory::registerPath($f3->get('PATH_ROOT') . "public/site/");
         \Minify\Factory::registerPath($f3->get('PATH_ROOT') . "public/images/");       
-       
+        \Minify\Factory::registerPath($f3->get('PATH_ROOT') . "public/site/images/");       
         
         
         break;

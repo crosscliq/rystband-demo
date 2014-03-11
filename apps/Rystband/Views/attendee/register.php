@@ -4,6 +4,7 @@
         <div class="grid">
           <div class="row">
             <div class="span12">
+               <?php echo \Dsc\System::instance()->renderMessages(); ?>
              <br/>
                 <form method="post" action="<?php echo $PARAMS[0]?>" autocomplete="off" >
                         <fieldset>
@@ -19,9 +20,10 @@
                                         <label>Age Estimate ( 10 - 80 )</label>
                                              <span id="ageval"></span>
                                              <input type="range" name="age" min="10" max="80" step="5" value="<?php echo $flash->old('age'); ?>" onchange="updateRange(value)">
-                                             </div><br/><br/>
-                                             <div class="input-control text">
-						                          <select name="howdidyouhear" >
+                                             </div><br/>
+                                            <div class="input-control select">
+                                        <label>How did you hear about this event?</label>
+                                                <select name="howdidyouhear" >
                                                         <option>Word of Mouth</option>
                                                         <option>Radio</option>
                                                         <option>Mall Signage</option>
@@ -33,10 +35,38 @@
                                                         <option>News</option>
                                                         <option>Other</option>
                                                 </select>
-
-
-
-                                             </div><br/><br/><br/>
+                                             </div><br/>
+        <label>Do you own any Microsoft products?</label>
+                                         <div class="checkbox">
+                                            <input name="products[xboxone]" type="checkbox">
+                          <span class="check"></span>Xbox One
+                                        </div>  <br/>
+                                        <div class="checkbox">
+                                            <input name="products[xbox360]" type="checkbox">
+                          <span class="check"></span>Xbox 360
+                                        </div><br/>
+                                        <div class="checkbox">
+                                            <input name="products[kinect]" type="checkbox">
+                          <span class="check"></span>Kinect
+                                        </div><br/>
+                                        <div class="checkbox">
+                                            <input name="products[surface]" type="checkbox">
+                          <span class="check"></span>Surface
+                                        </div><br/>
+                                        <div class="checkbox">
+                                            <input name="products[pc]" type="checkbox" >
+                          <span class="check"></span>PC
+                                        </div><br/>
+                                        <div class="checkbox">
+                                            <input name="products[windowsphone]" type="checkbox" >
+                          <span class="check"></span>Windows Phone
+                                        </div><br/>
+                                        <div class="checkbox">
+                                            <input name="products[office]" type="checkbox" >
+                          <span class="check"></span>Office
+                                        </div><br/>
+     <br>
+                                             <br/><br/>
                                         <input type="hidden" name="tagid" value="<?=$tagid?>">
                                         <input type="hidden" name="submitType" value="save_customer">
                                         <input type="submit" value="Register" class="btn large inverse">

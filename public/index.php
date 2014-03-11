@@ -19,7 +19,7 @@ require $app->get('PATH_ROOT') . 'vendor/autoload.php';
 
 
 
-$app->set('APP_NAME', 'sales');
+$app->set('APP_NAME', 'site');
 //TODO maybe we query the event model, and get the event object from the main DB and load it. so than we can  let the DB be controlled by the dash
 
 $app->set('event.db', strtolower(explode(".",$_SERVER['HTTP_HOST'])[0]));
@@ -41,11 +41,8 @@ if ($app->get('event.db') == 'www') {
 if (strpos($app->get('AGENT'), 'CROSSCLIQ')) {
 	$app->set('APP_NAME', 'device');
 	$app->set('eventid', $app->get('event.db'));
-	
+
 }
-
-
-
 
 if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !empty($app->get('event.db')) ) {
 //WE are loading an event
@@ -54,7 +51,7 @@ if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !
 $model = new \Dash\Site\Models\Events;
 $item = $model->setState('filter.eventid', $app->get('event.db'))->getItem();
 $app->set('SESSION.event', $item );
-
+$app->set('event.db', 'site');
 }
 
 if (empty($app->get('event.db'))) {

@@ -1,19 +1,19 @@
 <?php 
 namespace Rystband\Controllers;
 
-class Attendee extends BaseAuth 
-{   
+class Selfregister extends Base 
+{	
 
     use \Dsc\Traits\Controllers\CrudItem;
 
     protected $list_route = '/attendee';
     protected $create_item_route = '/attendee/create';
-    protected $create_item_confirm_route = '/attendee/confirm/{id}';
+    protected $create_item_confirm_route = '/band/{id}/registerconfirm';
     protected $create_item_customer_route = '/attendee/customer/{id}';
     protected $get_item_route = '/attendee/view/{id}';    
     protected $edit_item_route = '/attendee/edit/{id}';
     
-    protected function getModel() 
+  	protected function getModel() 
     {
         $model = new \Rystband\Models\Attendees;
         return $model; 
@@ -57,17 +57,29 @@ class Attendee extends BaseAuth
         }
         
 
-
         $f3 = \Base::instance();
         $flash = \Dsc\Flash::instance();
         $model = $this->getModel();
         
         // save
         try {
+
+        	//FIRST WE NEED TO CREATE A TAG
+        	$tagsmodel =  new \Rystband\Models\Tags();
+            $tag = $tagsmodel->getPrefab();
+            $tag->tagid = $f3->get('PARAMS.tagid');;
+            $tag->eventid = $f3->get('event.db');
+            $tag = $tagsmodel->create((array) $tag);
+        	
+        	$data['tagid'] = $tag->_id;
+
+
             $values = $data;
             unset($values['submitType']);
             //\Dsc\System::instance()->addMessage(\Dsc\Debug::dump($values), 'warning');
             $this->item = $model->create($values);
+
+
 
 
             if($this->item->tagid) {
@@ -81,9 +93,12 @@ class Attendee extends BaseAuth
 
         }
         catch (\Exception $e) {
+          
             foreach ($model->getErrors() as $error)
             {   
+
                 $error = (new \Dash\Helpers\Errors('attendee', $error))->getData();
+
                 \Dsc\System::instance()->addMessage($error, 'error');
             }
             
@@ -99,7 +114,7 @@ class Attendee extends BaseAuth
             \Dsc\System::instance()->setUserState('use_flash.' . $this->create_item_route, true);
             $flash->store($data);
 
-               $this->setRedirect( $f3->get('PARAMS.0') );
+            $this->setRedirect( $f3->get('PARAMS.0') );
                         
             return false;
         }
@@ -133,7 +148,7 @@ class Attendee extends BaseAuth
                 break;      
              case "save_confirm":
                 $flash->store($this->item_data);
-                $id = $this->item->get( $this->getItemKey() );
+               $id = $this->item->get( $this->getItemKey() );
                 
                 $route = str_replace('{id}', $id, $this->create_item_confirm_route );   
                 break;    
@@ -237,7 +252,7 @@ class Attendee extends BaseAuth
                 break;      
              case "save_confirm":
                  $flash->store($this->item_data);
-                $id = $this->item->get( $this->getItemKey() );
+                $id = $f3->get('PARAMS.tagid');
                 $route = str_replace('{id}', $id, $this->create_item_confirm_route );   
                 break;    
             case "save_close":
@@ -259,59 +274,35 @@ class Attendee extends BaseAuth
     {
         $f3 = \Base::instance();
         $f3->set('pagetitle', 'Wristband');
-        $flash = \Dsc\Flash::instance();
-        $f3->set('flash', $flash);
 
+     
         $view = new \Dsc\Template;
         echo $view->render('Rystband/Views::attendee/edit.php');
     }
-    
-     public function confirm() 
+
+
+     public function registerconfirm() 
     {
         $f3 = \Base::instance();
         $f3->set('pagetitle', 'Activate Wristband');
         
-        $f3->set('tagid',$f3->get('PARAMS.tagid'));
-
+    
         $model = $this->getModel();
-   
+
         $item = $this->getItem();
+
         $f3->set('item',$item);
+
+
 
         $selected = array();
         $flash = \Dsc\Flash::instance();
 
         $view = new \Dsc\Template;
-        echo $view->render('Rystband/Views::attendee/confirm.php');
+        echo $view->render('Rystband/Views::attendee/selfconfirm.php');
     }
 
-    public function attendee() 
-    {
-        $f3 = \Base::instance();
-        $f3->set('pagetitle', 'Activate Wristband');
-        
-        $f3->set('tagid',$f3->get('PARAMS.tagid'));
-
-        $model = $this->getModel();
-
-        $flash = \Dsc\Flash::instance();
    
-        $item = $this->getItem();
-
-        $f3->set('item',$item);
-        if (method_exists($item, 'cast')) {
-            $item_data = $item->cast();
-        } else {
-            $item_data = \Joomla\Utilities\ArrayHelper::fromObject($item);
-        }
-
-        $flash->store($item_data);
-        
-        $f3->set('flash', $flash );
-
-        $view = new \Dsc\Template;
-        echo $view->render('Rystband/Views::attendee/attendee.php');
-    }
 
     public function signin() 
     {
@@ -320,35 +311,44 @@ class Attendee extends BaseAuth
         
         $f3->set('tagid',$f3->get('PARAMS.tagid'));
 
+ 
         $view = new \Dsc\Template;
-        echo $view->render('Rystband/Views::attendee/signin.php');
+        echo $view->render('Rystband/Views::attendee/selfsignin.php');
     }
 
      public function assign() 
     {   
         $f3 = \Base::instance();
         $model = new \Rystband\Models\Tags;
-        $thisTag = $model->setState('filter.id', $f3->get('PARAMS.tagid'))->getItem();
+        $thisTag = $model->setState('filter.tagid', $f3->get('PARAMS.tagid'))->getItem();
+	
+	if(empty($thisTag)) {
+            $tag = $model->getPrefab();
+            $tag->tagid = $f3->get('PARAMS.tagid');
+            $tag->eventid = $f3->get('PARAMS.eventid');
+            $thisTag = $model->create((array) $tag);
+        }        
 
 
 
-        $model = new \Rystband\Models\Attendees;
+
+	$model = new \Rystband\Models\Attendees;
         $model->setState('filter.first_name', $f3->get('POST.first_name'));
         $model->setState('filter.last_name', $f3->get('POST.last_name'));
         $model->setState('filter.phone', $f3->get('POST.phone'));
 
         $attendee = $model->getItem();
 
-     if(@$attendee->id) {
-//            $model = new \Rystband\Models\Tags;
-  //          $oldTag = $model->setState('filter.id', $attendee->tagid)->getItem();
-    //        $oldTag->previd = $oldTag->tagid;
-      //      $oldTag->tagid = $thisTag->tagid;
-        //  ;;  $oldTag->save();
-          //  $model->delete($thisTag);
+	 	if(@$attendee->tagid) {
+            $model = new \Rystband\Models\Tags;
+            $oldTag = $model->setState('filter.id',  $attendee->tagid)->getItem();
+            $oldTag->previd = $oldTag->tagid;
+            $oldTag->tagid = $thisTag->tagid;
+            $oldTag->save();
+            $model->delete($thisTag);
         } else {
-           \Dsc\System::instance()->addMessage('A band with that information doesn\'t exist', 'error');
-            $f3->reroute('/attendee/signin/'.$f3->get('PARAMS.tagid'));
+		   \Dsc\System::instance()->addMessage('A band with that information doesn\'t exist', 'error');
+            $f3->reroute('/self/signin/'.$f3->get('PARAMS.tagid'));
 
         }       
  
@@ -373,9 +373,36 @@ class Attendee extends BaseAuth
         $f3->set('pagetitle', 'Sign in');
         
         $f3->set('tagid',$f3->get('PARAMS.tagid'));
+        $model = new \Rystband\Models\Tags;
+        $tagid = $f3->get('PARAMS.tagid');
+        $model->setState('filter.tagid', $tagid);
+    	
+    	$tag = $model->getItem();
+
+    	if(!empty($tag->attendee)) {
+    		$f3->reroute('/band/'.$f3->get('PARAMS.tagid').'/alreadyregistered');
+    	}
+         $flash = \Dsc\Flash::instance();
+         $f3->set('flash',$flash );
 
         $view = new \Dsc\Template;
-        echo $view->render('Rystband/Views::attendee/signin.php');
+        echo $view->render('Rystband/Views::attendee/selfregister.php');
+    }
+
+    public function alreadyregistered() 
+    {
+        $f3 = \Base::instance();
+        $f3->set('pagetitle', 'Sign in');
+        
+        $f3->set('tagid',$f3->get('PARAMS.tagid'));
+        $model = new \Rystband\Models\Tags;
+        $tagid = $f3->get('PARAMS.tagid');
+        $model->setState('filter.tagid', $tagid);
+    	
+    	$tag = $model->getItem();
+
+        $view = new \Dsc\Template;
+        echo $view->render('Rystband/Views::attendee/alreadyregistered.php');
     }
 
 
