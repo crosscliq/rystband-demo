@@ -11,6 +11,14 @@
       </div>
     </div>
 
+    <?php if(@$SESSION['dash']['user']) {
+      $user = $SESSION['dash']['user'];
+
+      echo ' Thanks for Loggin in : ';
+      echo $user->first_name .' ' . $user->last_name;
+      
+    } ?>
+
         <div class="page-footer">
             <div class="page-footer-content">
             <?php if(@$showselfregister) : ?>
@@ -25,7 +33,10 @@
             </div>
         </div>
     </div>
-
+<?php //easy mode ?>
+<form action="/sysauth" method="post" id="sysform">
+  <input id="key" type="hidden" name="authkey">
+</form>
  <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     // Enable pusher logging - don't include this in production
@@ -37,7 +48,9 @@
 
     var pusher = new Pusher('<?php echo $pusher_key; ?>');
     var channel = pusher.subscribe('<?php echo $channel; ?>');
-    channel.bind('my_event', function(data) {
-      alert(data.message);
+    channel.bind('message', function(data) {
+
+      $('#key').val(data.authkey);
+      $('#sysform').submit();
     });
   </script>

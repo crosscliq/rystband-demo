@@ -106,6 +106,11 @@ switch ($global_app_name)
         $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Rystband/Views/";
         $f3->set('UI', $ui);
 
+
+         $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
+
+
+
     $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
             
         break;
