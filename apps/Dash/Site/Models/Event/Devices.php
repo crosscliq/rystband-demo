@@ -163,6 +163,14 @@ Class Devices Extends Eventbase {
         return $this->getTotal();
     }
 
+
+    public function createDevice($uid) {
+
+        $array = array('device' => 'auto created '.$uid,  'device_id' => $uid);
+        $this->create($array);
+
+    }
+
    
 
 }

@@ -109,10 +109,10 @@ switch ($global_app_name)
 
          $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
 
+         $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
 
-
-    $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
-            
+         $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
+           
         break;
 
          case "device":
