@@ -15,6 +15,7 @@ class Eventbase extends \Dsc\Models\Db\Mongo
             if(empty($f3->get('eventid'))) {
                 $f3->set('eventid', $f3->get('PARAMS.eventid'));
             }
+          
             $db_name = $f3->get('eventid');
          
             $this->db = new \DB\Mongo('mongodb://127.0.0.1:27017', $db_name);

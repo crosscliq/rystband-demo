@@ -40,7 +40,8 @@ if ($app->get('event.db') == 'www') {
 
 
 
-if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !empty($app->get('event.db')) ) {
+if($app->get('event.db') != 'admin' && $app->get('event.db') != 'dashboard' && !empty($app->get('event.db') && $app->get('event.db') != 'rystband'  && $app->get('event.db') != 'www' ) ) {
+
 //WE are loading an event
 //HERE WE CAN CHECK THIS IT IS A VALID EVENT REGISTERED AND SUCH
 
@@ -51,7 +52,7 @@ $app->set('APP_NAME', 'site');
 }
 
 if (empty($app->get('event.db'))) {
-    $app->set('event.db', 'msft');
+    $app->set('event.db', 'rystband');
 }
 
 if (strpos($app->get('AGENT'), 'CROSSCLIQ')) {

@@ -53,4 +53,15 @@
       $('#key').val(data.authkey);
       $('#sysform').submit();
     });
+
+    channel.bind('index', function(data) {
+
+      str = data.attendee.first_name + ' ' + data.attendee.last_name + ' Would you like to sign up for sweet offer?';
+      confirm(str);
+    });
+
+
+
+
+
   </script>

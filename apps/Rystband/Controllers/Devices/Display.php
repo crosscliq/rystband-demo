@@ -1,26 +1,32 @@
 <?php 
 namespace Rystband\Controllers\Devices;
 
-class Test extends Base 
+class Display extends Base 
 {   
     var $pusher = null;
-
-   
     
-    public function message($msg = null) {
-echo ' you used the text controller' . $msg;
+    public function index($item) {
+        $f3 = \Base::instance();
+        $f3->set('item',$item );
+       
+        $view = new \Dsc\Template;
+        echo $view->render('device/'.$item->type.'/index.php');
 
-	$route = \Base::instance()->get('PARAMS[0]');
+    }
+
+    
+
+
+    public function message($msg = null) {
+		
+
+			$route = \Base::instance()->get('PARAMS[0]');
          	$peices = explode('/', $route);
         	$channel = end($peices);
-
-
        		
         	$tags = new \Rystband\Models\Tags;
         	$tags->setState('filter.tagid', $channel);
         	$tag = $tags->getItem();
-
-
 
         	$attendees = new \Rystband\Models\Attendees;
         	$attendees->setState('filter.id', $tag->{'attendee.id'});
@@ -37,14 +43,6 @@ echo ' you used the text controller' . $msg;
 			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $item->{'message'}, 'authkey' => $attendee->authkey);
 			$pusher->trigger($channel, $item->{'action'}, $data);
 
-
-
-    }
-
-    public function login() {
-
-
-    	
     }
 
 
