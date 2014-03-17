@@ -109,12 +109,9 @@ class Device extends Base
             }
 
 
-			
-        
 		} catch ( \Exception $e ) {
 			\Dsc\System::instance()->addMessage( "Invalid Item: " . $e->getMessage(), 'error');
             echo  $e->getMessage();
-			echo 0;
 			return;
 		}
 

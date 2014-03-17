@@ -5,8 +5,6 @@ class Demoaction extends \Rystband\Controllers\Devices\Base
 {   
     var $pusher = null;
 
-
- 
     public function index($device, $tag) {
         $f3 = \Base::instance();
        	$attendees = new \Rystband\Models\Attendees;
@@ -18,9 +16,6 @@ class Demoaction extends \Rystband\Controllers\Devices\Base
         		$displays = new \Dash\Site\Models\Event\Devices;
         		$display = $displays->setState('filter.device_id', $device->display)->getItem();
 				
-				
-	        	
-
 	        	$pusher = new \Pusher($display->{'pusher.public'}, $display->{'pusher.private'}, $display->{'pusher.app_id'});
 
 				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
@@ -33,10 +28,10 @@ class Demoaction extends \Rystband\Controllers\Devices\Base
 		
 		$pusher->trigger($tag->tagid, 'index', $data);
 
-
-
-
     }
+
+
+    
 
     
 

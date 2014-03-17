@@ -26,6 +26,7 @@
                  <option value="">Set Type</option>
                 <option value="crossbox">Cross Box</option>
                 <option value="display">Display</option>
+                <option value="content">Content</option>
                 <option value="kiosk">Kiosk</option>
                 <option value="phone">Phone</option>
             </select>
@@ -40,7 +41,8 @@
                 <option value="\Rystband\Controllers\Devices\Test">Test</option>
                 <option value="\Rystband\Controllers\Devices\Display">Display</option>  
                 <option value="\Rystband\Controllers\Devices\Box\Login">Box - Login</option> 
-                <option value="\Rystband\Controllers\Devices\Box\Demoaction">Box - Demoaction</option>  
+                <option value="\Rystband\Controllers\Devices\Box\Demoaction">Box - Demoaction</option>
+                <option value="\Rystband\Controllers\Devices\Box\Contentdemo">Box - Contentdemo</option>  
             </select>
                        
             </div>
