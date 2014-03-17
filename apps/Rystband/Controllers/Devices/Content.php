@@ -9,6 +9,7 @@ class Content extends Base
         $f3 = \Base::instance();
        
         $view = new \Dsc\Template;
+        $view->setLayout('content.php');
         echo $view->render('content/car/index.php');
 
     }
