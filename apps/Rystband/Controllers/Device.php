@@ -115,16 +115,6 @@ class Device extends Base
             }
 
 
-			
-        
-			
-
-			$pusher = new \Pusher($item->{'pusher.public'}, $item->{'pusher.private'}, $item->{'pusher.app_id'});
-			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $item->{'message'}, 'authkey' => $attendee->authkey);
-			$pusher->trigger($channel, $item->{'action'}, $data);
-
-			echo 1;
-
 		} catch ( \Exception $e ) {
 			\Dsc\System::instance()->addMessage( "Invalid Item: " . $e->getMessage(), 'error');
             echo  $e->getMessage();

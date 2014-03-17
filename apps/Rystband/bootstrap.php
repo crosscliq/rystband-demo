@@ -112,7 +112,7 @@ switch ($global_app_name)
          $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
 
          $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
-           
+         $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');    
         break;
 
          case "device":
