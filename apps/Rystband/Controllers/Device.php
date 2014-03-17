@@ -18,9 +18,6 @@ class Device extends Base
 
 
 
-    protected function createDevice($uid) {
-
-    }
 
     //handles displays and public routes
     public function route() {
@@ -36,7 +33,6 @@ class Device extends Base
         try {
             $item = $model->getItem();
 
-         
 
             if($item) {
                 $controller = new $item->controller;
@@ -94,7 +90,6 @@ class Device extends Base
 
 		try {
 			$item = $model->getItem();
-
             if($item) {
 
                 $route = \Base::instance()->get('PARAMS[0]');
@@ -104,11 +99,10 @@ class Device extends Base
                 $tags = new \Rystband\Models\Tags;
                 $tags->setState('filter.tagid', $id);
                 $tag = $tags->getItem();
-
-                $controller = new $item->controller;
+		$controller = new $item->controller;
                 $action = $item->action;
                 $controller->$action($item, $tag);
-
+		
 
             } else {
                $model->createDevice($uid);
@@ -117,14 +111,6 @@ class Device extends Base
 
 			
         
-			
-
-			$pusher = new \Pusher($item->{'pusher.public'}, $item->{'pusher.private'}, $item->{'pusher.app_id'});
-			$data = array('route' => $f3->get('PARAMS.0'), 'msg' => $item->{'message'}, 'authkey' => $attendee->authkey);
-			$pusher->trigger($channel, $item->{'action'}, $data);
-
-			echo 1;
-
 		} catch ( \Exception $e ) {
 			\Dsc\System::instance()->addMessage( "Invalid Item: " . $e->getMessage(), 'error');
             echo  $e->getMessage();
