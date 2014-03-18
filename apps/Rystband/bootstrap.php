@@ -113,8 +113,11 @@ switch ($global_app_name)
 
          $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
          $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');
-         $f3->route('GET /content/car', '\Rystband\Controllers\Devices\Content->car');   
-         $f3->route('POST /content/car', '\Rystband\Controllers\Devices\Content->carrequest');     
+         $f3->route('GET /content/car', '\Rystband\Controllers\Devices\Content->car');  
+
+         $f3->route('POST /band/@tagid', '\Rystband\Controllers\Devices\Content->carrequest');
+        
+
         break;
 
          case "device":
