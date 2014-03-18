@@ -16,6 +16,29 @@
 	background: #333 url(/display/images/profile2.png);
 	background-size:cover;
 }
+
+
+.rate-1 { 
+	background: #333 url(/display/images/rate-1.png);
+	background-size:cover;
+}
+.rate-2 { 
+	background: #333 url(/display/images/rate-2.png);
+	background-size:cover;
+}
+.rate-3 { 
+	background: #333 url(/display/images/rate-3.png);
+	background-size:cover;
+}
+.rate-4 { 
+	background: #333 url(/display/images/rate-4.png);
+	background-size:cover;
+}
+.rate-5 { 
+	background: #333 url(/display/images/rate-5.png);
+	background-size:cover;
+}
+
 .toast-item {
 	width:373px;
 	height: 500px;
