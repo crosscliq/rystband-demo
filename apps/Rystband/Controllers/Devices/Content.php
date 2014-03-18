@@ -14,6 +14,16 @@ class Content extends Base
 
     }
 
+     public function carrequest() {
+        $f3 = \Base::instance();
+        
+        $pusher = new \Pusher($f3->get('pusher_key')), $f3->get('pusher_secret'), $f3->get('pusher_app_id');
+        $data = array('POST' => $f3->get('POST'));
+        $pusher->trigger('cardisplay', 'post', $data);
+
+    }
+
+
 }
 
 
