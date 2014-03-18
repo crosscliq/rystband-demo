@@ -99,6 +99,7 @@ class Device extends Base
                 $tags = new \Rystband\Models\Tags;
                 $tags->setState('filter.tagid', $id);
                 $tag = $tags->getItem();
+
 		$controller = new $item->controller;
                 $action = $item->action;
                 $controller->$action($item, $tag);

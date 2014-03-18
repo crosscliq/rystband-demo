@@ -13,7 +13,6 @@ class Contentdemo extends \Rystband\Controllers\Devices\Base
   	    $attendee = $attendees->getItem();
         	//trigger screen
 
-
         if(@$device->display)  {
         		$displays = new \Dash\Site\Models\Event\Devices;
         		$display = $displays->setState('filter.device_id', $device->display)->getItem();

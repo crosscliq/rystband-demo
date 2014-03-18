@@ -1,6 +1,7 @@
-
+  <link rel="stylesheet" href="/display/css/superslides.css">
+  <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
     <div class="container">
-  
+    <div id="hidden" style="display:none;"><a class="fancybox"></a></div>
     <div class="grid">
       <div class="row">
         <div class="span12" style="text-align:center;">
@@ -37,8 +38,13 @@
 <form action="/sysauth" method="post" id="sysform">
   <input id="key" type="hidden" name="authkey">
 </form>
+ <script src="/own/fancybox/jquery.fancybox.js" type="text/javascript"></script>
  <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
   <script type="text/javascript">
+
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
     // Enable pusher logging - don't include this in production
     Pusher.log = function(message) {
       if (window.console && window.console.log) {
@@ -53,9 +59,17 @@
       $('#key').val(data.authkey);
       $('#sysform').submit();
     });
+    channel.bind('content', function(data) {
 
+  	var thePage = data.content;
+
+     $('#hidden').load(thePage, function(){
+       var theData = $('#hidden').html(); 
+       $.fancybox(theData);
+    });
+
+    });
     channel.bind('index', function(data) {
-
       str = data.attendee.first_name + ' ' + data.attendee.last_name + ' Would you like to sign up for sweet offer?';
       confirm(str);
     });

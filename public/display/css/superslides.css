@@ -1,4 +1,8 @@
 body { background:#000; }
+#car {
+	background:url(/display/images/car.jpg) no-repeat;
+	background-size:cover;
+}
 .bottom {
 	display:block;
 	margin-top:420px!important;
