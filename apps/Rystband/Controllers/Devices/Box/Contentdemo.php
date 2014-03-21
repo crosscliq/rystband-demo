@@ -17,8 +17,15 @@ class Contentdemo extends \Rystband\Controllers\Devices\Base
         		$displays = new \Dash\Site\Models\Event\Devices;
         		$display = $displays->setState('filter.device_id', $device->display)->getItem();
 	        	$pusher = new \Pusher($display->{'pusher.public'}, $display->{'pusher.private'}, $display->{'pusher.app_id'});
-    				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
-    				$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
+    			$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
+    			$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
+                
+                $displays = new \Dash\Site\Models\Event\Devices;
+                $display = $displays->setState('filter.device_id', $device->display)->getItem();
+                $pusher = new \Pusher($display->{'pusher.public'}, $display->{'pusher.private'}, $display->{'pusher.app_id'});
+                $data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast(), 'game' => (array) $this->gamePlay());
+                $pusher->trigger($display->{'pusher.channel'}, 'game_spin', $data);
+
         }
 
         // trigger phone 
@@ -26,6 +33,21 @@ class Contentdemo extends \Rystband\Controllers\Devices\Base
 		    $data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast(), 'content' => '/content/car' );
 		
 		    $pusher->trigger($tag->tagid, 'content', $data);
+
+    }
+
+    protected function gamePlay() {
+
+        $rand = rand(1, 10); 
+
+        switch ( $rand) {
+          case  ($rand < "5"):
+            $array = array('status' => 'winner', 'prize' => array('name' => 'Prize name', 'prize_id' => 122, 'prize_image' => 'http://placehold.it/350x350?text=Awesome+Prize'));
+                break;
+            default:
+              $array = array('status' => 'loser', 'prize' => array());
+                break;
+        }
 
     }
 
