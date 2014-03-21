@@ -37,9 +37,11 @@
 	  });
 
 	  channel.bind('post', function(data) {
+		
 
+		    str = data.attendee.first_name + ' ' + data.attendee.last_name + ' Rated this car.';
         	$().toastmessage('showToast', {
-     	        	text     : data.feature,
+     	        	text     : str,
    	  	       sticky   : false,
    		       position : 'top-right',
    	         	badge     : 'rate-' + data.feature,

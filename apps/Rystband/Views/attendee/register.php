@@ -1,3 +1,4 @@
+  <link rel="stylesheet" href="/display/css/superslides.css">
  <header class="bg-dark border" data-load="/header"></header>
     <div class="container">
 
@@ -35,39 +36,7 @@
                                                         <option>News</option>
                                                         <option>Other</option>
                                                 </select>
-                                             </div><br/>
-        <label>Do you own any Microsoft products?</label>
-                                         <div class="checkbox">
-                                            <input name="products[xboxone]" type="checkbox">
-                          <span class="check"></span>Xbox One
-                                        </div>  <br/>
-                                        <div class="checkbox">
-                                            <input name="products[xbox360]" type="checkbox">
-                          <span class="check"></span>Xbox 360
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[kinect]" type="checkbox">
-                          <span class="check"></span>Kinect
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[surface]" type="checkbox">
-                          <span class="check"></span>Surface
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[pc]" type="checkbox" >
-                          <span class="check"></span>PC
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[windowsphone]" type="checkbox" >
-                          <span class="check"></span>Windows Phone
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[office]" type="checkbox" >
-                          <span class="check"></span>Office
-                                        </div><br/>
-     <br>
-                                             <br/><br/>
-                                        <input type="hidden" name="tagid" value="<?=$tagid?>">
+                                             </div>                                        <input type="hidden" name="tagid" value="<?=$tagid?>">
                                         <input type="hidden" name="submitType" value="save_customer">
                                         <input type="submit" value="Register" class="btn large inverse">
 						<br/><br/>
