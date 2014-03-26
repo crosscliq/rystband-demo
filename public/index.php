@@ -1,4 +1,5 @@
 <?php
+
 ini_set('session.gc_maxlifetime', 36000);
 session_set_cookie_params(36000);
 if(!empty($_COOKIE['id'])) {
@@ -17,6 +18,8 @@ $app->config( $app->get('PATH_ROOT') . 'config/common.config.ini');
 
 require $app->get('PATH_ROOT') . 'vendor/autoload.php';
 
+
+$app->set('db.jig.dir', $app->get('PATH_ROOT') . 'jig/');
 
 
 $app->set('APP_NAME', 'site');

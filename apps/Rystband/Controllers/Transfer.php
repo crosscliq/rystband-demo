@@ -281,4 +281,3 @@ class Transfer extends BaseAuth
     protected function displayRead() {}
 
 }
-?> 

@@ -284,4 +284,3 @@ class Tags extends Base
     }
 
 }
-?> 

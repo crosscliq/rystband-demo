@@ -29,4 +29,3 @@ class Attendees extends BaseAuth
     }
 
 }
-?> 

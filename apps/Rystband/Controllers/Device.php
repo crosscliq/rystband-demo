@@ -14,11 +14,6 @@ class Device extends Base
         echo $view->render('device/view.php');
     }
 
-
-
-
-
-
     //handles displays and public routes
     public function route() {
 
@@ -119,4 +114,3 @@ class Device extends Base
 
     }
 }
-?> 

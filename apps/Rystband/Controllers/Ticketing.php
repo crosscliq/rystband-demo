@@ -318,4 +318,3 @@ class Ticketing extends BaseAuth
     protected function displayRead() {}
 
 }
-?> 

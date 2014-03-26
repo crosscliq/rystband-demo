@@ -14,9 +14,3 @@ class Base extends \Dsc\Controller
 
 
 }
-
-
-
-
-
-?>

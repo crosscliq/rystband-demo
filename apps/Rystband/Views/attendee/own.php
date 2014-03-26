@@ -1,5 +1,7 @@
+
   <link rel="stylesheet" href="/display/css/superslides.css">
   <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
+
     <div class="container">
     <div id="hidden" style="display:none;"><a class="fancybox"></a></div>
     <div class="grid">

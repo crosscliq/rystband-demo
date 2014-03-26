@@ -21,7 +21,7 @@ $app->config( $app->get('PATH_ROOT') . 'config/cli.config.ini');
 $app->set('LOGS', $app->get('PATH_ROOT') . 'logs/');
 $app->set('TEMP', $app->get('PATH_ROOT') . 'tmp/');
 $app->set('db.jig.dir', $app->get('PATH_ROOT') . 'jig/');
-
+echo $app->get('db.jig.dir'); die();
 $logger = new \Log( $app->get('application.logfile') );
 \Registry::set('logger', $logger);
 

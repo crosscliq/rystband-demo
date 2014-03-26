@@ -55,4 +55,3 @@ class Login extends Base
     }
 
 }
-?> 

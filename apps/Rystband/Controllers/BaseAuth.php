@@ -17,4 +17,3 @@ class BaseAuth extends Base
 
 
 }
-?>

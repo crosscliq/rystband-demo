@@ -15,4 +15,3 @@ class Prizepatrol extends BaseAuth
     }
 
 }
-?> 
