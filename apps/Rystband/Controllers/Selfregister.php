@@ -483,6 +483,14 @@ class Selfregister extends Base
             }
  */
         # 4 - if authentication does not exist and email is not in use, then we create a new user 
+            //FIRST WE NEED TO CREATE A TAG
+            $tagsmodel =  new \Rystband\Models\Tags();
+            $tag = $tagsmodel->getPrefab();
+            $tag->tagid = $f3->get('SESSION.tag');
+            $tag->eventid = $f3->get('event.db');
+            $tag = $tagsmodel->create((array) $tag);
+                
+
             $data = array();
             $data['tagid'] = $tag->id;
             $data['social'][$provider]['identifier'] = $user_profile->identifier;
