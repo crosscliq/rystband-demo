@@ -1,5 +1,5 @@
 {
-    "530fb0f255e749.92420107": {
+    "532ef7195eb875.47480548": {
         "title": "Activity",
         "route": "",
         "icon": "fa fa-activiy",
@@ -12,7 +12,26 @@
         ],
         "priority": 30
     },
-    "530fb0f2561205.67242795": {
+    "532ef7195f10a0.83374669": {
+        "priority": 30,
+        "key": "fa-customer",
+        "title": "Customers",
+        "route": "",
+        "icon": "fa fa-customer",
+        "children": [
+            {
+                "title": "List",
+                "route": "\/admin\/customers",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Groups",
+                "route": "\/admin\/customers\/groups",
+                "icon": "fa fa-list"
+            }
+        ]
+    },
+    "532ef7195f8599.98574737": {
         "priority": 40,
         "key": "f3-assets",
         "title": "Media Assets",
@@ -26,12 +45,12 @@
             },
             {
                 "title": "Add New",
-                "route": "\/admin\/asset",
+                "route": "\/admin\/asset\/create",
                 "icon": "fa fa-plus"
             }
         ]
     },
-    "530fb0f2563760.37846204": {
+    "532ef7195fc612.05133152": {
         "priority": 30,
         "key": "f3-blog",
         "title": "Blog",
@@ -60,7 +79,7 @@
             }
         ]
     },
-    "530fb0f2565e64.31636016": {
+    "532ef7196045f8.98590285": {
         "priority": 50,
         "key": "fa-mailer",
         "title": "Emails",
@@ -84,7 +103,7 @@
             }
         ]
     },
-    "530fb0f2568796.31190622": {
+    "532ef7196128f7.18594892": {
         "priority": 40,
         "key": "f3-modules",
         "title": "Modules",
@@ -103,7 +122,7 @@
             }
         ]
     },
-    "530fb0f256b695.42633345": {
+    "532ef71961aeb1.87017585": {
         "priority": 30,
         "key": "fa-user",
         "title": "Users",
@@ -113,35 +132,21 @@
             {
                 "title": "List",
                 "route": "\/admin\/users",
-                "icon": "fa fa-list"
+                "icon": "fa fa-user"
             },
             {
                 "title": "Groups",
                 "route": "\/admin\/users\/groups",
-                "icon": "fa fa-list"
-            }
-        ]
-    },
-    "530fb0f256ed41.70411527": {
-        "priority": 30,
-        "key": "fa-customer",
-        "title": "Customers",
-        "route": "",
-        "icon": "fa fa-customer",
-        "children": [
-            {
-                "title": "List",
-                "route": "\/admin\/customers",
-                "icon": "fa fa-list"
+                "icon": "fa fa-group"
             },
             {
-                "title": "Groups",
-                "route": "\/admin\/customers\/groups",
-                "icon": "fa fa-list"
+                "title": "Roles",
+                "route": "\/admin\/users\/roles",
+                "icon": "fa fa-unlock"
             }
         ]
     },
-    "530fb0f25720f4.73653525": {
+    "532ef719620f75.46056467": {
         "priority": 99,
         "title": "Navigation",
         "route": "",
@@ -172,7 +177,7 @@
             }
         ]
     },
-    "530fb0f2574593.71093525": {
+    "532ef719626b29.13159167": {
         "priority": 100,
         "title": "System",
         "route": "",

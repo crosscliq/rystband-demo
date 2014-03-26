@@ -178,6 +178,3 @@ class Auth extends \Users\Site\Controllers\Auth {
     
     protected function displayRead() {}
 }
-
-?> 
-

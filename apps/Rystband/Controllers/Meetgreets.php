@@ -15,4 +15,3 @@ class Meetgreets extends BaseAuth
     }
 
 }
-?> 

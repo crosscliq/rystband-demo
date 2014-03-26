@@ -394,4 +394,3 @@ class Attendee extends BaseAuth
     protected function displayRead() {}
 
 }
-?> 

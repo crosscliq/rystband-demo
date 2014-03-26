@@ -1,4 +1,4 @@
-
+  <?php var_dump(@$SESSION['user']); ?>
     <div class="container">
   
     <div class="grid">

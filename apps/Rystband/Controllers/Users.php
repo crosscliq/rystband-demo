@@ -69,4 +69,3 @@ class Users extends BaseAuth
     }
 
 }
-?> 

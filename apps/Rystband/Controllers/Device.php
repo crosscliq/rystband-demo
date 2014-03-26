@@ -125,4 +125,3 @@ class Device extends Base
 
     }
 }
-?> 

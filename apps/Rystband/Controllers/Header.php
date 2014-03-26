@@ -14,4 +14,3 @@ class Header extends Base
         echo $view->render('header/header.php');
      }
 }
-?> 

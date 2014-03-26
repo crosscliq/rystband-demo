@@ -22,4 +22,3 @@ class Home extends Base
         echo $view->render('attendee/own.php');
     }
 }
-?> 
