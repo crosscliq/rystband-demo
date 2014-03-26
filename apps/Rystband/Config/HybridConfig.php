@@ -31,7 +31,7 @@ Class HybridConfig {
 
 				"Facebook" => array ( 
 					"enabled" => true,
-					"keys"    => array ( "id" => "1421129754806837", "secret" => "d965985de6dd32aa1230c552d5025b8f" ),
+					"keys"    => array ( "id" => "598027230287444", "secret" => "c23f62e17930904c5e94621e447aa39" ),
 					"trustForwarded" => false
 				),
 
