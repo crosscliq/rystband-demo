@@ -5,9 +5,12 @@ namespace Rystband\Config;
 Class HybridConfig {
 
 	function getConfig() {
+
+	$f3 = \Base::instance();
+
 	return 
 		array(
-			"base_url" => "http://testproject.rystband.com.local/socialauth/", 
+			"base_url" =>  $f3->get('SCHEME') . "://" . $f3->get('HOST') . $f3->get('BASE'). "/socialauth/", 
 
 			"providers" => array ( 
 				// openid providers
@@ -37,7 +40,7 @@ Class HybridConfig {
 
 				"Twitter" => array ( 
 					"enabled" => true,
-					"keys"    => array ( "key" => "TLF2hcRb2agGUV90mWkVoA", "secret" => "qMfRR0lliO931QWEvyYKuT1qkIWHzBhzfjLeyxKX7A" ) 
+					"keys"    => array ( "key" => "QOW09CO0jKeCxFwiRMHuDA", "secret" => "bTeaho5QT81TnI0lqExVL3VuKTQs2bd3persK4yTMU" ) 
 				),
 
 				// windows live

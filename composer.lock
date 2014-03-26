@@ -17,11 +17,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ec2118777620a79e2125d2f1b020112362740d5",
                 "reference": "5ec2118777620a79e2125d2f1b020112362740d5",
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dd8f78b8abde74245578dbfb930c29efff20f25a",
-                "reference": "dd8f78b8abde74245578dbfb930c29efff20f25a",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +257,6 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-admin.git",
-<<<<<<< HEAD
                 "reference": "ae10bdfc24b558c297ca3d197ac3c4047f781c6b"
             },
             "dist": {
@@ -270,15 +264,6 @@
                 "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-273c68.zip",
                 "reference": "ae10bdfc24b558c297ca3d197ac3c4047f781c6b",
                 "shasum": "3ab8172b69d0e601dced1ec22812eb724b07a979"
-=======
-                "reference": "1822283849ab259e87dadc9f866085f9d13a9a76"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-8dcdc9.zip",
-                "reference": "1822283849ab259e87dadc9f866085f9d13a9a76",
-                "shasum": "fc0b4c984767466f28b1d6a736bde54c35bc7ce8"
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
             },
             "require": {
                 "dioscouri/f3-lib": "dev-master",
@@ -310,11 +295,7 @@
                 "F3",
                 "RAD"
             ],
-<<<<<<< HEAD
             "time": "2014-03-24 17:36:07"
-=======
-            "time": "2014-03-20 18:19:15"
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "dioscouri/f3-assets",
@@ -322,7 +303,6 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-assets.git",
-<<<<<<< HEAD
                 "reference": "45bcac12c8b1b6084740e6964ae3ebbd65a85457"
             },
             "dist": {
@@ -330,25 +310,6 @@
                 "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-assets-dev-master-ca86ff.zip",
                 "reference": "45bcac12c8b1b6084740e6964ae3ebbd65a85457",
                 "shasum": "e949f2017df1e4c9dc4d68dba42d504aeb6059b0"
-=======
-<<<<<<< HEAD
-                "reference": "45bcac12c8b1b6084740e6964ae3ebbd65a85457"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-assets-dev-master-ca86ff.zip",
-                "reference": "45bcac12c8b1b6084740e6964ae3ebbd65a85457",
-                "shasum": "e949f2017df1e4c9dc4d68dba42d504aeb6059b0"
-=======
-                "reference": "7d31a6ca09ee9d64842547f961d16ad8531d6e47"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-assets-dev-master-6b29e5.zip",
-                "reference": "7d31a6ca09ee9d64842547f961d16ad8531d6e47",
-                "shasum": "9941be3df15b2b6d1d1fa72d28ea3f4ba769c7c9"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -379,15 +340,7 @@
                 "Media Asset Manager",
                 "RAD"
             ],
-<<<<<<< HEAD
             "time": "2014-03-20 18:17:49"
-=======
-<<<<<<< HEAD
-            "time": "2014-03-20 18:17:49"
-=======
-            "time": "2014-03-05 03:04:35"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "dioscouri/f3-blog",
@@ -395,7 +348,6 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-blog.git",
-<<<<<<< HEAD
                 "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38"
             },
             "dist": {
@@ -403,25 +355,6 @@
                 "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-b17df4.zip",
                 "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38",
                 "shasum": "e9895752f0944dd5559ff8af789d90bce5200c31"
-=======
-<<<<<<< HEAD
-                "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-b17df4.zip",
-                "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38",
-                "shasum": "e9895752f0944dd5559ff8af789d90bce5200c31"
-=======
-                "reference": "d5a6d8d238c1e42f693456ddef4d2b6ec64e2f33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-3067f0.zip",
-                "reference": "d5a6d8d238c1e42f693456ddef4d2b6ec64e2f33",
-                "shasum": "4bd425975ea2ff53ee8992d9b42605277e496764"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -452,15 +385,7 @@
                 "F3",
                 "RAD"
             ],
-<<<<<<< HEAD
             "time": "2014-03-20 18:07:32"
-=======
-<<<<<<< HEAD
-            "time": "2014-03-20 18:07:32"
-=======
-            "time": "2014-03-05 03:40:05"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "dioscouri/f3-lib",
@@ -468,30 +393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dioscouri/f3-lib.git",
-<<<<<<< HEAD
                 "reference": "9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31",
                 "reference": "9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31",
-=======
-<<<<<<< HEAD
-                "reference": "80915ef626076570af9f80ad197556df51f69887"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/80915ef626076570af9f80ad197556df51f69887",
-                "reference": "80915ef626076570af9f80ad197556df51f69887",
-=======
-                "reference": "940abdf8489526795cd9658be503b5104ae9e3fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/940abdf8489526795cd9658be503b5104ae9e3fa",
-                "reference": "940abdf8489526795cd9658be503b5104ae9e3fa",
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
                 "shasum": ""
             },
             "require": {
@@ -522,15 +429,7 @@
                 "F3",
                 "rad"
             ],
-<<<<<<< HEAD
             "time": "2014-03-25 13:13:41"
-=======
-<<<<<<< HEAD
-            "time": "2014-03-23 10:45:16"
-=======
-            "time": "2014-03-05 03:36:26"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "dioscouri/f3-mailer",
@@ -636,7 +535,6 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-modules.git",
-<<<<<<< HEAD
                 "reference": "7f9de99034543f4d1c076781723e167cd47ebcd2"
             },
             "dist": {
@@ -644,25 +542,6 @@
                 "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-modules-dev-master-549ca1.zip",
                 "reference": "7f9de99034543f4d1c076781723e167cd47ebcd2",
                 "shasum": "65c64cb76db133951900d163f78a5c3549533732"
-=======
-<<<<<<< HEAD
-                "reference": "7f9de99034543f4d1c076781723e167cd47ebcd2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-modules-dev-master-549ca1.zip",
-                "reference": "7f9de99034543f4d1c076781723e167cd47ebcd2",
-                "shasum": "65c64cb76db133951900d163f78a5c3549533732"
-=======
-                "reference": "5da8eb27edde4766a7967c0f831ba5075bff11c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-modules-dev-master-dc8c40.zip",
-                "reference": "5da8eb27edde4766a7967c0f831ba5075bff11c4",
-                "shasum": "d36dedca3637cdd939808763a73c729e4ebd8245"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -693,15 +572,7 @@
                 "Module Manager",
                 "RAD"
             ],
-<<<<<<< HEAD
             "time": "2014-03-20 18:10:34"
-=======
-<<<<<<< HEAD
-            "time": "2014-03-20 18:10:34"
-=======
-            "time": "2014-03-05 03:10:11"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "dioscouri/f3-users",
@@ -709,7 +580,6 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-users.git",
-<<<<<<< HEAD
                 "reference": "73b61c024ecfee0fdd1ab27b70715bfdeed4d4c5"
             },
             "dist": {
@@ -717,25 +587,6 @@
                 "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-7d4728.zip",
                 "reference": "73b61c024ecfee0fdd1ab27b70715bfdeed4d4c5",
                 "shasum": "fa92bb628e1ceffc58a6763f8074c04c8e624718"
-=======
-<<<<<<< HEAD
-                "reference": "0c1c2408f9bb338d1d24497a069dce1345221fbe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-cccd82.zip",
-                "reference": "0c1c2408f9bb338d1d24497a069dce1345221fbe",
-                "shasum": "8a7df109d1324259299925b95a36f30558d6137c"
-=======
-                "reference": "ddf7f7d3183b66724261a586d54ab694374c61b2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-b2747c.zip",
-                "reference": "ddf7f7d3183b66724261a586d54ab694374c61b2",
-                "shasum": "6495673885a13d777a079e263b47e543d2bce4ba"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -766,15 +617,7 @@
                 "RAD",
                 "User Management"
             ],
-<<<<<<< HEAD
             "time": "2014-03-24 19:12:01"
-=======
-<<<<<<< HEAD
-            "time": "2014-03-23 10:46:59"
-=======
-            "time": "2014-03-05 03:43:57"
->>>>>>> FETCH_HEAD
->>>>>>> 210a3a3dd9d78f1ef06c8bc9576f84c55cb38565
         },
         {
             "name": "firephp/firephp-core",
@@ -913,12 +756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "5c68688a77e90b2739f548046f406c80c2128368"
+                "reference": "be0b6983fe561044808612b6b264745141fade25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/5c68688a77e90b2739f548046f406c80c2128368",
-                "reference": "5c68688a77e90b2739f548046f406c80c2128368",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/be0b6983fe561044808612b6b264745141fade25",
+                "reference": "be0b6983fe561044808612b6b264745141fade25",
                 "shasum": ""
             },
             "require": {
@@ -954,7 +797,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2014-03-21 18:20:20"
+            "time": "2014-03-26 00:24:11"
         },
         {
             "name": "joomla/framework",
