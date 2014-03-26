@@ -379,7 +379,7 @@ class Selfregister extends Base
     	
         $tag = $model->getItem();
 
-        $f3->set('SESSION.tag', $tag);
+        $f3->set('SESSION.tagid', $tagid);
 
 
     	
@@ -486,7 +486,7 @@ class Selfregister extends Base
             //FIRST WE NEED TO CREATE A TAG
             $tagsmodel =  new \Rystband\Models\Tags();
             $tag = $tagsmodel->getPrefab();
-            $tag->tagid = $f3->get('SESSION.tag');
+            $tag->tagid = $f3->get('SESSION.tagid');
             $tag->eventid = $f3->get('event.db');
             $tag = $tagsmodel->create((array) $tag);
                 
@@ -524,6 +524,8 @@ class Selfregister extends Base
             // 4.3 - store the new user_id in session
              $f3->set('SESSION.user', $doc);
             // 4.4 - redirect to user/profile
+
+
              $f3->reroute('/welcome');
         }
         catch( \Exception $e ){
