@@ -377,8 +377,12 @@ class Selfregister extends Base
         $tagid = $f3->get('PARAMS.tagid');
         $model->setState('filter.tagid', $tagid);
     	
-    	$tag = $model->getItem();
+        $tag = $model->getItem();
 
+        $f3->set('SESSION.tag', $tag);
+
+
+    	
     	if(!empty($tag->attendee)) {
     		$f3->reroute('/band/'.$f3->get('PARAMS.tagid').'/alreadyregistered');
     	}
@@ -423,7 +427,7 @@ class Selfregister extends Base
     public function socialauth() {
 
          try{
-        \Hybrid_Endpoint::process();
+             \Hybrid_Endpoint::process();
           } catch( \Exception $e ){
             echo $e->getMessage();
             die();
@@ -447,7 +451,7 @@ class Selfregister extends Base
 
 
 
-            
+            $tag = $f3->get('SESSION.tag');
 
            
 
@@ -480,6 +484,7 @@ class Selfregister extends Base
  */
         # 4 - if authentication does not exist and email is not in use, then we create a new user 
             $data = array();
+            $data['tagid'] = $tag->id;
             $data['social'][$provider]['identifier'] = $user_profile->identifier;
             $data['email'] = $user_profile->email;
             $data['first_name'] = $user_profile->firstName;
@@ -487,11 +492,23 @@ class Selfregister extends Base
             $data['display_name'] = $user_profile->displayName;
             $data['website_url'] = $user_profile->webSiteURL;
             $data['social'][$provider]['profile_url'] = $user_profile->profileURL;
-    
+        
             $password      = rand( ) ; # for the password we generate something random
+
+
+
 
             // 4.1 - create new user
             $doc = $model->create($data);    
+
+
+                $tags = new \Rystband\Models\Tags();
+                $tag = $tags->setState('filter.id',$tag->id)->getItem();
+                $tag->set('attendee.id',$doc->_id);
+                $tag->set('attendee.name',$doc->first_name . ' ' .$doc->last_name);
+                $tag->save();
+
+
 
             // 4.2 - creat a new authentication for him
             //$authentication->create( $new_user_id, $provider, $provider_uid, $email, $display_name, $first_name, $last_name, $profile_url, $website_url );
