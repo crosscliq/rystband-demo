@@ -3,6 +3,10 @@ body { background:#000; }
 	background:url(/display/images/car.jpg) no-repeat;
 	background-size:cover;
 }
+#car2 {
+	background:url(/display/images/bent.jpg) no-repeat;
+	background-size:cover;
+}
 .bottom {
 	display:block;
 	margin-top:420px!important;

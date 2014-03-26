@@ -47,8 +47,8 @@ class Contentdemo extends \Rystband\Controllers\Devices\Base
             default:
               $array = array('status' => 'loser', 'prize' => array());
                 break;
-        }
-
+        }	
+	return $array;
     }
 
 
