@@ -80,7 +80,7 @@
     background-position: center 0;
     }
 
-    #winner {
+    #winner, #player {
     background: rgba(0,0,0,0.8);
     width: 100%;
     height: 100%;
@@ -91,6 +91,10 @@
     color: #fff;
     z-index: 9999;
     line-height: 100%;
+    }
+
+    #player {
+        padding-top: 30%;
     }
 
     #spin-btn {
@@ -161,7 +165,7 @@
 
 </head>
 <body id="car2">
-
+<div id="player" style="display:none;"><b style="display:block;padding-top:20%;color:#fff;">YOU WIN!</b></div>
 <div id="winner" style="display:none;"><b style="display:block;padding-top:20%;color:#fff;">YOU WIN!</b></div><div id=frame></div><div id=wheels><ul><li id=slot1 class=slot></li><li id=slot2 class=slot></li><li id=slot3 class=slot></li></ul></div>
 
 
@@ -833,21 +837,34 @@ var spinTime;
 
 
 }
-	 // Enable pusher logging - don't include this in production
-				   
 
+function showName(data) {
+        
+    $('#player').html(data.attendee.first_name + ' Get Ready to Play!');
+     $('#player').fadeIn('fast');
+
+
+            window.setTimeout(function() {
+                           
+                     $('#player').hide();
+            }, 3500);
+}
+
+
+			   
 	var pusher = new Pusher("<?php echo $item->{'pusher.public'}; ?>");
 	var channel = pusher.subscribe("<?php echo $item->{'pusher.channel'}; ?>");
 
-    	  channel.bind('game_spin', function(data) {
-		console.log('game!');
-		console.log(data);
-		
-		spin(data.game.status);        
+    	channel.bind('game_spin', function(data) {
+	           showName(data);
+               setTimeout(function () {
+                spin(data.game.status);   
+               }, 4000);
 
+		           
 
-	 });
-});
+    	    });
+        });
   </script>
 
 </body>
