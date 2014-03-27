@@ -647,7 +647,7 @@ if (!debug) {
     var spinSnd = new Audio("/display/spin/spin.mp3");
     spinSnd.addEventListener('ended', function() {
         this.currentTime = 0;
-       // this.play();
+        this.play();
     }, false);
     var stopSnd = new Audio("/display/spin/stop.mp3");
     var winSnd = new Audio("/display/spin/win.mp3");

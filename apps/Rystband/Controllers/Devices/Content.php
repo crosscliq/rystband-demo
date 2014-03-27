@@ -27,7 +27,7 @@ class Content extends Base
 
         $pusher = new \Pusher($f3->get('pusher_key'), $f3->get('pusher_secret'), $f3->get('pusher_app_id'));
         $data = array('feature' => $f3->get('POST.feature'), 'attendee' => (array) $attendee->cast() );
-        $pusher->trigger('cardisplay', 'post', $data);
+        $pusher->trigger('tvdevice1', 'post', $data);
     	
         $f3->set('tag', $tag);
         $f3->set('tagid', $tagid);
