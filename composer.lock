@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "991fcbe0718ce7eb5163923221373347",
+    "hash": "1b05529454db82ac42fbbae695c27ed5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -101,16 +101,16 @@
         },
         {
             "name": "ddeboer/data-import",
-            "version": "0.12.1",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ddeboer/data-import.git",
-                "reference": "48d88bd387e5da282343df5dd15a6c58ed1cf075"
+                "reference": "6a7d4e6d80e7011b63c6d747952bae072d8009df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ddeboer/data-import/zipball/48d88bd387e5da282343df5dd15a6c58ed1cf075",
-                "reference": "48d88bd387e5da282343df5dd15a6c58ed1cf075",
+                "url": "https://api.github.com/repos/ddeboer/data-import/zipball/6a7d4e6d80e7011b63c6d747952bae072d8009df",
+                "reference": "6a7d4e6d80e7011b63c6d747952bae072d8009df",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 {
                     "name": "David de Boer",
                     "email": "david@ddeboer.nl",
-                    "homepage": "https://github.com/ddeboer"
+                    "homepage": "http://ddeboer.nl"
                 },
                 {
                     "name": "The community",
@@ -166,7 +166,7 @@
                 "export",
                 "import"
             ],
-            "time": "2014-02-07 17:15:53"
+            "time": "2014-03-28 08:49:45"
         },
         {
             "name": "dg/twitter-php",
@@ -257,13 +257,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-admin.git",
-                "reference": "ae10bdfc24b558c297ca3d197ac3c4047f781c6b"
+                "reference": "02eb7036755fca0f1d2d7b6cc8d5f00407856eb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-273c68.zip",
-                "reference": "ae10bdfc24b558c297ca3d197ac3c4047f781c6b",
-                "shasum": "3ab8172b69d0e601dced1ec22812eb724b07a979"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-admin-dev-master-33a659.zip",
+                "reference": "02eb7036755fca0f1d2d7b6cc8d5f00407856eb8",
+                "shasum": "6f5342503917af57443f9e9a87705ff863e068d8"
             },
             "require": {
                 "dioscouri/f3-lib": "dev-master",
@@ -295,7 +295,7 @@
                 "F3",
                 "RAD"
             ],
-            "time": "2014-03-24 17:36:07"
+            "time": "2014-03-28 17:14:01"
         },
         {
             "name": "dioscouri/f3-assets",
@@ -756,12 +756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "be0b6983fe561044808612b6b264745141fade25"
+                "reference": "d89bbfebc4b51f054b9ba9560280a41de7f029ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/be0b6983fe561044808612b6b264745141fade25",
-                "reference": "be0b6983fe561044808612b6b264745141fade25",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/d89bbfebc4b51f054b9ba9560280a41de7f029ab",
+                "reference": "d89bbfebc4b51f054b9ba9560280a41de7f029ab",
                 "shasum": ""
             },
             "require": {
@@ -797,7 +797,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2014-03-26 00:24:11"
+            "time": "2014-03-27 21:24:20"
         },
         {
             "name": "joomla/framework",

@@ -1,5 +1,5 @@
 {
-    "532ef7195eb875.47480548": {
+    "5335afaaea55d7.19789101": {
         "title": "Activity",
         "route": "",
         "icon": "fa fa-activiy",
@@ -12,7 +12,7 @@
         ],
         "priority": 30
     },
-    "532ef7195f10a0.83374669": {
+    "5335afaaea9e04.15879587": {
         "priority": 30,
         "key": "fa-customer",
         "title": "Customers",
@@ -31,7 +31,7 @@
             }
         ]
     },
-    "532ef7195f8599.98574737": {
+    "5335afaaead008.74690404": {
         "priority": 40,
         "key": "f3-assets",
         "title": "Media Assets",
@@ -50,7 +50,7 @@
             }
         ]
     },
-    "532ef7195fc612.05133152": {
+    "5335afaaeb0a03.73195731": {
         "priority": 30,
         "key": "f3-blog",
         "title": "Blog",
@@ -79,7 +79,7 @@
             }
         ]
     },
-    "532ef7196045f8.98590285": {
+    "5335afaaeb4818.17532852": {
         "priority": 50,
         "key": "fa-mailer",
         "title": "Emails",
@@ -103,7 +103,26 @@
             }
         ]
     },
-    "532ef7196128f7.18594892": {
+    "5335afaaeb8ac3.73745207": {
+        "priority": 40,
+        "key": "f3-redirect",
+        "title": "Mass Update",
+        "route": "",
+        "icon": "fa fa-signal",
+        "children": [
+            {
+                "title": "List Updaters",
+                "route": "\/admin\/massupdate\/updaters",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Settings",
+                "route": "\/admin\/massupdate\/settings",
+                "icon": "fa fa-cogs"
+            }
+        ]
+    },
+    "5335afaaebd3b1.63635190": {
         "priority": 40,
         "key": "f3-modules",
         "title": "Modules",
@@ -122,7 +141,56 @@
             }
         ]
     },
-    "532ef71961aeb1.87017585": {
+    "5335afaaec24c0.14468861": {
+        "priority": 20,
+        "title": "Shop",
+        "route": "",
+        "icon": "fa fa-ticket",
+        "children": [
+            {
+                "title": "Products",
+                "route": "\/admin\/shop\/products",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Collections",
+                "route": "\/admin\/shop\/collections",
+                "icon": "fa fa-hdd"
+            },
+            {
+                "title": "Categories",
+                "route": "\/admin\/shop\/categories",
+                "icon": "fa fa-folder"
+            },
+            {
+                "title": "Manufacturers",
+                "route": "\/admin\/shop\/manufacturers",
+                "icon": "fa fa-barcode"
+            },
+            {
+                "title": "Media Assets",
+                "route": "\/admin\/shop\/assets",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Countries",
+                "route": "\/admin\/shop\/countries",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Regions",
+                "route": "\/admin\/shop\/regions",
+                "icon": "fa fa-list"
+            },
+            {
+                "title": "Settings",
+                "route": "\/admin\/shop\/settings",
+                "icon": "fa fa-cogs"
+            }
+        ],
+        "base": "\/admin\/shop"
+    },
+    "5335afaaec82e7.34565309": {
         "priority": 30,
         "key": "fa-user",
         "title": "Users",
@@ -143,10 +211,15 @@
                 "title": "Roles",
                 "route": "\/admin\/users\/roles",
                 "icon": "fa fa-unlock"
+            },
+            {
+                "title": "Settings",
+                "route": "\/admin\/users\/settings",
+                "icon": "fa fa-cogs"
             }
         ]
     },
-    "532ef719620f75.46056467": {
+    "5335afaaece3f1.33238576": {
         "priority": 99,
         "title": "Navigation",
         "route": "",
@@ -177,7 +250,7 @@
             }
         ]
     },
-    "532ef719626b29.13159167": {
+    "5335afaaed4290.69585241": {
         "priority": 100,
         "title": "System",
         "route": "",
