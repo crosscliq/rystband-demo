@@ -10,13 +10,14 @@
         "dioscouri/f3-admin": "dev-master",
         "dioscouri/f3-assets": "dev-master",
         "dioscouri/f3-blog": "dev-master",
-        "dioscouri/f3-users": "dev-master",
-        
-        "dioscouri/f3-modules": "dev-master",
-        "dioscouri/f3-mailer": "dev-master",
+        "dioscouri/f3-modules": "dev-master",   
         "dioscouri/f3-minify": "dev-master",
-        "dioscouri/f3-activity": "dev-master",
+    
         "firephp/firephp-core": "dev-master",
+        "dioscouri/f3-mailer": "dev-master",
+        "dioscouri/f3-activity": "dev-master",
+        "hybridauth/hybridauth" : "dev-master",
+        "dioscouri/f3-users": "dev-master",
         "joomla/framework": ">=1.0",
         "bcosca/fatfree": "dev-master",
         "leafo/lessphp": "0.4.0",
@@ -25,7 +26,7 @@
 	    "pusher/pusher-php-server": "dev-master",
         "mandrill/mandrill": "dev-master",
         "ddeboer/data-import": "@stable",
-        "hybridauth/hybridauth" : "dev-master",
+        
         "dg/twitter-php": "@stable"
     }
 }

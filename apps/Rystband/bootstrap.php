@@ -25,8 +25,8 @@ switch ($global_app_name)
         $f3->route('GET /home', '\Rystband\Controllers\Auth->showLogin');
         $f3->route('POST /home', '\Rystband\Controllers\Auth->doLogin');     
         
-        $f3->route('GET /login', '\Rystband\Controllers\Auth->showLogin'); 
-        $f3->route('POST /login', '\Rystband\Controllers\Auth->doLogin');
+        //$f3->route('GET /login', '\Rystband\Controllers\Auth->showLogin'); 
+        //$f3->route('POST /login', '\Rystband\Controllers\Auth->doLogin');
         $f3->route('GET /signup', '\Rystband\Controllers\Auth->showSignup');
         $f3->route('POST /signup', '\Rystband\Controllers\Auth->doSignup');
         $f3->route('GET|POST /logout', '\Users\Rystband\Controllers\User->logout');     
@@ -109,6 +109,9 @@ switch ($global_app_name)
         $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Rystband/Views/";
         $f3->set('UI', $ui);
 
+        // append this app's UI folder to the path
+        \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Rystband/Views/', 'Rystband/Views/' );
+        
 
          $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
 

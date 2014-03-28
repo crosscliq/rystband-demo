@@ -17,6 +17,9 @@ switch ($global_app_name)
         $templates .= ";" . $f3->get('PATH_ROOT') . "apps/Theme/Templates/";
         $f3->set('TEMPLATES', $templates);
         
+        \Dsc\System::instance()->get('theme')->setTheme('Theme', $f3->get('PATH_ROOT') . 'apps/Theme/' );
+        \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Theme/Views/', 'Theme/Views' );
+      
          // register the less css file
        // \Minify\Factory::registerLessCssSource( $f3->get('PATH_ROOT') . "apps/Theme/Less/global.less.css" );
         
@@ -56,3 +59,8 @@ switch ($global_app_name)
         break;
 }
 ?>
+
+
+
+
+

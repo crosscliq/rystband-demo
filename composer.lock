@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1b05529454db82ac42fbbae695c27ed5",
+    "hash": "456da98ea0a8a7ab69b3c42e506e434c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -211,14 +211,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:dioscouri/f3-activity.git",
+                "url": "https://github.com/dioscouri/f3-activity.git",
                 "reference": "826b2db3266ce55369b4a9bb47017fecaa1f05ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-activity-dev-master-4a44cf.zip",
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-activity-826b2db3266ce55369b4a9bb47017fecaa1f05ae-zip-4a44cf.zip",
                 "reference": "826b2db3266ce55369b4a9bb47017fecaa1f05ae",
-                "shasum": "c5347277bde86b989bee1a6592a86664f03bb9ee"
+                "shasum": "fdc460230d1647422a53eb1ae559857e0833d440"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -249,6 +249,10 @@
                 "RAD",
                 "Tracking"
             ],
+            "support": {
+                "source": "https://github.com/dioscouri/f3-activity/tree/master",
+                "issues": "https://github.com/dioscouri/f3-activity/issues"
+            },
             "time": "2014-02-11 02:18:01"
         },
         {
@@ -436,14 +440,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:dioscouri/f3-mailer.git",
+                "url": "https://github.com/dioscouri/f3-mailer.git",
                 "reference": "97d1cc0c92d8360beea5efb593b317bee397b5b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-dev-master-1c2671.zip",
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-97d1cc0c92d8360beea5efb593b317bee397b5b5-zip-1c2671.zip",
                 "reference": "97d1cc0c92d8360beea5efb593b317bee397b5b5",
-                "shasum": "f33b68916651bfec95a87aaa05b298193f1c5602"
+                "shasum": "6e84299f5865eff306f95899b7b7fad015cad131"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -482,6 +486,10 @@
                 "email",
                 "mandrill"
             ],
+            "support": {
+                "source": "https://github.com/dioscouri/f3-mailer/tree/master",
+                "issues": "https://github.com/dioscouri/f3-mailer/issues"
+            },
             "time": "2014-03-20 18:08:02"
         },
         {
@@ -580,13 +588,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-users.git",
-                "reference": "73b61c024ecfee0fdd1ab27b70715bfdeed4d4c5"
+                "reference": "92a76c5098c6dd6f10f3b714757a574a1bbd5c35"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-7d4728.zip",
-                "reference": "73b61c024ecfee0fdd1ab27b70715bfdeed4d4c5",
-                "shasum": "fa92bb628e1ceffc58a6763f8074c04c8e624718"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-75e4a4.zip",
+                "reference": "92a76c5098c6dd6f10f3b714757a574a1bbd5c35",
+                "shasum": "c24c61f679e54a58bcfe63b7177b8c2dd2a512d9"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -617,7 +625,7 @@
                 "RAD",
                 "User Management"
             ],
-            "time": "2014-03-24 19:12:01"
+            "time": "2014-03-28 19:05:17"
         },
         {
             "name": "firephp/firephp-core",
@@ -1157,18 +1165,18 @@
         "dioscouri/f3-admin": 20,
         "dioscouri/f3-assets": 20,
         "dioscouri/f3-blog": 20,
-        "dioscouri/f3-users": 20,
         "dioscouri/f3-modules": 20,
-        "dioscouri/f3-mailer": 20,
         "dioscouri/f3-minify": 20,
-        "dioscouri/f3-activity": 20,
         "firephp/firephp-core": 20,
+        "dioscouri/f3-mailer": 20,
+        "dioscouri/f3-activity": 20,
+        "hybridauth/hybridauth": 20,
+        "dioscouri/f3-users": 20,
         "bcosca/fatfree": 20,
         "aws/aws-sdk-php": 20,
         "pusher/pusher-php-server": 20,
         "mandrill/mandrill": 20,
         "ddeboer/data-import": 0,
-        "hybridauth/hybridauth": 20,
         "dg/twitter-php": 0
     },
     "platform": [

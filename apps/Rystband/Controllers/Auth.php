@@ -13,9 +13,9 @@ class Auth extends \Users\Site\Controllers\Auth {
     protected $default_loggedin_redirect = '/roles';
     
 
-    function beforeRoute() {
+    function beforeRoute($f3) {
 
-	$f3 = \Base::instance();
+
 
         $session = \Base::instance()->get('SESSION.user');
         
