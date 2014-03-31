@@ -467,12 +467,15 @@ class Selfregister extends Base
             $model = new \Rystband\Models\Attendees;
             $filter = 'social.'.$provider.'.identifier';
 
-            $user = $model->setCondition($filter, $user_profile->identifier)->getItem();
+            $user = $model->setFilter($filter, $user_profile->identifier)->getItem();
      
 
        if(!empty($user->id)) {
-             $this->auth->setIdentity($user );
-            $f3->reroute('/user'); 
+             //$this->auth->setIdentity($user );
+           
+	$f3->set('SESSION.user', $user);
+
+	    $f3->reroute('/welcome'); 
     
         }
 
@@ -495,9 +498,10 @@ class Selfregister extends Base
                             
                             $user->save();
                             
-                            $this->auth->setIdentity( $user );
-        
-                            $f3->reroute('/user');
+               //             $this->auth->setIdentity( $user );
+		$f3->set('SESSION.user', $user);        
+
+                            $f3->reroute('/welcome');
                         }
                     } catch ( \Exception $e ) {
                         $this->setError('Invalid Email');
@@ -522,9 +526,11 @@ class Selfregister extends Base
             $model = new \Rystband\Models\Attendees;    
              $user = $model->create($data);    
 
-            $this->auth->setIdentity( $user );
+	$f3->set('SESSION.user', $user);
+
+           // $this->auth->setIdentity( $user );
         
-            $f3->reroute('/user');
+            $f3->reroute('/welcome');
         }
         catch( \Exception $e ){
             // Display the recived error
