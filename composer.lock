@@ -211,14 +211,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dioscouri/f3-activity.git",
+                "url": "git@github.com:dioscouri/f3-activity.git",
                 "reference": "826b2db3266ce55369b4a9bb47017fecaa1f05ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-activity-826b2db3266ce55369b4a9bb47017fecaa1f05ae-zip-4a44cf.zip",
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-activity-dev-master-4a44cf.zip",
                 "reference": "826b2db3266ce55369b4a9bb47017fecaa1f05ae",
-                "shasum": "fdc460230d1647422a53eb1ae559857e0833d440"
+                "shasum": "c5347277bde86b989bee1a6592a86664f03bb9ee"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -249,10 +249,6 @@
                 "RAD",
                 "Tracking"
             ],
-            "support": {
-                "source": "https://github.com/dioscouri/f3-activity/tree/master",
-                "issues": "https://github.com/dioscouri/f3-activity/issues"
-            },
             "time": "2014-02-11 02:18:01"
         },
         {
@@ -397,12 +393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dioscouri/f3-lib.git",
-                "reference": "9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31"
+                "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31",
-                "reference": "9f1b7d41c1b87f141dc8d4d1118374d8d1da5a31",
+                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
+                "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
                 "shasum": ""
             },
             "require": {
@@ -433,21 +429,21 @@
                 "F3",
                 "rad"
             ],
-            "time": "2014-03-25 13:13:41"
+            "time": "2014-03-28 21:06:20"
         },
         {
             "name": "dioscouri/f3-mailer",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dioscouri/f3-mailer.git",
+                "url": "git@github.com:dioscouri/f3-mailer.git",
                 "reference": "97d1cc0c92d8360beea5efb593b317bee397b5b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-97d1cc0c92d8360beea5efb593b317bee397b5b5-zip-1c2671.zip",
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-mailer-dev-master-1c2671.zip",
                 "reference": "97d1cc0c92d8360beea5efb593b317bee397b5b5",
-                "shasum": "6e84299f5865eff306f95899b7b7fad015cad131"
+                "shasum": "f33b68916651bfec95a87aaa05b298193f1c5602"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -486,10 +482,6 @@
                 "email",
                 "mandrill"
             ],
-            "support": {
-                "source": "https://github.com/dioscouri/f3-mailer/tree/master",
-                "issues": "https://github.com/dioscouri/f3-mailer/issues"
-            },
             "time": "2014-03-20 18:08:02"
         },
         {
