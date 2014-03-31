@@ -43,8 +43,8 @@ switch ($global_app_name)
          $f3->route('POST /self/assign/tag/@tagid', '\Rystband\Controllers\Selfregister->assign');
         $f3->route('GET /self/signin/@tagid', '\Rystband\Controllers\Selfregister->signin');
         
-        $f3->route('GET|POST /socialauth', '\Rystband\Controllers\Selfregister->socialauth');
-        $f3->route('GET|POST /social/auth/@provider', '\Rystband\Controllers\Selfregister->authenticatewith');
+        $f3->route('GET|POST /attendee/social', '\Rystband\Controllers\Selfregister->social');
+        $f3->route('GET|POST /attendee/social/auth/@provider', '\Rystband\Controllers\Selfregister->provider');
 
         //Attendee Reg pages
         $f3->route('GET /attendee', '\Rystband\Controllers\Attendees->display');
@@ -116,12 +116,13 @@ switch ($global_app_name)
          $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
 
          $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
+          $f3->route('GET /facebooktest', '\Rystband\Controllers\Devices\Box\Social->facebook');
 
          $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
          $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');
          $f3->route('GET /content/car', '\Rystband\Controllers\Devices\Content->car');  
 
-       
+        
         
           $f3->route('POST /band/@tagid', '\Rystband\Controllers\Devices\Content->carrequest');
         break;

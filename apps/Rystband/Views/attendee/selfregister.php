@@ -6,17 +6,20 @@
 	<div class="grid">
 	  <div class="row">
 	    <div class="span12">
-	<?php echo \Dsc\System::instance()->renderMessages(); ?>
+	<?php echo \Dsc\System::instance()->renderMessages();
+
+
+    //echo $SESSION['tagid']; ?>
 
 
             <br>
         <fieldset>
             <legend>Use service</legend>
-            &nbsp;&nbsp;<a href="/social/auth/google">Sign-in with Google</a><br /> 
-            &nbsp;&nbsp;<a href="/social/auth/yahoo">Sign-in with Yahoo</a><br /> 
-            &nbsp;&nbsp;<a href="/social/auth/facebook">Sign-in with Facebook</a><br />
-            &nbsp;&nbsp;<a href="/social/auth/twitter">Sign-in with Twitter</a><br />  
-            &nbsp;&nbsp;<a href="/social/auth/linkedin">Sign-in with LinkedIn</a><br />
+          
+            &nbsp;&nbsp;<a class="button large inverse fg-white" href="/attendee/social/auth/facebook">Sign-in with Facebook</a><br />
+            <br>
+            &nbsp;&nbsp;<a class="button large inverse fg-white" href="/attendee/social/auth/twitter">Sign-in with Twitter</a><br />  
+
         </fieldset>
 	    	     <br/>
 		<form method="post" action="<?php echo $PARAMS[0]; ?>">
@@ -50,48 +53,7 @@
         <br/><br/>
                                         </div>
                                          <legend></legend>
-         <label>Do you own any Microsoft products?</label>
-                                         <div class="checkbox">
-                                            <input name="products[xboxone]" type="checkbox">
-                          <span class="check"></span>Xbox One
-                                        </div>  <br/>
-                                        <div class="checkbox">
-                                            <input name="products[xbox360]" type="checkbox">
-                          <span class="check"></span>Xbox 360
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[kinect]" type="checkbox">
-                          <span class="check"></span>Kinect
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[surface]" type="checkbox">
-                          <span class="check"></span>Surface
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[pc]" type="checkbox" >
-                          <span class="check"></span>PC
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[windowsphone]" type="checkbox" >
-                          <span class="check"></span>Windows Phone
-                                        </div><br/>
-                                        <div class="checkbox">
-                                            <input name="products[office]" type="checkbox" >
-                          <span class="check"></span>Office
-                                        </div><br/>
- 
-
-           <legend></legend>
-            
-                                        <label>Receive offers/updates from Microsoft? <small>( <a href="/privacy/policy" target="_BLANK" class="fg-white tiny">Privacy Policy</a> )</small></label>
-                                        <div class="checkbox">
-                                            <input name="offers[email]" type="checkbox" checked>
-                          <span class="check"></span>email
-                                        </div>  <br/>
-                                        <div class="checkbox">
-                                            <input name="offers[sms]" type="checkbox" checked>
-                                <span class="check"></span>sms
-                                        </div><br/><br/>    
+          
 
 					               		 <input type="hidden" name="selfregistered" value="true"> 
                                         <input type="hidden" name="submitType" value="save_confirm">      
@@ -107,7 +69,7 @@
 
         <div class="page-footer">
             <div class="page-footer-content" style="text-align:center;"><br>
-                                                     <small>Data collected by Crosscliq on behalf of Microsoft retail stores</small>
+                                                     <small>Data collected by Crosscliq.com</small>
 
             </div>
         </div>
