@@ -441,10 +441,10 @@ class Selfregister extends Base
     {  
         $f3 = \Base::instance();
         $provider = $f3->get('PARAMS.provider');
-        $hybridauth_config =  \Users\Models\Settings::fetch();
+        //$hybridauth_config =  \Users\Models\Settings::fetch();
        // $config = (array) $hybridauth_config->{'social'};
 
-        $tagid = $f3->get('SESSION.tagid');
+          $tagid = $f3->get('SESSION.tagid');
         
             $model = new \Rystband\Models\Tags;
             $tag = $model->getPrefab();
@@ -464,7 +464,7 @@ class Selfregister extends Base
         // grab the user profile
             $user_profile = $adapter->getUserProfile();
 
-            $model = new \Users\Models\Users;
+            $model = new \Rystband\Models\Attendees;
             $filter = 'social.'.$provider.'.identifier';
 
             $user = $model->setCondition($filter, $user_profile->identifier)->getItem();
@@ -483,7 +483,7 @@ class Selfregister extends Base
                 {
                     // now check via email
                     try {
-                        $model = new \Users\Models\Users;
+                         $model = new \Rystband\Models\Attendees;
                         $model->setState('filter.email', $user_profile->email);
                         if ($user = $model->getItem())
                         {   
@@ -519,7 +519,7 @@ class Selfregister extends Base
                 
             $password      = rand( ) ; # for the password we generate something random
             // 4.1 - create new user
-             $model = new \Users\Models\Users;    
+            $model = new \Rystband\Models\Attendees;    
              $user = $model->create($data);    
 
             $this->auth->setIdentity( $user );
