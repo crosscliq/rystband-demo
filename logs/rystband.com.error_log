@@ -64,3 +64,9 @@ PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.ph
 PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
 PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
 PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1294 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2014/03/31 21:41:40 [error] 18882#0: *24815 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /social/)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /social/?hauth.start=Facebook&hauth.time=1396302100 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com", referrer: "http://event1.rystband.com/band/testsadfasf/selfsignup"
+2014/03/31 21:44:18 [error] 18882#0: *24846 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/avatars/avatar-large-1.jpg)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /img/avatars/avatar-large-1.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com", referrer: "http://event1.rystband.com/user"
+2014/03/31 21:44:18 [error] 18882#0: *24842 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /img/mockup.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /img/mockup.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com", referrer: "http://event1.rystband.com/user"
