@@ -12,10 +12,10 @@
         "dioscouri/f3-blog": "dev-master",
         "dioscouri/f3-modules": "dev-master",   
         "dioscouri/f3-minify": "dev-master",
-    
         "firephp/firephp-core": "dev-master",
         "dioscouri/f3-mailer": "dev-master",
         "dioscouri/f3-activity": "dev-master",
+        "facebook/php-sdk" : "dev-master",
         "hybridauth/hybridauth" : "dev-master",
         "dioscouri/f3-users": "dev-master",
         "joomla/framework": ">=1.0",
@@ -26,7 +26,6 @@
 	    "pusher/pusher-php-server": "dev-master",
         "mandrill/mandrill": "dev-master",
         "ddeboer/data-import": "@stable",
-        
         "dg/twitter-php": "@stable"
     }
 }

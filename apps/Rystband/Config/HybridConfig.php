@@ -10,7 +10,7 @@ Class HybridConfig {
 
 	return 
 		array(
-			"base_url" =>  $f3->get('SCHEME') . "://" . $f3->get('HOST') . $f3->get('BASE'). "/socialauth/", 
+			"base_url" =>  $f3->get('SCHEME') . "://" . $f3->get('HOST') . $f3->get('BASE'). "/social/", 
 
 			"providers" => array ( 
 				// openid providers
@@ -34,7 +34,7 @@ Class HybridConfig {
 
 				"Facebook" => array ( 
 					"enabled" => true,
-					"keys"    => array ( "id" => "598027230287444", "secret" => "c23f62e17930904c5e94621e447aa39" ),
+					"keys"    => array ( "id" => "108795075865055", "secret" => "34bf0bfb1ede7a0f7cb5febf00c47ed0" ),
 					"trustForwarded" => false
 				),
 

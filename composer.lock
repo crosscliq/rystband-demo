@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "456da98ea0a8a7ab69b3c42e506e434c",
+    "hash": "e8411e76bf6691ba5cf006677886e25f",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5ec2118777620a79e2125d2f1b020112362740d5"
+                "reference": "02a3d338eb764cf44c0a8917b38220ad3322811f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ec2118777620a79e2125d2f1b020112362740d5",
-                "reference": "5ec2118777620a79e2125d2f1b020112362740d5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/02a3d338eb764cf44c0a8917b38220ad3322811f",
+                "reference": "02a3d338eb764cf44c0a8917b38220ad3322811f",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2014-03-25 22:51:48"
+            "time": "2014-03-30 00:20:00"
         },
         {
             "name": "bcosca/fatfree",
@@ -393,12 +393,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dioscouri/f3-lib.git",
+<<<<<<< HEAD
                 "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
                 "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
+=======
+                "reference": "3a478dc97390193207bb3a45a10498f63bb0fefa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/3a478dc97390193207bb3a45a10498f63bb0fefa",
+                "reference": "3a478dc97390193207bb3a45a10498f63bb0fefa",
+>>>>>>> 54f6faf4951b1008d7304fc97a4815ffa01efb0a
                 "shasum": ""
             },
             "require": {
@@ -429,7 +438,11 @@
                 "F3",
                 "rad"
             ],
+<<<<<<< HEAD
             "time": "2014-03-28 21:06:20"
+=======
+            "time": "2014-03-30 16:57:22"
+>>>>>>> 54f6faf4951b1008d7304fc97a4815ffa01efb0a
         },
         {
             "name": "dioscouri/f3-mailer",
@@ -580,13 +593,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-users.git",
-                "reference": "92a76c5098c6dd6f10f3b714757a574a1bbd5c35"
+                "reference": "81554dac84de2cec97037f50cb4c554101119171"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-75e4a4.zip",
-                "reference": "92a76c5098c6dd6f10f3b714757a574a1bbd5c35",
-                "shasum": "c24c61f679e54a58bcfe63b7177b8c2dd2a512d9"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-users-dev-master-7049e3.zip",
+                "reference": "81554dac84de2cec97037f50cb4c554101119171",
+                "shasum": "badd485c68c1de76533f610615e841afe5531d72"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -617,7 +630,53 @@
                 "RAD",
                 "User Management"
             ],
-            "time": "2014-03-28 19:05:17"
+            "time": "2014-03-29 18:12:53"
+        },
+        {
+            "name": "facebook/php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/facebook-php-sdk.git",
+                "reference": "8e20b40868b6beb72a0d4452d2c275f48f25cbc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk/zipball/8e20b40868b6beb72a0d4452d2c275f48f25cbc5",
+                "reference": "8e20b40868b6beb72a0d4452d2c275f48f25cbc5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
+                }
+            ],
+            "description": "Facebook PHP SDK",
+            "homepage": "https://github.com/facebook/facebook-php-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2014-02-21 17:24:51"
         },
         {
             "name": "firephp/firephp-core",
@@ -1162,6 +1221,7 @@
         "firephp/firephp-core": 20,
         "dioscouri/f3-mailer": 20,
         "dioscouri/f3-activity": 20,
+        "facebook/php-sdk": 20,
         "hybridauth/hybridauth": 20,
         "dioscouri/f3-users": 20,
         "bcosca/fatfree": 20,

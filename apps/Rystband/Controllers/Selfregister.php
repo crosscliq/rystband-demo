@@ -311,6 +311,7 @@ class Selfregister extends Base
         
         $f3->set('tagid',$f3->get('PARAMS.tagid'));
 
+        $f3->set('SESSION.tagid', $f3->get('PARAMS.tagid'));
  
         $view = new \Dsc\Template;
         echo $view->render('Rystband/Views::attendee/selfsignin.php');
@@ -323,6 +324,7 @@ class Selfregister extends Base
         $thisTag = $model->setState('filter.tagid', $f3->get('PARAMS.tagid'))->getItem();
 	
 	if(empty($thisTag)) {
+
             $tag = $model->getPrefab();
             $tag->tagid = $f3->get('PARAMS.tagid');
             $tag->eventid = $f3->get('PARAMS.eventid');
@@ -424,24 +426,37 @@ class Selfregister extends Base
     
     protected function displayRead() {}
 
-    public function socialauth() {
+   public function social() {
 
          try{
              \Hybrid_Endpoint::process();
           } catch( \Exception $e ){
-            echo $e->getMessage();
-            die();
+            \Dsc\System::addMessage('Login failed', 'error');
+            \Dsc\System::addMessage($e->getMessage(), 'error');
+            \Base::instance()->reroute("/login");
           }
     }
 
-    public function authenticatewith(  )
-    {   $f3 = \Base::instance();
+    public function provider()
+    {  
+        $f3 = \Base::instance();
         $provider = $f3->get('PARAMS.provider');
-        $hybridauth_config = (new \Rystband\Config\HybridConfig)->getConfig();
-    
+        $hybridauth_config =  \Users\Models\Settings::fetch();
+       // $config = (array) $hybridauth_config->{'social'};
+
+        $tagid = $f3->get('SESSION.tagid');
+        
+            $model = new \Rystband\Models\Tags;
+            $tag = $model->getPrefab();
+            $tag->tagid = $tagid;
+            $tag->eventid = $f3->get('PARAMS.eventid');
+            $thisTag = $model->create((array) $tag);
+
+
+        $config = (new \Rystband\Config\HybridConfig)->getConfig();
         try{
         // create an instance for Hybridauth with the configuration file path as parameter
-            $hybridauth = new \Hybrid_Auth( $hybridauth_config );
+            $hybridauth = new \Hybrid_Auth( $config );
 
         // try to authenticate the selected $provider
             $adapter = $hybridauth->authenticate( $provider );
@@ -449,109 +464,98 @@ class Selfregister extends Base
         // grab the user profile
             $user_profile = $adapter->getUserProfile();
 
+            $model = new \Users\Models\Users;
+            $filter = 'social.'.$provider.'.identifier';
 
+            $user = $model->setCondition($filter, $user_profile->identifier)->getItem();
+     
 
-            $tag = $f3->get('SESSION.tag');
+       if(!empty($user->id)) {
+             $this->auth->setIdentity($user );
+            $f3->reroute('/user'); 
+    
+        }
 
-           
-
-            $model = new \Rystband\Models\Attendees;
-            $filter = 'social.'.$provider;
-            //$model->setState($filter, $user_profile->identifier)->getItem();
-        # 1 - check if user already have authenticated using this provider before
-        //    $authentication_info = $authentication->find_by_provider_uid( $provider, $user_profile->identifier );
-
-        # 2 - if authentication exists in the database, then we set the user as connected and redirect him to his profile page
-        /*    if( $authentication_info ){
-                // 2.1 - store user_id in session
-                $_SESSION["user"] = $authentication_info["user_id"]; 
-
-                // 2.2 - redirect to user/profile
-                $this->redirect( "users/profile" );
-            }
-
-        # 3 - else, here lets check if the user email we got from the provider already exists in our database ( for this example the email is UNIQUE for each user )
+           # here lets check if the user email we got from the provider already exists in our database ( for this example the email is UNIQUE for each user )
             // if authentication does not exist, but the email address returned  by the provider does exist in database, 
-            // then we tell the user that the email  is already in use 
-            // but, its up to you if you want to associate the authentication with the user having the adresse email in the database
-            if( $user_profile->email ){
-                $user_info = $user->find_by_email( $user_profile->email );
+            // then authenticatewith the user having the address email in the database
+               if ($user_profile->email) 
+                {
+                    // now check via email
+                    try {
+                        $model = new \Users\Models\Users;
+                        $model->setState('filter.email', $user_profile->email);
+                        if ($user = $model->getItem())
+                        {   
+                            $user->set('tagid', $thisTag->tagid);
 
-                if( $user_info ) {
-                    die( '<br /><b style="color:red">Well! the email returned by the provider ('. $user_profile->email .') already exist in our database, so in this case you might use the <a href="index.php?route=users/login">Sign-in</a> to login using your email and password.</b>' );
-                }
-            }
- */
+                            $user->set('social.'.$provider.'profile', $adapter->getUserProfile());
+                            $user->set('social.'.$provider.'access_token', $adapter->getAccessToken());
+                            $user->save();
+                            
+                            $user->save();
+                            
+                            $this->auth->setIdentity( $user );
+        
+                            $f3->reroute('/user');
+                        }
+                    } catch ( \Exception $e ) {
+                        $this->setError('Invalid Email');
+                    }
+                }    
+
+
         # 4 - if authentication does not exist and email is not in use, then we create a new user 
-            //FIRST WE NEED TO CREATE A TAG
-            $tagsmodel =  new \Rystband\Models\Tags();
-            $tag = $tagsmodel->getPrefab();
-            $tag->tagid = $f3->get('SESSION.tagid');
-            $tag->eventid = $f3->get('event.db');
-            $tag = $tagsmodel->create((array) $tag);
-                
+          
 
             $data = array();
-            $data['tagid'] = $tag->id;
-            $data['social'][$provider]['identifier'] = $user_profile->identifier;
+            $data['social'][$provider]['profile'] = $adapter->getUserProfile();
+            $data['social'][$provider]['access_token'] = $adapter->getAccessToken();
+            $data['tagid'] = $thisTag->tagid;
+
             $data['email'] = $user_profile->email;
             $data['first_name'] = $user_profile->firstName;
             $data['last_name'] = $user_profile->lastName;
-            $data['display_name'] = $user_profile->displayName;
-            $data['website_url'] = $user_profile->webSiteURL;
-            $data['social'][$provider]['profile_url'] = $user_profile->profileURL;
-        
+                
             $password      = rand( ) ; # for the password we generate something random
-
-
-
-
             // 4.1 - create new user
-            $doc = $model->create($data);    
+             $model = new \Users\Models\Users;    
+             $user = $model->create($data);    
 
-
-                $tags = new \Rystband\Models\Tags();
-                $tag = $tags->setState('filter.id',$tag->id)->getItem();
-                $tag->set('attendee.id',$doc->_id);
-                $tag->set('attendee.name',$doc->first_name . ' ' .$doc->last_name);
-                $tag->save();
-
-
-
-            // 4.2 - creat a new authentication for him
-            //$authentication->create( $new_user_id, $provider, $provider_uid, $email, $display_name, $first_name, $last_name, $profile_url, $website_url );
- 
-            // 4.3 - store the new user_id in session
-             $f3->set('SESSION.user', $doc);
-            // 4.4 - redirect to user/profile
-
-
-             $f3->reroute('/welcome');
+            $this->auth->setIdentity( $user );
+        
+            $f3->reroute('/user');
         }
         catch( \Exception $e ){
             // Display the recived error
-            switch( $e->getCode() ){ 
-                case 0 : $error = "Unspecified error."; break;
-                case 1 : $error = "Hybriauth configuration error."; break;
-                case 2 : $error = "Provider not properly configured."; break;
-                case 3 : $error = "Unknown or disabled provider."; break;
-                case 4 : $error = "Missing provider application credentials."; break;
-                case 5 : $error = "Authentication failed. The user has canceled the authentication or the provider refused the connection."; break;
-                case 6 : $error = "User profile request failed. Most likely the user is not connected to the provider and he should to authenticate again."; 
-                         $adapter->logout(); 
-                         break;
-                case 7 : $error = "User not connected to the provider."; 
-                         $adapter->logout(); 
-                         break;
+            if($f3->get('DEBUG')) {
+
+                switch( $e->getCode() ){ 
+                    case 0 : $error = "Unspecified error."; break;
+                    case 1 : $error = "Hybriauth configuration error."; break;
+                    case 2 : $error = "Provider not properly configured."; break;
+                    case 3 : $error = "Unknown or disabled provider."; break;
+                    case 4 : $error = "Missing provider application credentials."; break;
+                    case 5 : $error = "Authentication failed. The user has canceled the authentication or the provider refused the connection."; break;
+                    case 6 : $error = "User profile request failed. Most likely the user is not connected to the provider and he should to authenticate again."; 
+                             $adapter->logout(); 
+                             break;
+                    case 7 : $error = "User not connected to the provider."; 
+                             $adapter->logout(); 
+                             break;
+                } 
+
+                // well, basically your should not display this to the end user, just give him a hint and move on..
+                $error .= "<br /><br /><b>Original error message:</b> " . $e->getMessage(); 
+                $error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>"; 
+            } else {
+
+                $error = 'Something went wrong';
             } 
 
-            // well, basically your should not display this to the end user, just give him a hint and move on..
-            $error .= "<br /><br /><b>Original error message:</b> " . $e->getMessage(); 
-            $error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>"; 
-
-            // load error view
-            $data = array( "error" => $error ); 
-            var_dump($data); die();
+            $this->setError($error ); 
+               
+            $f3->reroute('/login');
         }
     }
 
