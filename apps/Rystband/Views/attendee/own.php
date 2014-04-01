@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="/display/css/superslides.css">
   <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
 
+
     <div class="container">
     <div id="hidden" style="display:none;"><a class="fancybox"></a></div>
     <div class="grid">
@@ -13,11 +14,12 @@
         </div>
       </div>
     </div>
+    <?php echo \Dsc\System::instance()->renderMessages(); ?>
 
     <?php if(@$SESSION['user']) {
       $user = $SESSION['user'];
 
-      echo ' Thanks for Loggin in : ';
+      echo ' Hi! ';
       echo $user->first_name .' ' . $user->last_name;
       
     } ?>

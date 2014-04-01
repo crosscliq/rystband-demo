@@ -36,34 +36,50 @@ class Social extends \Rystband\Controllers\Devices\Base
     public function facebook() {
         // require Facebook PHP SDK
         
-        // initialize Facebook class using your own Facebook App credentials
-        // see: https://developers.facebook.com/docs/php/gettingstarted/#install
-        $config = array();
-        $config['appId'] = '108795075865055';
-        $config['secret'] = '34bf0bfb1ede7a0f7cb5febf00c47ed0';
-        $config['fileUpload'] = false; // optional
-         
-        $fb = new \Facebook($config);
-         
-        // define your POST parameters (replace with your own values)
-        $params = array(
-          "access_token" => "CAABi8tPZAqd8BACIO6UiSsCCneV6B4xemwuYfeUjlbhyRM3EswQ30aaQFHvPG7tH70IWcZCCJg3k9FsBYIcijo6S7GtsMD8jdvrtrbxZAFh3c0rmebycJX4Xvxm3jMU4ZAjSNBtlqM6CoTv61JGdH4mIaSDALqZBEMEFAGIvyCVuWVQDoM25yfqUFyhiQsO0ZD", // see: https://developers.facebook.com/docs/facebook-login/access-tokens/
-          "message" => "Here is a blog post about auto posting on Facebook using PHP #php #facebook",
-          "link" => "http://www.pontikis.net/blog/auto_post_on_facebook_with_php",
-          "picture" => "http://i.imgur.com/lHkOsiH.png",
-          "name" => "How to Auto Post on Facebook with PHP",
-          "caption" => "www.pontikis.net",
-          "description" => "Automatically post on Facebook with PHP using Facebook PHP SDK. How to create a Facebook app. Obtain and extend Facebook access tokens. Cron automation."
-        );
-         
-        // post to Facebook
-        // see: https://developers.facebook.com/docs/reference/php/facebook-api/
-        try {
-          $ret = $fb->api('/chrissneakattack/feed', 'POST', $params);
-          echo 'Successfully posted to Facebook';
-        } catch(\Exception $e) {
-          echo $e->getMessage();
-        }
+        $f3 = \Base::instance();
+
+        $user = $f3->get('SESSION.user');
+
+                if(!empty($user->{'social.facebook.profile'})) {
+                // initialize Facebook class using your own Facebook App credentials
+                // see: https://developers.facebook.com/docs/php/gettingstarted/#install
+                $config = array();
+                $config['appId'] = '108795075865055';
+                $config['secret'] = '34bf0bfb1ede7a0f7cb5febf00c47ed0';
+                $config['fileUpload'] = false; // optional
+                 
+                $fb = new \Facebook($config);
+                 
+                // define your POST parameters (replace with your own values)
+                $params = array(
+                  "access_token" => $user->{'social.facebook.access_token.access_token'}, // see: https://developers.facebook.com/docs/facebook-login/access-tokens/
+                  "message" => "Rystband tap to share demo, NFC powered wristband sharing facebook status #Rystband #facebook",
+                  "link" => "http://www.rystband.com/",
+                  "picture" => "http://www.rystband.com/sales/img/image2.png",
+                  "name" => "Rystband tap to share demo",
+                  "caption" => "www.rystband.com",
+                  "description" => "Using Rystband nfc wristbands to tap and share  via the Crossbox from Crosscliq.com"
+                );
+                 
+                // post to Facebook
+                // see: https://developers.facebook.com/docs/reference/php/facebook-api/
+                        try {
+                          $ret = $fb->api('/'.$user->{'social.facebook.profile.username'}.'/feed', 'POST', $params);
+                         
+                          \Dsc\System::instance()->addMessage( 'Successfully posted to facebook!', 'message');
+
+                        } catch(\Exception $e) {
+                       
+                           \Dsc\System::instance()->addMessage( $e->getMessage(), 'error');
+                        }
+                        finally {
+                            $f3->reroute('/welcome');
+                        }
+
+                }
+
+
+       
        
     }
 
