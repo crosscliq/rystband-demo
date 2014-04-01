@@ -481,7 +481,7 @@ class Selfregister extends Base
                 $thisTag->set('attendee.name',$user->first_name . ' ' .$user->last_name);
                 $thisTag->save();
 
-	    $f3->reroute('/welcome'); 
+	    $f3->reroute('/band/'.$thisTag->tagid);
     
         }
 
@@ -509,7 +509,7 @@ class Selfregister extends Base
                //             $this->auth->setIdentity( $user );
 		                    $f3->set('SESSION.user', $user);        
 
-                            $f3->reroute('/welcome');
+                            $f3->reroute('/band/'.$thisTag->tagid);
                         }
                     } catch ( \Exception $e ) {
                         $this->setError('Invalid Email');
@@ -542,7 +542,7 @@ class Selfregister extends Base
 
            // $this->auth->setIdentity( $user );
         
-            $f3->reroute('/welcome');
+           $f3->reroute('/band/'.$thisTag->tagid);
         }
         catch( \Exception $e ){
             // Display the recived error

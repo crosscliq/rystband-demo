@@ -8,11 +8,13 @@ class Social extends \Rystband\Controllers\Devices\Base
 
 
     public function index($device, $tag) {
+        
         $f3 = \Base::instance();
        	$attendees = new \Rystband\Models\Attendees;
 	    $attendees->setState('filter.id', $tag->{'attendee.id'});
 	    $attendee = $attendees->getItem();
       	
+        $this->facebook($attendee);
         //trigger screen
         if($device->display)  {
         		$displays = new \Dash\Site\Models\Event\Devices;
@@ -33,12 +35,15 @@ class Social extends \Rystband\Controllers\Devices\Base
     }
 
 
-    public function facebook() {
+    public function facebook($user = null) {
         // require Facebook PHP SDK
         
         $f3 = \Base::instance();
 
-        $user = $f3->get('SESSION.user');
+        if(empty($user)) {
+             $user = $f3->get('SESSION.user');
+        }
+
 
                 if(!empty($user->{'social.facebook.profile'})) {
                 // initialize Facebook class using your own Facebook App credentials
