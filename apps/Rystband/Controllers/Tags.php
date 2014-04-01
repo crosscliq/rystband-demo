@@ -242,24 +242,23 @@ class Tags extends Base
         $f3 =  \Base::instance();
         $f3->set('tag', $tag);
         $f3->set('tagid', $tagid);
-
          $route = \Base::instance()->get('PARAMS[0]');
          $peices = explode('/', $route);
         $channel = end($peices);
-       
         $f3->set('channel', $channel);
        
         $model = $this->getModel()->setState('filter.tagid', $tagid);
         $tag = $model->getItem();
-
         if(empty($tag->attendee)) {
             $f3->set('showselfregister', true);
             $view = new \Dsc\Template;
-            echo $view->render('Msft/Views::attendee/own.php');
+	 $view->setLayout('content.php');        
+    echo $view->render('Rystband/Views::attendee/own.php');
         } else {
              $f3->set('showselfregister', false);
             $view = new \Dsc\Template;
-            echo $view->render('Msft/Views::attendee/own.php');
+	 $view->setLayout('content.php');
+            echo $view->render('Rystband/Views::attendee/own.php');
         }
 
        
