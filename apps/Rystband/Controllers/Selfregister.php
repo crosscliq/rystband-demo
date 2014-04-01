@@ -454,7 +454,8 @@ class Selfregister extends Base
 
 
         $config = (new \Rystband\Config\HybridConfig)->getConfig();
-        try{
+
+         try{
         // create an instance for Hybridauth with the configuration file path as parameter
             $hybridauth = new \Hybrid_Auth( $config );
 
@@ -470,10 +471,15 @@ class Selfregister extends Base
             $user = $model->setFilter($filter, $user_profile->identifier)->getItem();
      
 
+
        if(!empty($user->id)) {
              //$this->auth->setIdentity($user );
            
-	$f3->set('SESSION.user', $user);
+	    $f3->set('SESSION.user', $user);
+
+                $thisTag->set('attendee.id',$user->_id);
+                $thisTag->set('attendee.name',$user->first_name . ' ' .$user->last_name);
+                $thisTag->save();
 
 	    $f3->reroute('/welcome'); 
     
@@ -496,10 +502,12 @@ class Selfregister extends Base
                             $user->set('social.'.$provider.'access_token', $adapter->getAccessToken());
                             $user->save();
                             
-                            $user->save();
+                              $thisTag->set('attendee.id',$user->_id);
+                              $thisTag->set('attendee.name',$user->first_name . ' ' .$user->last_name);
+                              $thisTag->save();
                             
                //             $this->auth->setIdentity( $user );
-		$f3->set('SESSION.user', $user);        
+		                    $f3->set('SESSION.user', $user);        
 
                             $f3->reroute('/welcome');
                         }

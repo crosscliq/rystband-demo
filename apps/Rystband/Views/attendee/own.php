@@ -14,8 +14,8 @@
       </div>
     </div>
 
-    <?php if(@$SESSION['dash']['user']) {
-      $user = $SESSION['dash']['user'];
+    <?php if(@$SESSION['user']) {
+      $user = $SESSION['user'];
 
       echo ' Thanks for Loggin in : ';
       echo $user->first_name .' ' . $user->last_name;
