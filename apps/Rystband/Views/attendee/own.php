@@ -29,6 +29,13 @@
     <?php endforeach;?>
     <?php endif; ?>
 
+    <?php if(!empty($user->{'social.twitter.profile'})) :?>
+    <h1>Twitter</h1>
+    <?php foreach($user->{'social.twitter.profile'} as $key => $value) :?>
+    <?php echo $key ?> : <?php echo $value; ?> <br>
+    <?php endforeach;?>
+    <?php endif; ?>
+
 
 
 
