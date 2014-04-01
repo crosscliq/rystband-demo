@@ -10,11 +10,13 @@ class Social extends \Rystband\Controllers\Devices\Base
     public function index($device, $tag) {
         
         $f3 = \Base::instance();
-       	$attendees = new \Rystband\Models\Attendees;
-	    $attendees->setState('filter.id', $tag->{'attendee.id'});
-	    $attendee = $attendees->getItem();
+         	$attendees = new \Rystband\Models\Attendees;
+  	    $attendees->setState('filter.id', $tag->{'attendee.id'});
+  	    $attendee = $attendees->getItem();
       	
-        $this->facebook($attendee);
+        
+
+
         //trigger screen
         if($device->display)  {
         		$displays = new \Dash\Site\Models\Event\Devices;
@@ -22,20 +24,23 @@ class Social extends \Rystband\Controllers\Devices\Base
 				
 	        	$pusher = new \Pusher($display->{'pusher.public'}, $display->{'pusher.private'}, $display->{'pusher.app_id'});
 
-				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
-				$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
+    				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
+    				$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
         }
 
         // trigger phone 
         $pusher = new \Pusher($f3->get('pusher_key'), $f3->get('pusher_secret'), $f3->get('pusher_app_id'));
-		$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
-		
-		$pusher->trigger($tag->tagid, 'index', $data);
+    		$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
+    		$pusher->trigger($tag->tagid, 'index', $data);
+
+        $this->facebook($attendee, $tag, $redirect = false);
+
+
 
     }
 
 
-    public function facebook($user = null) {
+    public function facebook($user = null, $tag = null, $redirect = true ) {
         // require Facebook PHP SDK
         
         $f3 = \Base::instance();
@@ -78,7 +83,18 @@ class Social extends \Rystband\Controllers\Devices\Base
                            \Dsc\System::instance()->addMessage( $e->getMessage(), 'error');
                         }
                         finally {
-                            $f3->reroute('/welcome');
+                          if($redirect) {
+                                if(empty($tag)) {
+                                   $model = new \Rystband\Models\Tags;
+                                  $model->setState('filter.tagid', $tagid);
+                                  
+                                $tag = $model->getItem();
+                      
+                                  }
+
+
+                            $f3->reroute('/band/'.$tag->tagid);
+                           } 
                         }
 
                 }
