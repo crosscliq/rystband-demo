@@ -89,3 +89,49 @@ PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.ph
 PHP message: - /var/www/rystband.com/vendor/dioscouri/f3-lib/src/Dsc/Template.php:159 Dsc\Template->renderLayout('attendee/own.php','text/html',NULL)
 PHP message: - /var/www/rystband.com/apps/Rystband/Controllers/Home.php:22 Dsc\Template->render('attendee/own.php')
 PHP message: - /var/www/rystband.com/vendor/bcosca/fatfree/lib/base.php:1294 Base->call('\Rystband\Controllers\Home->own',array(Base::__set_state(array('hive'=>array('AGENT'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2014/03/31 22:06:43 [error] 18882#0: *24890 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.eot)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 131.107.192.70, server: rystband.com, request: "GET /sales/fonts/dripicons.eot? HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/03/31 22:06:43 [error] 18882#0: *24895 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/fonts/dripicons.woff)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 131.107.192.70, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/03/31 22:07:03 [error] 18882#0: *24900 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /browserconfig.xml)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 131.107.192.70, server: rystband.com, request: "GET /browserconfig.xml HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 22:17:34 [error] 18882#0: *24911 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 180.76.6.14, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:09:39 [error] 18882#0: *24920 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:09:40 [error] 18882#0: *24920 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:10:32 [error] 18882#0: *24938 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:10:32 [error] 18882#0: *24938 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:11:29 [error] 18882#0: *24948 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:11:29 [error] 18882#0: *24948 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:37 [error] 18882#0: *24951 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:37 [error] 18882#0: *24951 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:37 [error] 18882#0: *24954 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:38 [error] 18882#0: *24954 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:41 [error] 18882#0: *24957 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:41 [error] 18882#0: *24957 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:56 [error] 18882#0: *24960 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:12:56 [error] 18882#0: *24960 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 172.56.8.33, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/03/31 23:17:27 [error] 18882#0: *24964 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /browserconfig.xml)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 131.107.192.70, server: rystband.com, request: "GET /browserconfig.xml HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/01 03:24:48 [error] 18882#0: *24983 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 157.56.93.72, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/01 07:39:46 [error] 18882#0: *24998 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 180.76.5.192, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/01 09:44:53 [error] 18882#0: *25005 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 157.55.32.58, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/01 15:37:36 [error] 18882#0: *25041 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:89 Base->run()" while reading response header from upstream, client: 157.56.229.187, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
