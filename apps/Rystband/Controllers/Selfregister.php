@@ -496,7 +496,7 @@ class Selfregister extends Base
                         $model->setState('filter.email', $user_profile->email);
                         if ($user = $model->getItem())
                         {   
-                            $user->set('tagid', $thisTag->tagid);
+                            $user->set('tagid', $thisTag->id);
 
                             $user->set('social.'.$provider.'profile', $adapter->getUserProfile());
                             $user->set('social.'.$provider.'access_token', $adapter->getAccessToken());
@@ -523,7 +523,7 @@ class Selfregister extends Base
             $data = array();
             $data['social'][$provider]['profile'] = $adapter->getUserProfile();
             $data['social'][$provider]['access_token'] = $adapter->getAccessToken();
-            $data['tagid'] = $thisTag->tagid;
+            $data['tagid'] = $thisTag->id;
 
             $data['email'] = $user_profile->email;
             $data['first_name'] = $user_profile->firstName;
