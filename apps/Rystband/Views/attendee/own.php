@@ -22,6 +22,15 @@
       
     } ?>
 
+    <?php if(!empty($user->{'social.facebook.profile'})) :?>
+    <?php foreach($user->{'social.facebook.profile'} as $key => $value) :?>
+    <?php echo $key ?> : <?php echo $value; ?>
+    <?php endforeach;?>
+    <?php endif; ?>
+
+
+
+
         <div class="page-footer">
             <div class="page-footer-content">
             <?php if(@$showselfregister) : ?>
