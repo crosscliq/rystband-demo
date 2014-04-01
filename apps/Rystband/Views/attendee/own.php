@@ -23,8 +23,9 @@
     } ?>
 
     <?php if(!empty($user->{'social.facebook.profile'})) :?>
+    <h1>Facebook</h1>
     <?php foreach($user->{'social.facebook.profile'} as $key => $value) :?>
-    <?php echo $key ?> : <?php echo $value; ?>
+    <?php echo $key ?> : <?php echo $value; ?> <br>
     <?php endforeach;?>
     <?php endif; ?>
 
