@@ -532,9 +532,13 @@ class Selfregister extends Base
             $password      = rand( ) ; # for the password we generate something random
             // 4.1 - create new user
             $model = new \Rystband\Models\Attendees;    
-             $user = $model->create($data);    
+            $user = $model->create($data);    
 
-	$f3->set('SESSION.user', $user);
+            $thisTag->set('attendee.id',$user->_id);
+            $thisTag->set('attendee.name',$user->first_name . ' ' .$user->last_name);
+            $thisTag->save();
+
+	       $f3->set('SESSION.user', $user);
 
            // $this->auth->setIdentity( $user );
         
