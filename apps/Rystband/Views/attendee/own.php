@@ -1,4 +1,4 @@
-
+<style>* { color: #fff !important;}</style>
   <link rel="stylesheet" href="/display/css/superslides.css">
   <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
 
