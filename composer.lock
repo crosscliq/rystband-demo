@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "02a3d338eb764cf44c0a8917b38220ad3322811f"
+                "reference": "7bb2406bfaaa83332e7bf7a37a887da76f48571a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/02a3d338eb764cf44c0a8917b38220ad3322811f",
-                "reference": "02a3d338eb764cf44c0a8917b38220ad3322811f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bb2406bfaaa83332e7bf7a37a887da76f48571a",
+                "reference": "7bb2406bfaaa83332e7bf7a37a887da76f48571a",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2014-03-30 00:20:00"
+            "time": "2014-04-01 00:07:04"
         },
         {
             "name": "bcosca/fatfree",
@@ -348,13 +348,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dioscouri/f3-blog.git",
-                "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38"
+                "reference": "d1fd5d9551fb616860972aab132d29c91ac55616"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-b17df4.zip",
-                "reference": "f18e8f39647504e4ad3e67e6fbde9d9af1c76c38",
-                "shasum": "e9895752f0944dd5559ff8af789d90bce5200c31"
+                "url": "http://satis-private.dioscouri.com/dist/dioscouri-f3-blog-dev-master-b13c6d.zip",
+                "reference": "d1fd5d9551fb616860972aab132d29c91ac55616",
+                "shasum": "12e1b4a8f7495770dea1b166be0485c9f44a46e1"
             },
             "require": {
                 "dioscouri/f3-admin": "dev-master",
@@ -385,7 +385,7 @@
                 "F3",
                 "RAD"
             ],
-            "time": "2014-03-20 18:07:32"
+            "time": "2014-04-01 03:12:13"
         },
         {
             "name": "dioscouri/f3-lib",
@@ -393,21 +393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dioscouri/f3-lib.git",
-<<<<<<< HEAD
-                "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
-                "reference": "51c2f7377f0b960cb025a4f1a9aa6bd18a8baac8",
-=======
                 "reference": "3a478dc97390193207bb3a45a10498f63bb0fefa"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dioscouri/f3-lib/zipball/3a478dc97390193207bb3a45a10498f63bb0fefa",
                 "reference": "3a478dc97390193207bb3a45a10498f63bb0fefa",
->>>>>>> 54f6faf4951b1008d7304fc97a4815ffa01efb0a
                 "shasum": ""
             },
             "require": {
@@ -438,11 +429,7 @@
                 "F3",
                 "rad"
             ],
-<<<<<<< HEAD
-            "time": "2014-03-28 21:06:20"
-=======
             "time": "2014-03-30 16:57:22"
->>>>>>> 54f6faf4951b1008d7304fc97a4815ffa01efb0a
         },
         {
             "name": "dioscouri/f3-mailer",

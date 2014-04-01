@@ -1,84 +1,260 @@
-<style>* { color: #fff !important;}</style>
-  <link rel="stylesheet" href="/display/css/superslides.css">
-  <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
+<?php echo \Dsc\System::instance()->renderMessages(); ?>
 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0" />
+ <script src='/dash/js/jquery.js' type='text/javascript'></script>
+  <link rel="stylesheet" href="/own/profile/css/profile.css">
+    <?php if(@$SESSION['user']) {
+      $user = $SESSION['user'];
 
-    <div class="container">
-    <div id="hidden" style="display:none;"><a class="fancybox"></a></div>
-    <div class="grid">
-      <div class="row">
-        <div class="span12" style="text-align:center;">
-           <h1 class="fg-white"><?php echo @$SESSION['event']->name;?></h1>
-		<hr/>
-            <h2 class="fg-white"><?php echo @$SESSION['event']->dates['start_date'];?></h2>
-        </div>
-      </div>
-    </div>
-    <?php echo \Dsc\System::instance()->renderMessages(); ?>
+?>
+
+<style type="text/css">
+
+ #background {
+     margin-left:-20px;
+     margin-top:-20px;
+     padding-right:30px;
+     padding-bottom:30px;
+     height:100%;
+     width:100%;
+     background:url(<?php echo(str_replace("150","",@$user->{'social.facebook.profile.photoURL'})); ?>) no-repeat;
+     background-size:cover;
+     -webkit-filter: blur(14px);
+    -moz-filter: blur(14px);
+    -o-filter: blur(14px);
+    -ms-filter: blur(14px);
+     filter: blur(14px);
+     opacity: 0.8;" 
+     z-index:-1;
+ }
+ #photo {
+
+	opacity:0;
+	-webkit-transition: all .5s ease-in-out; 
+	display:block;
+	position:absolute;
+	margin: 0;
+	padding:0;
+
+	-webkit-box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;
+	-moz-box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;
+	box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;	
+	-webkit-box-shadow: inset 0px 0px 63px 3px rgba(101, 63, 90, 0.8);
+	border:6px solid rgba(255,255,255,0.4);	
+	-webkit-border-radius:100%;
+	background-size:cover!important;
+	background-position:center;
+	background:rgba(255,255,255,.2);
+       background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'});?>) no-repeat;
+       z-index:10;
+ }
+</style>
+<?php } ?>
+
+</head>
+<body>
 
     <?php if(@$SESSION['user']) {
       $user = $SESSION['user'];
 
-      echo ' Hi! ';
-      echo $user->first_name .' ' . $user->last_name;
-      
-    } ?>
-
-    <?php if(!empty($user->{'social.facebook.profile'})) :?>
-    <h1>Facebook</h1>
-    <div class="profile"> <pre>
-    <?php foreach($user->{'social.facebook.profile'} as $key => $value) :?>
-    <?php echo $key ?> : <?php echo $value; ?> <br>
-    <?php endforeach;?>
-    </pre>
-    </div>
-
-    <div class="share">
-    <a href="/share/facebook" class="share button facebook">Share a Post to Facebook</a>
-    </div>
+?>
 
 
-    <?php endif; ?>
+<audio id="beepsound" src="/own/profile/beep.mp3" preload="auto"></audio>
+<audio id="loadsound" src="/own/profile/whoosh.mp3" preload="auto"></audio>
+<div id="wrapper">
+<div id="media" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Media</p>
+<div class="modalbody">
 
+<table width="100%" cellspacing="2" cellpadding="8" border="0">
+	<tr>
+		<th>Filename</th>
+		<th>Type</th>
+		<th>Options</th>
+	</tr>
+	<tr>
+		<td>file.mp3</td>
+		<td>Audio</td>
+		<td> x y z</td>
+	</tr>
+	<tr>
+		<td>file2.jpg</td>
+		<td>Photo</td>
+		<td> x y z</td>
+	</tr>
+	<tr>
+		<td>file3.doc</td>
+		<td>Document</td>
+		<td> x y z</td>
+	</tr>
+</table>
+</div>
+</div>
+<div id="settings" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
+<div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
+<div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody">this is connections</div></div>
+<div id="glass"><p class="logo">ARM<small>social</small></p></div>
+<div id="photo">
+	<div id="icons">
+		<img src="/own/profile/images/media.png" class='icon itop' tar="#media">
+		<img src="/own/profile/images/settings.png" class='icon ibottom' tar="#settings">
+		<img src="/own/profile/images/connections.png" class='icon ileft' tar="#connections">
+		<img src="/own/profile/images/profile.png" class='icon iright' tar="#profile">
+	</div>
+</div>
 
+<div id="background">
+<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstname'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastname'})); ?><br/><small>Salt Lake City, UT</small></p>
+</div>
+</div>
 
+<?php } ?>
+<style type="text/css">
+body { background:#000; }
+</style>
 
-
-    <?php if(!empty($user->{'social.twitter.profile'})) :?>
-    <h1>Twitter</h1>
-    <div class="profile"> <pre>
-    <?php foreach($user->{'social.twitter.profile'} as $key => $value) :?>
-    <?php echo $key ?> : <?php echo $value; ?> <br>
-    <?php endforeach;?>
-    <?php endif; ?>
-    </pre>
-    </div>
-
-
-
-        <div class="page-footer">
-            <div class="page-footer-content">
-            <?php if(@$showselfregister) : ?>
+<?php if(@$showselfregister) : ?>
             <div id="role" style="text-align:center;">
-            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="button large inverse fg-white" style="width:80%; margin-bottom:25px;background:rgba(229,10,10,0.6)!important">Register your wristband</a>
+            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="button large inverse fg-white" style="width:80%; margin-top:25px;margin-bottom:5px;background:rgba(229,10,10,0.6)!important">Register your wristband</a>
             </div><br><br>
             <div id="role" style="text-align:center;">
-            <a href="/self/signin/<?php echo$tagid; ?>" class="button large warning">Already Registered?</a>
+            <a href="/self/signin/<?php echo$tagid; ?>" class="button large warning" style="width:80%;">Already Registered?</a>
             </div>
              
-            <?php endif; ?>
-            </div>
-        </div>
-    </div>
+<?php endif; ?>
+
+
+
 <?php //easy mode ?>
 <form action="/sysauth" method="post" id="sysform">
   <input id="key" type="hidden" name="authkey">
 </form>
+ 
+
  <script src="/own/fancybox/jquery.fancybox.js" type="text/javascript"></script>
  <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
+  
+<script type="text/javascript">
+
+
+				
+
+
+$(window).resize(function() {
+
+			if ($(document).width() <= $(window).height() ) {
+				var size=$(window).width();
+			} else {
+				var size=$(window).height();       
+			}	
+			$('#photo').css('height',size-30);
+			$('#photo').css('width',size-30);
+
+		
+			var pW=(size-30)/2;
+			var dW=$(document).width()/2
+			var leftL=(dW-pW);
+
+
+			var pH=(size-30)/2;
+			var dH=$(document).height()/2
+			var topL=(dH-pH);
+
+
+			$('#photo').css('top',topL);
+			$('#photo').css('left',leftL);
+
+});
+
+
+		$(window).load(function() {
+			if ($(document).width() <= $(document).height() ) {
+				var size=$(document).width();
+			} else {
+				var size=$(document).height();       
+			}
+
+			$('#photo').css('height',size-30);
+			$('#photo').css('width',size-30);
+
+
+			var pW=(size-30)/2;
+			var dW=$(document).width()/2
+			var leftL=(dW-pW);
+
+			var pH=(size-30)/2;
+			var dH=$(document).height()/2
+			var topL=(dH-pH);
+
+			$('#photo').css('top',topL);
+			$('#photo').css('left',leftL);
+
+			$('#photo').css('opacity',1);
+			$('#icons').css('opacity','0.9');
+			$('.icon').css('opacity','0.9');
+			setTimeout( function () { document.getElementById('loadsound').play(); } , 700);
+			$('#background').blurjs({ 
+				source: '#photo',
+				draggable: false,
+				offset: {
+					x:50,
+					y:0
+				},
+				radius:30
+			});
+
+			$('#background').css('opacity',1);
+			window.scroll(0,0);	
+		});
+
+
 
 	$(document).ready(function() {
+
+
+function goAway() { 
+				document.getElementById('beepsound').play();	
+			 	$('#photo').toggleClass('hidden');
+				 $('.name').toggleClass('blurtext');
+				 $('.logo').toggleClass('blurtext');
+				$('.modal').fadeOut();
+			}
+
+			$('.title').click( function(e) {
+				e.preventDefault();
+				goAway();
+			});
+			$('.navicon').click( function(e) {
+				e.preventDefault();
+				goAway();
+			});
+			$('.icon').on({ 'touchend' : function(e){ 		
+				document.getElementById('beepsound').play();	
+				 e.preventDefault();
+				 $('#photo').toggleClass('hidden');
+				 $('.name').toggleClass('blurtext');
+				 $('.logo').toggleClass('blurtext');
+				 $( $(this).attr('tar')).show(); 
+				 $(this).toggleClass('selected');
+			}});
+
+			$('.icon').click( function(e){ 		
+				document.getElementById('beepsound').play();	
+				 e.preventDefault();
+				 $('#photo').toggleClass('hidden');
+				 $( $(this).attr('tar')).delay(400).fadeIn(); 
+				 $('.name').toggleClass('blurtext');
+				 $('.logo').toggleClass('blurtext');
+				 $(this).toggleClass('selected');
+			});
+
+
+
+
 		$(".fancybox").fancybox();
 	});
     // Enable pusher logging - don't include this in production
@@ -115,3 +291,4 @@
 
 
   </script>
+</body>

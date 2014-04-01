@@ -481,8 +481,7 @@ class Selfregister extends Base
                 $thisTag->set('attendee.name',$user->first_name . ' ' .$user->last_name);
                 $thisTag->save();
 
-	    $f3->reroute('/welcome'); 
-    
+   		$f3->reroute('/band/'.$thisTag->tagid); 
         }
 
            # here lets check if the user email we got from the provider already exists in our database ( for this example the email is UNIQUE for each user )
@@ -508,8 +507,7 @@ class Selfregister extends Base
                             
                //             $this->auth->setIdentity( $user );
 		                    $f3->set('SESSION.user', $user);        
-
-                            $f3->reroute('/welcome');
+$f3->reroute('/band/'.$thisTag->tagid);
                         }
                     } catch ( \Exception $e ) {
                         $this->setError('Invalid Email');
@@ -541,8 +539,7 @@ class Selfregister extends Base
 	       $f3->set('SESSION.user', $user);
 
            // $this->auth->setIdentity( $user );
-        
-            $f3->reroute('/welcome');
+        $f3->reroute('/band/'.$thisTag->tagid);
         }
         catch( \Exception $e ){
             // Display the recived error
