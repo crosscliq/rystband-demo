@@ -498,8 +498,8 @@ class Selfregister extends Base
                         {   
                             $user->set('tagid', $thisTag->id);
 
-                            $user->set('social.'.$provider.'.profile', $adapter->getUserProfile());
-                            $user->set('social.'.$provider.'.access_token', $adapter->getAccessToken());
+                            $user->set('social.'.$provider.'.profile',  (array) $adapter->getUserProfile());
+                            $user->set('social.'.$provider.'.access_token',  (array) $adapter->getAccessToken());
                             $user->save();
                             
                               $thisTag->set('attendee.id',$user->_id);
@@ -521,8 +521,8 @@ class Selfregister extends Base
           
 
             $data = array();
-            $data['social'][$provider]['profile'] = $adapter->getUserProfile();
-            $data['social'][$provider]['access_token'] = $adapter->getAccessToken();
+            $data['social'][$provider]['profile'] = (array) $adapter->getUserProfile();
+            $data['social'][$provider]['access_token'] =  (array) $adapter->getAccessToken();
             $data['tagid'] = $thisTag->id;
 
             $data['email'] = $user_profile->email;
