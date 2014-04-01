@@ -116,7 +116,8 @@ switch ($global_app_name)
          $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
 
          $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
-          $f3->route('GET /facebooktest', '\Rystband\Controllers\Devices\Box\Social->facebook');
+          $f3->route('GET /share/facebook', '\Rystband\Controllers\Devices\Box\Social->facebook');
+          $f3->route('GET /share/twitter', '\Rystband\Controllers\Devices\Box\Social->twitter');
 
          $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
          $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');

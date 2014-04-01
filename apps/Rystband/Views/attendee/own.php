@@ -26,18 +26,33 @@
 
     <?php if(!empty($user->{'social.facebook.profile'})) :?>
     <h1>Facebook</h1>
+    <div class="profile"> <pre>
     <?php foreach($user->{'social.facebook.profile'} as $key => $value) :?>
     <?php echo $key ?> : <?php echo $value; ?> <br>
     <?php endforeach;?>
+    </pre>
+    </div>
+
+    <div class="share">
+    <a href="/share/facebook" class="share button facebook">Share a Post to Facebook</a>
+    </div>
+
+
     <?php endif; ?>
+
+
+
+
 
     <?php if(!empty($user->{'social.twitter.profile'})) :?>
     <h1>Twitter</h1>
+    <div class="profile"> <pre>
     <?php foreach($user->{'social.twitter.profile'} as $key => $value) :?>
     <?php echo $key ?> : <?php echo $value; ?> <br>
     <?php endforeach;?>
     <?php endif; ?>
-
+    </pre>
+    </div>
 
 
 
