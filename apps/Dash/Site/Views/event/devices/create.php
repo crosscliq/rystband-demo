@@ -43,6 +43,7 @@
                 <option value="\Rystband\Controllers\Devices\Box\Login">Box - Login</option> 
                 <option value="\Rystband\Controllers\Devices\Box\Demoaction">Box - Demoaction</option>
                 <option value="\Rystband\Controllers\Devices\Box\Contentdemo">Box - Contentdemo</option>  
+                <option value="\Rystband\Controllers\Devices\Box\Social">Box - Social</option>
             </select>
                        
             </div>

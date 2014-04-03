@@ -8,12 +8,12 @@ class Social extends \Rystband\Controllers\Devices\Base
 
 
     public function index($device, $tag) {
-	
         
         $f3 = \Base::instance();
-         	$attendees = new \Rystband\Models\Attendees;
-  	    $attendees->setState('filter.id', $tag->{'attendee.id'});
-  	    $attendee = $attendees->getItem();
+       	$attendees = new \Rystband\Models\Attendees;
+	    $attendees->setState('filter.id', $tag->{'attendee.id'});
+	    $attendee = $attendees->getItem();
+      	
         //trigger screen
         if($device->display)  {
         		$displays = new \Dash\Site\Models\Event\Devices;
