@@ -12,7 +12,7 @@
 	    <div class="span12 text-center">
 <div class="notice marker-on-top bg-red">
     <h1>Band is already registered</h1>
-    <h2>Please see a Microsoft employee for help.</h2>
+    <h2></h2>
 </div>
 	    </div>
 	  </div>

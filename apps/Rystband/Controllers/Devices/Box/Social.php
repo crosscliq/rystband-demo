@@ -8,11 +8,12 @@ class Social extends \Rystband\Controllers\Devices\Base
 
 
     public function index($device, $tag) {
+	
+        
         $f3 = \Base::instance();
-       	$attendees = new \Rystband\Models\Attendees;
-	    $attendees->setState('filter.id', $tag->{'attendee.id'});
-	    $attendee = $attendees->getItem();
-      	
+         	$attendees = new \Rystband\Models\Attendees;
+  	    $attendees->setState('filter.id', $tag->{'attendee.id'});
+  	    $attendee = $attendees->getItem();
         //trigger screen
         if($device->display)  {
         		$displays = new \Dash\Site\Models\Event\Devices;
@@ -20,25 +21,37 @@ class Social extends \Rystband\Controllers\Devices\Base
 				
 	        	$pusher = new \Pusher($display->{'pusher.public'}, $display->{'pusher.private'}, $display->{'pusher.app_id'});
 
-				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
-				$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
+    				$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
+    				$pusher->trigger($display->{'pusher.channel'}, $display->{'action'}, $data);
         }
 
         // trigger phone 
         $pusher = new \Pusher($f3->get('pusher_key'), $f3->get('pusher_secret'), $f3->get('pusher_app_id'));
-		$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
-		
-		$pusher->trigger($tag->tagid, 'index', $data);
+    		$data = array('device' => (array) $device->cast(), 'tag' => (array) $tag->cast(), 'attendee' => (array) $attendee->cast());
+    		$pusher->trigger($tag->tagid, 'social', $data);
+
+        $this->facebook($attendee, $tag, $redirect = false);
+
+
 
     }
 
+public function routeFacebook() {
+      $f3 = \Base::instance();
+      $user = $f3->get('SESSION.user');
+      $model = new \Rystband\Models\Tags;
+      $model->setState('filter.id', $user->tagid);
+      $tag = $model->getItem();
+      $this->facebook($user, $tag);
+    }
 
-    public function facebook() {
+    public function facebook($user = null, $tag = null, $redirect = true ) {
         // require Facebook PHP SDK
-        
         $f3 = \Base::instance();
 
-        $user = $f3->get('SESSION.user');
+        if(empty($user)) {
+             $user = $f3->get('SESSION.user');
+        }
 
                 if(!empty($user->{'social.facebook.profile'})) {
                 // initialize Facebook class using your own Facebook App credentials
@@ -47,7 +60,6 @@ class Social extends \Rystband\Controllers\Devices\Base
                 $config['appId'] = '108795075865055';
                 $config['secret'] = '34bf0bfb1ede7a0f7cb5febf00c47ed0';
                 $config['fileUpload'] = false; // optional
-                 
                 $fb = new \Facebook($config);
                  
                 // define your POST parameters (replace with your own values)
@@ -73,7 +85,18 @@ class Social extends \Rystband\Controllers\Devices\Base
                            \Dsc\System::instance()->addMessage( $e->getMessage(), 'error');
                         }
                         finally {
-                            $f3->reroute('/welcome');
+                          if($redirect) {
+                                if(empty($tag)) {
+                                   $model = new \Rystband\Models\Tags;
+                                  $model->setState('filter.tagid', $tagid);
+                                  
+                                $tag = $model->getItem();
+                      
+                                  }
+
+
+                            $f3->reroute('/band/'.$tag->tagid);
+                           } 
                         }
 
                 }
@@ -89,3 +112,4 @@ class Social extends \Rystband\Controllers\Devices\Base
 
 }
 ?> 
+

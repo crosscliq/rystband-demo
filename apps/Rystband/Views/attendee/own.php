@@ -1,5 +1,7 @@
 <?php echo \Dsc\System::instance()->renderMessages(); ?>
-
+    <?php if(@$SESSION['user']) {
+      $user = $SESSION['user'];
+    } ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,10 +9,6 @@
 <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0" />
  <script src='/dash/js/jquery.js' type='text/javascript'></script>
   <link rel="stylesheet" href="/own/profile/css/profile.css">
-    <?php if(@$SESSION['user']) {
-      $user = $SESSION['user'];
-
-?>
 
 <style type="text/css">
 
@@ -21,15 +19,15 @@
      padding-bottom:30px;
      height:100%;
      width:100%;
-     background:url(<?php echo(str_replace("150","",@$user->{'social.facebook.profile.photoURL'})); ?>) no-repeat;
+     background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
      background-size:cover;
-     -webkit-filter: blur(14px);
+     
     -moz-filter: blur(14px);
     -o-filter: blur(14px);
     -ms-filter: blur(14px);
      filter: blur(14px);
-     opacity: 0.8;" 
-     z-index:-1;
+     opacity: 0.6;
+     z-index:-10000;
  }
  #photo {
 
@@ -46,23 +44,19 @@
 	-webkit-box-shadow: inset 0px 0px 63px 3px rgba(101, 63, 90, 0.8);
 	border:6px solid rgba(255,255,255,0.4);	
 	-webkit-border-radius:100%;
-	background-size:cover!important;
+	background-size:100%!important;
 	background-position:center;
 	background:rgba(255,255,255,.2);
-       background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'});?>) no-repeat;
+       background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
        z-index:10;
  }
 </style>
-<?php } ?>
+
 
 </head>
 <body>
 
-    <?php if(@$SESSION['user']) {
-      $user = $SESSION['user'];
-
-?>
-
+    <?php if(@$SESSION['user']) { ?>
 
 <audio id="beepsound" src="/own/profile/beep.mp3" preload="auto"></audio>
 <audio id="loadsound" src="/own/profile/whoosh.mp3" preload="auto"></audio>
@@ -94,10 +88,14 @@
 </table>
 </div>
 </div>
+<div id="hidden"></div>
 <div id="settings" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
 <div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
-<div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody">this is connections</div></div>
-<div id="glass"><p class="logo">ARM<small>social</small></p></div>
+<div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody"><a href="http://google.com" class="fb">Share to Facebook</a></div></div>
+<div id="glass"><p class="logo">RYST</p>
+<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?></small></p>
+
+</div>
 <div id="photo">
 	<div id="icons">
 		<img src="/own/profile/images/media.png" class='icon itop' tar="#media">
@@ -107,24 +105,24 @@
 	</div>
 </div>
 
-<div id="background">
-<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstname'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastname'})); ?><br/><small>Salt Lake City, UT</small></p>
+<div id="background pushdown">
 </div>
 </div>
 
 <?php } ?>
-<style type="text/css">
-body { background:#000; }
-</style>
+
 
 <?php if(@$showselfregister) : ?>
+<div class="pushdown">
+
             <div id="role" style="text-align:center;">
-            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="button large inverse fg-white" style="width:80%; margin-top:25px;margin-bottom:5px;background:rgba(229,10,10,0.6)!important">Register your wristband</a>
-            </div><br><br>
+            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="btn" style="">Register your wristband</a>
+            </div><br>
             <div id="role" style="text-align:center;">
-            <a href="/self/signin/<?php echo$tagid; ?>" class="button large warning" style="width:80%;">Already Registered?</a>
+            <a href="/self/signin/<?php echo$tagid; ?>" class="btn" style="">Already Registered?</a>
             </div>
-             
+</div>
+ <div id="glass"><p class="logo">RYST</p>            
 <?php endif; ?>
 
 
@@ -144,31 +142,6 @@ body { background:#000; }
 				
 
 
-$(window).resize(function() {
-
-			if ($(document).width() <= $(window).height() ) {
-				var size=$(window).width();
-			} else {
-				var size=$(window).height();       
-			}	
-			$('#photo').css('height',size-30);
-			$('#photo').css('width',size-30);
-
-		
-			var pW=(size-30)/2;
-			var dW=$(document).width()/2
-			var leftL=(dW-pW);
-
-
-			var pH=(size-30)/2;
-			var dH=$(document).height()/2
-			var topL=(dH-pH);
-
-
-			$('#photo').css('top',topL);
-			$('#photo').css('left',leftL);
-
-});
 
 
 		$(window).load(function() {
@@ -178,21 +151,20 @@ $(window).resize(function() {
 				var size=$(document).height();       
 			}
 
-			$('#photo').css('height',size-30);
-			$('#photo').css('width',size-30);
+			$('#photo').css('height',size-100);
+			$('#photo').css('width',size-100);
 
 
-			var pW=(size-30)/2;
+			var pW=(size-100)/2;
 			var dW=$(document).width()/2
-			var leftL=(dW-pW);
+			var leftL=(dW-pW)-10;
 
-			var pH=(size-30)/2;
+			var pH=(size-100)/2;
 			var dH=$(document).height()/2
 			var topL=(dH-pH);
 
 			$('#photo').css('top',topL);
 			$('#photo').css('left',leftL);
-
 			$('#photo').css('opacity',1);
 			$('#icons').css('opacity','0.9');
 			$('.icon').css('opacity','0.9');
@@ -214,6 +186,31 @@ $(window).resize(function() {
 
 
 	$(document).ready(function() {
+$(window).resize(function() {
+
+			if ($(document).width() <= $(window).height() ) {
+				var size=$(window).width();
+			} else {
+				var size=$(window).height();       
+			}	
+			$('#photo').css('height',size-100);
+			$('#photo').css('width',size-100);
+
+		
+			var pW=(size-100)/2;
+			var dW=$(document).width()/2
+			var leftL=(dW-pW)-10;
+
+
+			var pH=(size-100)/2;
+			var dH=$(document).height()/2
+			var topL=(dH-pH);
+
+
+			$('#photo').css('top',topL);
+			$('#photo').css('left',leftL);
+
+});
 
 
 function goAway() { 
@@ -223,6 +220,10 @@ function goAway() {
 				 $('.logo').toggleClass('blurtext');
 				$('.modal').fadeOut();
 			}
+			$('.fb').click( function(e) {
+				e.preventDefault();
+				window.location.href="/share/facebook";
+			});
 
 			$('.title').click( function(e) {
 				e.preventDefault();
@@ -286,7 +287,10 @@ function goAway() {
       confirm(str);
     });
 
+    channel.bind('social', function(data) {
+      alert('You shared this on Facebook!');
 
+    });
 
 
 

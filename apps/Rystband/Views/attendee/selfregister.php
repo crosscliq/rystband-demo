@@ -1,28 +1,71 @@
+<?php echo \Dsc\System::instance()->renderMessages(); ?>
+    <?php if(@$SESSION['user']) {
+      $user = $SESSION['user'];
+    } ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0" />
+ <script src='/dash/js/jquery.js' type='text/javascript'></script>
+  <link rel="stylesheet" href="/own/profile/css/profile.css">
+
+<style type="text/css">
+
+ #background {
+     margin-left:-20px;
+     margin-top:-20px;
+     padding-right:30px;
+     padding-bottom:30px;
+     height:100%;
+     width:100%;
+     background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
+     background-size:cover;
+     
+    -moz-filter: blur(14px);
+    -o-filter: blur(14px);
+    -ms-filter: blur(14px);
+     filter: blur(14px);
+     opacity: 0.6;
+     z-index:-10000;
+ }
+ #photo {
+
+	opacity:0;
+	-webkit-transition: all .5s ease-in-out; 
+	display:block;
+	position:absolute;
+	margin: 0;
+	padding:0;
+
+	-webkit-box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;
+	-moz-box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;
+	box-shadow:0 2px 5px rgba(0,0,0,0.5) , 0 6px 0 rgba(255,255,255,0.4) inset;	
+	-webkit-box-shadow: inset 0px 0px 63px 3px rgba(101, 63, 90, 0.8);
+	border:6px solid rgba(255,255,255,0.4);	
+	-webkit-border-radius:100%;
+	background-size:100%!important;
+	background-position:center;
+	background:rgba(255,255,255,.2);
+       background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
+       z-index:10;
+ }
+</style>
 
 
-<header class="bg-dark border" data-load="/header-cust"></header>
-    <div class="container">
-  
-	<div class="grid">
-	  <div class="row">
-	    <div class="span12">
-	<?php echo \Dsc\System::instance()->renderMessages();
+</head>
+<body style="">
+ <div class="pushdown" style="padding:10px;margin-top:10px;">
 
-
-    //echo $SESSION['tagid']; ?>
-
-
-            <br>
+		<form method="post" action="<?php echo $PARAMS[0]; ?>">
         <fieldset>
             <legend>Use service</legend>
           
-            &nbsp;&nbsp;<a class="button large inverse fg-white" href="/attendee/social/auth/facebook">Sign-in with Facebook</a><br />
+            <a class="btn" href="/attendee/social/auth/facebook">Sign-in with Facebook</a>
             <br>
-            &nbsp;&nbsp;<a class="button large inverse fg-white" href="/attendee/social/auth/twitter">Sign-in with Twitter</a><br />  
+            <a class="btn" href="/attendee/social/auth/twitter">Sign-in with Twitter</a><br />  
 
         </fieldset>
-	    	     <br/>
-		<form method="post" action="<?php echo $PARAMS[0]; ?>">
 			<fieldset>
                 <legend>Customer Info </legend><br>
                             <label>First Name <span class="required">*</span></label>
@@ -57,7 +100,7 @@
 
 					               		 <input type="hidden" name="selfregistered" value="true"> 
                                         <input type="hidden" name="submitType" value="save_confirm">      
-                                        <input type="submit" value="Activate New Band" class="inverse large">
+                                        <input type="submit" value="Activate New Band" class="btn">
                                    
 
                                     </fieldset>
@@ -74,3 +117,5 @@
             </div>
         </div>
     </div>
+
+</div><div id="glass"><p class="logo">RYST</p>   
