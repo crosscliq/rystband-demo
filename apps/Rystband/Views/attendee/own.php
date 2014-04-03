@@ -56,7 +56,7 @@
 </head>
 <body>
 
-    <?php if(@$SESSION['user']) { ?>
+    <?php if(@$SESSION['user']) :?>
 
 <audio id="beepsound" src="/own/profile/beep.mp3" preload="auto"></audio>
 <audio id="loadsound" src="/own/profile/whoosh.mp3" preload="auto"></audio>
@@ -109,21 +109,6 @@
 </div>
 </div>
 
-<?php } ?>
-
-
-<?php if(@$showselfregister) : ?>
-<div class="pushdown">
-
-            <div id="role" style="text-align:center;">
-            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="btn" style="">Register your wristband</a>
-            </div><br>
-            <div id="role" style="text-align:center;">
-            <a href="/self/signin/<?php echo$tagid; ?>" class="btn" style="">Already Registered?</a>
-            </div>
-</div>
- <div id="glass"><p class="logo">RYST</p>            
-<?php endif; ?>
 
 
 
@@ -295,4 +280,37 @@ function goAway() {
 
 
   </script>
+
+<?php else :  ?>
+
+<?php if(@$showselfregister) : ?>
+<div class="pushdown">
+
+            <div id="role" style="text-align:center;">
+            <a href="/band/<?php echo $tagid; ?>/selfsignup" class="btn" style="">Register your wristband</a>
+            </div><br>
+            <div id="role" style="text-align:center;">
+            <a href="/self/signin/<?php echo$tagid; ?>" class="btn" style="">Already Registered?</a>
+            </div>
+</div>
+ <div id="glass"><p class="logo">RYST</p>            
+<?php else : ?>
+This Band has been activated But you are not logged in.
+
+ <fieldset>
+            <legend>Please Login</legend>
+          
+            <a class="btn" href="/attendee/social/auth/facebook">Sign-in with Facebook</a>
+            <br>
+          
+
+        </fieldset>
+
+
+<?php endif; ?>
+
+
+
+<?php endif; ?>
+
 </body>
