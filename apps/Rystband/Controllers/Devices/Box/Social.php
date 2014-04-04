@@ -8,7 +8,13 @@ class Social extends \Rystband\Controllers\Devices\Base
 
 
     public function index($device, $tag) {
-        
+
+	 if(empty($tag)) {
+
+          echo ' This band has no wristband tag in the tags collection'. "\n";
+          return;
+        }       
+ 
         $f3 = \Base::instance();
          	$attendees = new \Rystband\Models\Attendees;
   	    $attendees->setState('filter.id', $tag->{'attendee.id'});

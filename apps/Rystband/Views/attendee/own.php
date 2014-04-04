@@ -8,8 +8,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0" />
  <script src='/dash/js/jquery.js' type='text/javascript'></script>
-  <link rel="stylesheet" href="/own/profile/css/profile.css">
 
+  <link rel="stylesheet" href="/own/profile/css/profile.css">
+  <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
 <style type="text/css">
 
  #background {
@@ -27,7 +28,7 @@
     -ms-filter: blur(14px);
      filter: blur(14px);
      opacity: 0.6;
-     z-index:-10000;
+     z-index:0;
  }
  #photo {
 
@@ -105,7 +106,7 @@
 	</div>
 </div>
 
-<div id="background pushdown">
+<div id="background">
 </div>
 </div>
 
@@ -273,7 +274,7 @@ function goAway() {
     });
 
     channel.bind('social', function(data) {
-      alert('You shared this on Facebook!');
+      $.fancybox('You shared this on Facebook!');
 
     });
 

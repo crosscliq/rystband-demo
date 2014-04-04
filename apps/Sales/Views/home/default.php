@@ -57,15 +57,18 @@
 		<!-- Start About -->
 		<section class="black-bg">
 			<a id="about"></a>
-			<h2>This is <b>Ryst</b><small>&trade;</small>.</h2>
-			<p>Ryst&trade; is a new platform that enables event marketers and brand activation teams the ability to collect valuable data and effectively entertain an audience, all through a simple platform leveraging your staff's mobile devices. Our Ryst&trade; Bands are easily customized to reflect your event's branding but also can be configured to any number of event activities.  Ryst&trade; uses NFC / RFID to exchange data with mobile devices and event related hardware.</p>
+<h2>Experiencial environments have never been so easy.</h2>
+<p>Ryst&trade; is a new platform that enables event marketers, brand activation teams, and HR teams the ability to collect valuable data and effectively engage an audience. Our Ryst&trade; Bands are easily customized to reflect your branding but also can be configured to any number of activities.  Ryst&trade; uses NFC / RFID to exchange data with mobile devices and related Ryst™ hardware. Contact us today in increase your onsite engagement and data collection.</p>
 			<br/><br/>
 			<!-- Start Slider -->
 			<div class="slider-wrapper mockup">
 				<div class="slider-frame">
 					<ul class="mockup-items">
-						<li><img alt="image" src="/sales/img/mock1.png"></li>
-						<li><img alt="image" src="/sales/img/mock2.png"></li>
+<li><img alt="image" src="/sales/img/experiencial_agency.png"></li>
+<li><img alt="image" src="/sales/img/rfid_wristbands2.png"></li>
+<li><img alt="image" src="/sales/img/rfid.png"></li>
+<li><img alt="image" src="/sales/img/rfid-event.png"></li>
+<li><img alt="image" src="/sales/img/nfc-iphone-ryst.png"></li>
 					</ul>
 				</div>
 				<div class="arrow-wrapper">
@@ -81,7 +84,7 @@
 		<section>
 			<a id="features"></a>
 			<h2>A bit about our <b>platform</b>.</h2>
-			<p>The Ryst&trade;band platform was built as a more cost effective means of using RFID wristbands in smaller brand events, street team events, or sampling events. Ryst&trade; is the most customizable, versatile and best-looking band around; with our easy to use platform and customizable experiences your event will be taken to the next level of engagement!</p>
+			<p>The Ryst&trade;band platform was built as a more cost effective means of using RFID wristbands in smaller brand events, charity galas, sampling events, or HR training workshops. Ryst&trade; incorporates realtime data collection, audience gamification, social integration, and post-event dialogue with your attendees.  The platform provides a complete event technology solution and can be deployed within minutes.</p>
 			<div class="features-wrapper">
 				<div class="feature">
 					<div data-icon="&#xe039;" class="icon"></div>
@@ -90,8 +93,8 @@
 				</div>
 				<div class="feature">
 					<div data-icon="&#xe051;" class="icon"></div>
-					<h3>Completely Mobile</h3>
-					<p>Built entirely on standard mobile hardware, Ryst&trade; is cost effective, scalable, and easy to use almost anywhere.<br/><br/><br/></p>
+<h3>Mobile and Social</h3>
+<p>Quickly increase your social presence through Facebook and Twitter auto status updates. Your attendee's next post is a tap away.<br/><br/><br/></p>
 				</div>
 				<div class="feature">
 					<div data-icon="&#xe036;" class="icon"></div>

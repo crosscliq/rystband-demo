@@ -840,7 +840,7 @@ var spinTime;
 
 function showName(data) {
         
-    $('#player').html(data.attendee.first_name + ' Get Ready to Play!');
+     $('#player').html(data.attendee.first_name + ', Get Ready to Play!');
      $('#player').fadeIn('fast');
 
 
