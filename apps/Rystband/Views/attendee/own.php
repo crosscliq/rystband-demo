@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/own/profile/css/profile.css">
   <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
 <style type="text/css">
-
+ .pop { color:#000!important; }
  #background {
      margin-left:-20px;
      margin-top:-20px;
@@ -89,7 +89,7 @@
 </table>
 </div>
 </div>
-<div id="hidden"></div>
+<div id="hidden" style="display:none;"></div>
 <div id="settings" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
 <div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
 <div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody"><a href="http://google.com" class="fb">Share to Facebook</a></div></div>

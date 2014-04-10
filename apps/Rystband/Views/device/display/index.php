@@ -30,8 +30,8 @@
      	        	text     : str,
    	  	       sticky   : false,
    		       position : 'top-right',
-   	         	badge     : data.attendee.badge,
-
+   	         	//badge     : data.attendee.badge,
+			badge    : 'winner'
    	     	});
  
 	  });

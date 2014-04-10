@@ -57,8 +57,8 @@
 		<!-- Start About -->
 		<section class="black-bg">
 			<a id="about"></a>
-<h2>Experiencial environments have never been so easy.</h2>
-<p>Ryst&trade; is a new platform that enables event marketers, brand activation teams, and HR teams the ability to collect valuable data and effectively engage an audience. Our Ryst&trade; Bands are easily customized to reflect your branding but also can be configured to any number of activities.  Ryst&trade; uses NFC / RFID to exchange data with mobile devices and related Ryst™ hardware. Contact us today in increase your onsite engagement and data collection.</p>
+<h2>Experiential environments have never been so easy.</h2>
+<p>Ryst&trade; is a new platform that enables event marketers, brand activation teams, and HR teams the ability to collect valuable data and effectively engage an audience. Our Ryst&trade; Bands are easily customized to reflect your branding but also can be configured to any number of activities.  Ryst&trade; uses NFC / RFID to exchange data with mobile devices and related Ryst™ hardware. Contact us today to increase your onsite engagement and lead generation.</p>
 			<br/><br/>
 			<!-- Start Slider -->
 			<div class="slider-wrapper mockup">
@@ -89,7 +89,7 @@
 				<div class="feature">
 					<div data-icon="&#xe039;" class="icon"></div>
 					<h3>Data Collection</h3>
-					<p>Ryst&trade; makes data collection easy and fun.  Your audience won't feel pressured to opt-in nor will the experience feel intrusive. Post event re-targeting is as simple as a mouse click.<br/><br/></p>
+					<p>Ryst&trade; makes data collection and lead generation easy and fun.  Your audience won't feel pressured to opt-in nor will the experience feel intrusive. Post event re-targeting can be done through our integrated solution.<br/><br/></p>
 				</div>
 				<div class="feature">
 					<div data-icon="&#xe051;" class="icon"></div>
