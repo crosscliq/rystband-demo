@@ -296,10 +296,10 @@ function goAway() {
 </div>
  <div id="glass"><p class="logo">RYST</p>            
 <?php else : ?>
-This Band has been activated But you are not logged in.
+This Band has been activated but you are not logged in.
 
  <fieldset>
-            <legend>Please Login</legend>
+            <legend>Please Login again</legend>
           
             <a class="btn" href="/attendee/social/auth/facebook">Sign-in with Facebook</a>
             <br>
