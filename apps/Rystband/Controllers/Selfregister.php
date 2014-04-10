@@ -323,7 +323,7 @@ class Selfregister extends Base
         $model = new \Rystband\Models\Tags;
         $thisTag = $model->setState('filter.tagid', $f3->get('PARAMS.tagid'))->getItem();
 	
-	if(empty($thisTag)) {
+	   if(empty($thisTag)) {
 
             $tag = $model->getPrefab();
             $tag->tagid = $f3->get('PARAMS.tagid');
@@ -447,13 +447,14 @@ class Selfregister extends Base
           $tagid = $f3->get('SESSION.tagid');
         
             $model = new \Rystband\Models\Tags;
-            //$thisTag = $model->setState('filter_tagid', $tagid)->getItem();
-            //if(empty($thisTag)) {
+          
+            $thisTag = $model->setState('filter_tagid', $tagid)->getItem();
+            if(empty($thisTag)) {
             $tag = $model->getPrefab();
             $tag->tagid = $tagid;
             $tag->eventid = $f3->get('PARAMS.eventid');
             $thisTag = $model->create((array) $tag);
-          //  }
+            }
            
 
 
