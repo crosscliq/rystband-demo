@@ -97,6 +97,13 @@ switch ($global_app_name)
 
         $f3->route('GET /privacy/policy', '\Rystband\Controllers\Privacy->display');
         
+        $f3->route('GET /cart', '\Rystband\Controllers\Checkout->cart');
+        $f3->route('POST /cart', '\Rystband\Controllers\Checkout->saveCart');
+        $f3->route('GET /checkout', '\Rystband\Controllers\Checkout->checkout');
+        $f3->route('POST /checkout', '\Rystband\Controllers\Checkout->doCheckout');
+        $f3->route('GET /checkout/success', '\Rystband\Controllers\Checkout->success');
+        $f3->route('POST /addproduct', '\Rystband\Controllers\Checkout->addProduct');
+
         $f3->route('GET|POST /logout', function() {
              \Base::instance()->clear('SESSION');
              \Base::instance()->clear('COOKIE');
