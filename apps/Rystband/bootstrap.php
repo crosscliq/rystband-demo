@@ -104,6 +104,9 @@ switch ($global_app_name)
         $f3->route('GET /checkout/success', '\Rystband\Controllers\Checkout->success');
         $f3->route('POST /addproduct', '\Rystband\Controllers\Checkout->addProduct');
 
+        $f3->route('POST /display/cart', '\Rystband\Controllers\Checkout->external');
+
+
         $f3->route('GET|POST /logout', function() {
              \Base::instance()->clear('SESSION');
              \Base::instance()->clear('COOKIE');
