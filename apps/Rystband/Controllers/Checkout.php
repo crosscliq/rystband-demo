@@ -63,6 +63,9 @@ class Checkout extends Base
 	$f3 = \Base::instance();
         $view = new \Dsc\Template;
         $view->setLayout('content.php');
+
+        $attendee = (new \Rystband\Models\Attendees)->setState('filter.id', $f3->get('PARAMS.id'))->getItem();
+
         $f3->set('SESSION.active_role', 'processcart');
         $f3->set('channel', 'cart');
           $products =  $f3->get('SESSION.products');
@@ -70,7 +73,9 @@ class Checkout extends Base
           foreach ($products as $key => $product) {
               $total = $total + $product['price'];     
              }
-           $f3->set('total', $total);
+
+        $f3->set('attendee',$attendee);
+        $f3->set('total', $total);
         $f3->set('availCredits', $total * 3);
              
 
