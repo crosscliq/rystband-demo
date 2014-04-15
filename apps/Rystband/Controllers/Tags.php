@@ -54,6 +54,9 @@ class Tags extends Base
              case 'mc':
                 $this->notallowed($tag, $tagid, $role);
                 break;
+            case 'processcart':
+                $this->processCart($tag, $tagid, $role);
+                break;   
     		default:
            
     			$this->attendeeTapper($tag, $tagid, $role);
@@ -91,6 +94,16 @@ class Tags extends Base
     		\Base::instance()->reroute('/attendee/edit/'.$tag->attendee['id']);	
     	}
     	
+    }
+
+     //Attendee Registration, we check to see if the tag is assigned to a user and bring up an new / edit form.
+    protected function processCart($tag,$tagid,$role) {
+
+       var_dump($tag);
+       var_dump($tagid);
+       var_dump($role);
+       die();
+        
     }
     //Ticketing is  after they are in line they go inside and their ticket is actived
     protected function ticketing($tag, $tagid, $role) {
