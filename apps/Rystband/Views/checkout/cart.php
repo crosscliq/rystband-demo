@@ -2,10 +2,71 @@
 
 
 // THIS THE PRODUCTS PAGE ?>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Order</title>
 
-
-<form action="" method="POST" enctype="multipart/form-data">
-	<input name="products[]">
-
-
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/carts/css/style.css" />
+  </head>
+  <body>
+  <div style="wrapper">
+  <ul class="items">
+     <li>    
+       <a href="#" class="btn item" data-name="Burger" data-items="1">Burger</a>
+     </li>
+     <li>    
+       <a href="#" class="btn item" data-name="Hotdog" data-items="1">Hotdog</a>
+     </li>
+     <li>    
+       <a href="#" class="btn item" data-name="Pretzel" data-items="1">Pretzel</a>
+     </li>
+     <li>    
+       <a href="#" class="btn item" data-name="SM Soda" data-items="1">SM Soda</a>
+     </li>
+     <li>    
+       <a href="#" class="btn item" data-name="MED Soda" data-items="1">MED Soda</a>
+     </li>
+     <li>    
+       <a href="#" class="btn item" data-name="LRG Soda" data-items="1">LRG Soda</a>
+     </li>
+   </ul>
+   <div class="bottom">
+    <a href="#" class="confirm btn green lrg">Confirm Order</a>
+   </div>
+  </div>
+<form action="" method="POST" enctype="multipart/form-data" id="frm">
+	<input type="hidden" id="products" name="products[]">
 </form>
+  <script>
+    $(document).ready(function(){
+      var items= [];
+      
+      $('.confirm').click(function(e){
+	 e.preventDefault();
+		$('#frm').submit();
+	});
+
+
+      $('.item').click(function(e){
+	 e.preventDefault();
+	if ( $(this).hasClass('active')  ) {
+		$(this).data('items', $(this).data('items') + 1);
+		$(this).html( $(this).data('name') + '<small> x' + $(this).data('items') + '</small>');
+	}
+	$(this).addClass('active');
+	 items.push($(this).data('name'));
+
+			$('#products').val(items);
+	$.each(items, function(index, val) {
+	    console.log(val);
+	});
+
+      });
+      
+    });
+  </script>
+  </body>
+</html>

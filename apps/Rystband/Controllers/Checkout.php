@@ -4,11 +4,15 @@ namespace Rystband\Controllers;
 class Checkout extends Base 
 {   
     var $pusher = null;
-    var $products = array( 'pretzel' => array('name' => 'Pretzel', 'price' => 5.00),
-    'burger' => array('name' => 'Burger', 'price' => 7.00) 
+	   var $products = array( 
+        'Pretzel' => array('name' => 'Pretzel', 'price' => 5.00),
+        'MED Soda' => array('name' => 'MED Soda', 'price' => 6.00),
+        'LRG Soda' => array('name' => 'LRG Soda', 'price' => 7.00),
+        'SM Soda' => array('name' => 'SM Soda', 'price' => 8.00),
+        'Hotdog' => array('name' => 'Hotdog', 'price' => 9.00),
+        'Burger' => array('name' => 'Burger', 'price' => 10.00) 
 
         );
-
 
 
     public function cart() {
@@ -23,11 +27,12 @@ class Checkout extends Base
     public function saveCart() {
         $f3 = \Base::instance();
         
-        $products_ids = explode(',', $f3->get('POST.products'));
+        $products_ids = explode(',',$f3->get('POST.products')[0]);
+	
 
         $products = array();
         foreach ($products_ids as $key => $value) {
-            if(is_array($this->products[$value])){
+            if(@is_array($this->products[$value])){
                 $products[] = $this->products[$value];
             }
         }
