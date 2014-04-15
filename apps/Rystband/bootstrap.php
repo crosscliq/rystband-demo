@@ -104,7 +104,7 @@ switch ($global_app_name)
         $f3->route('POST /checkout/@id', '\Rystband\Controllers\Checkout->doCheckout');
         $f3->route('GET /checkout/success', '\Rystband\Controllers\Checkout->success');
         $f3->route('POST /addproduct', '\Rystband\Controllers\Checkout->addProduct');
-         $f3->route('POST /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
+         $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
         $f3->route('POST /display/cart', '\Rystband\Controllers\Checkout->external');
 
 
