@@ -98,10 +98,8 @@ class Tags extends Base
      //Attendee Registration, we check to see if the tag is assigned to a user and bring up an new / edit form.
     protected function processCart($tag,$tagid,$role) {
 
-       var_dump($tag);
-       var_dump($tagid);
-       var_dump($role);
-       die();
+        \Base::instance()->reroute('/checkout/'.$tag->{'attendee.id'};
+
         
     }
     //Ticketing is  after they are in line they go inside and their ticket is actived
