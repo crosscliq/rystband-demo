@@ -26,6 +26,18 @@ class Checkout extends Base
         
     }
 
+    public function buycredits() {
+        $f3 = \Base::instance();
+       
+        $view = new \Dsc\Template;
+        $view->setLayout('content.php');
+        $f3->set('channel', 'cart');
+        echo $view->render('checkout/buycredits.php');
+
+        
+    }
+
+
     public function saveCart() {
         $f3 = \Base::instance();
         $f3->set('channel', 'cart');
