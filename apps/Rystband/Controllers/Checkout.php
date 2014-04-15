@@ -22,6 +22,7 @@ class Checkout extends Base
         $view->setLayout('content.php');
         echo $view->render('checkout/cart.php');
 
+        $f3->set('channel', 'cart');
     }
 
     public function saveCart() {
@@ -38,7 +39,7 @@ class Checkout extends Base
         }
 
         $f3->set('SESSION.products', $products);
-
+         $f3->set('channel', 'cart');
         $f3->reroute('/checkout'); 
        
     }
@@ -50,10 +51,10 @@ class Checkout extends Base
 
         $view = new \Dsc\Template;
         $view->setLayout('content.php');
-        
+
         $f3->get('SESSION.active_role', 'processcart');
     
-
+         $f3->set('channel', 'cart');
         echo $view->render('checkout/checkout.php');
 
     }
@@ -110,6 +111,7 @@ class Checkout extends Base
     public function external() {
            $view = new \Dsc\Template;
         $view->setLayout('content.php');
+        $f3->set('channel', 'cart');
         echo $view->render('checkout/externaldisplay.php');
 
     }
