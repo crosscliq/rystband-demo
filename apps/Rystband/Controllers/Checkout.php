@@ -20,14 +20,15 @@ class Checkout extends Base
        
         $view = new \Dsc\Template;
         $view->setLayout('content.php');
+        $f3->set('channel', 'cart');
         echo $view->render('checkout/cart.php');
 
-        $f3->set('channel', 'cart');
+        
     }
 
     public function saveCart() {
         $f3 = \Base::instance();
-        
+        $f3->set('channel', 'cart');
         $products_ids = explode(',',$f3->get('POST.products')[0]);
 	
 
@@ -39,7 +40,7 @@ class Checkout extends Base
         }
 
         $f3->set('SESSION.products', $products);
-         $f3->set('channel', 'cart');
+     
         $f3->reroute('/checkout'); 
        
     }
