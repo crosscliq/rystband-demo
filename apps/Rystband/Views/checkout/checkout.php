@@ -24,7 +24,7 @@ foreach($products as $product) {
 }?>
 </ul>
 <h3 class="total">Total: <?php echo  $total; ?></h3>
-<h1 class="callout">Tap Band <br>to<br> Complete <br>Transaction</h1>
+<h1 class="callout">Tap Band <br/><small>to</small><br/> Complete<br/>Transaction</h1>
   <form action="" method="post" enctype="">
 
 

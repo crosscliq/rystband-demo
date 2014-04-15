@@ -60,6 +60,7 @@ class Checkout extends Base
 
     }
     public function showPayment() {
+	$f3 = \Base::instance();
         $view = new \Dsc\Template;
         $view->setLayout('content.php');
         $f3->set('SESSION.active_role', 'processcart');
