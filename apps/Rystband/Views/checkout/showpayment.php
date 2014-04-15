@@ -14,7 +14,9 @@
 		<?php echo $total; ?>
 		<?php echo $availCredits; ?>
 		<?php echo $attendee->first_name; ?>
-
+		<form action="" method="POST">
+			<button type="submit"></button>
+		</form>
 	</div>
 
   <script type="text/javascript">
