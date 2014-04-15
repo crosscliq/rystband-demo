@@ -59,7 +59,22 @@ class Checkout extends Base
         echo $view->render('checkout/checkout.php');
 
     }
+    public function showPayment() {
+        $view = new \Dsc\Template;
+        $view->setLayout('content.php');
+        $f3->set('SESSION.active_role', 'processcart');
+        $f3->set('channel', 'cart');
+          $products =  $f3->get('SESSION.products');
+          $total = 0;
+          foreach ($products as $key => $product) {
+              $total = $total + $product['price'];     
+             }
+           $f3->set('total', $total);
+        $f3->set('availCredits', $total * 3);
+             
 
+        echo $view->render('checkout/showpayment.php');
+    }
 
     public function doCheckout() {
         $f3 = \Base::instance();
