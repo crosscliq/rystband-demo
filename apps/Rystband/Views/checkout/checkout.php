@@ -20,10 +20,11 @@ $total=0;
 foreach($products as $product) {
 	$total=$total+$product['price'];	
 //	var_dump($product);
-	echo "<li>".$product['name']."<span>$".number_format($product['price'], 2)."</span></li>";
+	echo "<li>".$product['name']."<span>".$product['price']."</span></li>";
 }?>
 </ul>
-<h3 class="total">Total: <?php echo  "$".number_format($total, 2); ?></h3>
+<h3 class="total">Total: <?php echo  $total; ?></h3>
+<h1 class="callout">Tap Band <br>to<br> Complete <br>Transaction</h1>
   <form action="" method="post" enctype="">
 
 

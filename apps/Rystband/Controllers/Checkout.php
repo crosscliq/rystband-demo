@@ -53,7 +53,7 @@ class Checkout extends Base
         $view = new \Dsc\Template;
         $view->setLayout('content.php');
 
-        $f3->get('SESSION.active_role', 'processcart');
+        $f3->set('SESSION.active_role', 'processcart');
     
          $f3->set('channel', 'cart');
         echo $view->render('checkout/checkout.php');

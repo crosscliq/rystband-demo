@@ -48,7 +48,9 @@
       
       $('.confirm').click(function(e){
 	 e.preventDefault();
+	      if (items.length !==0 ) {
 		$('#frm').submit();
+	      }
 	});
 
 

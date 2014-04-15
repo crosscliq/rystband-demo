@@ -19,7 +19,6 @@ class Tags extends Base
     	$tag = $model->getItem();
 
     	$role = $f3->get('SESSION.active_role');
-    	
     	switch ($role) {
     		//Attendee Registration, we check to see if the tag is assigned to a user and bring up an new / edit form.
     		case 'attendee_registration':
