@@ -13,7 +13,7 @@
   <div style="wrapper">
 		<?php echo $total; ?>
 		<?php echo $availCredits; ?>
-
+		<?php echo $attendee->first_name; ?>
 
 	</div>
 

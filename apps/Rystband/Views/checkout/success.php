@@ -11,7 +11,7 @@
   </head>
   <body>
   <div style="wrapper">
-	
+	Success Page
 	</div>
 
   <script type="text/javascript">
