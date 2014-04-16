@@ -32,7 +32,7 @@ class Photo extends Base
             $overwrite = true; // set to true, to overwrite an existing file; Default: false
             $slug = true; // rename file to filesystem-friendly version
             
-            if($f3->set('POST.begin')) {
+            if($f3->get('POST.begin')) {
 
                 $pusher = new \Pusher($item->{'pusher.public'}, $item->{'pusher.private'}, $item->{'pusher.app_id'});
 
