@@ -29,7 +29,7 @@ class Photo extends Base
             $attendees->setState('filter.id', $tag->{'attendee.id'});
             $attendee = $attendees->getItem();
 
-            $overwrite = false; // set to true, to overwrite an existing file; Default: false
+            $overwrite = true; // set to true, to overwrite an existing file; Default: false
             $slug = true; // rename file to filesystem-friendly version
             
             $web = \Web::instance();
