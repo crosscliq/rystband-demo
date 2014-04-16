@@ -45,10 +45,10 @@ class Photo extends Base
             $overwrite,
             $slug
         );
-            $photos = array()
+            $photos = array();
             if(is_array($attendee->photos)) {
                 foreach ($attendee->photos as $key => $photo) {
-                   $photos[] = $photo
+                   $photos[] = $photo;
                 }
             }
              $photos[] = key($files[0]);
