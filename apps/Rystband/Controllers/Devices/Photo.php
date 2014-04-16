@@ -51,7 +51,7 @@ class Photo extends Base
                    $photos[] = $photo;
                 }
             }
-             $photos[] = key($files[0]);
+             $photos[] = key($files);
             $attendee->photos = $photos;
 
             $attendee->save();
