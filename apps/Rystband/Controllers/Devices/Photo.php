@@ -45,8 +45,8 @@ class Photo extends Base
             $overwrite,
             $slug
         );
-
-            $attendee->files = $files;
+            
+            $attendee->photos[] = $files;
 
             $attendee->save();
 
