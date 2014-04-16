@@ -50,8 +50,7 @@ class Photo extends Base
 
             $attendee->save();
 
-            $f3->set('channel', $channel);
-        
+            
             
 
     }
