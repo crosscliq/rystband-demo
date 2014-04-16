@@ -16,7 +16,6 @@ class Photo extends Base
 
     public function processImage() {
 
-        echo 'processImage'; die();
 
             $route = \Base::instance()->get('PARAMS[0]');
             $peices = explode('/', $route);
@@ -47,8 +46,8 @@ class Photo extends Base
             $slug
         );
 
+            $attendee->files = $files;
 
-            $attendee->authkey = rand();
             $attendee->save();
 
             $f3->set('channel', $channel);
