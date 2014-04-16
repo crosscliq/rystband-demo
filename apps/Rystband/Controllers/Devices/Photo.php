@@ -70,7 +70,7 @@ class Photo extends Base
 
                     $attendee->save();
 
-                       $pusher = new \Pusher($f3->get('pusher_key'),$f3->get('pusher_secret') , $f3->get('pusher_app_id'));
+                    $pusher = new \Pusher($f3->get('pusher_key'),$f3->get('pusher_secret') , $f3->get('pusher_app_id'));
 
             $data = array('attendee' => $attendee->cast(), 'photo' =>  key($files));
             
