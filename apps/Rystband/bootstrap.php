@@ -104,17 +104,14 @@ switch ($global_app_name)
         $f3->route('POST /checkout/@id', '\Rystband\Controllers\Checkout->doCheckout');
         $f3->route('GET /checkout/success', '\Rystband\Controllers\Checkout->success');
         $f3->route('POST /addproduct', '\Rystband\Controllers\Checkout->addProduct');
-         $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
+        $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
         $f3->route('POST /display/cart', '\Rystband\Controllers\Checkout->external');
-
-
         $f3->route('GET|POST /logout', function() {
              \Base::instance()->clear('SESSION');
              \Base::instance()->clear('COOKIE');
              setcookie('id','',time()-3600);
              \Base::instance()->reroute('/');
         });          
-        
         // append this app's UI folder to the path
         $ui = $f3->get('UI');
         $ui .= ";" . $f3->get('PATH_ROOT') . "apps/Rystband/Views/";
@@ -123,16 +120,13 @@ switch ($global_app_name)
         // append this app's UI folder to the path
         \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Rystband/Views/', 'Rystband/Views/' );
         
-
-         $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
-
-         $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
-          $f3->route('GET /share/facebook', '\Rystband\Controllers\Devices\Box\Social->routeFacebook');
-          $f3->route('GET /share/twitter', '\Rystband\Controllers\Devices\Box\Social->twitter');
-
-         $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
-         $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');
-         $f3->route('GET /content/car', '\Rystband\Controllers\Devices\Content->car');  
+        $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
+        $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
+        $f3->route('GET /share/facebook', '\Rystband\Controllers\Devices\Box\Social->routeFacebook');
+        $f3->route('GET /share/twitter', '\Rystband\Controllers\Devices\Box\Social->twitter');
+        $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 
+        $f3->route('GET /content/@name', '\Rystband\Controllers\Devices\Content->@name');
+        $f3->route('GET /content/car', '\Rystband\Controllers\Devices\Content->car');  
 
         
         
