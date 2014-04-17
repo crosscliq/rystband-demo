@@ -19,7 +19,11 @@
      padding-bottom:30px;
      height:100%;
      width:100%;
+     <?php if(@$user->{'social.facebook.profile.photoURL'}) :?>
      background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
+     <?php else :?>
+     background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat; 
+     <?php endif :?>
      background-size:cover;
      
     -moz-filter: blur(14px);
@@ -47,7 +51,12 @@
 	background-size:100%!important;
 	background-position:center;
 	background:rgba(255,255,255,.2);
-       background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
+     <?php if(@$user->{'social.facebook.profile.photoURL'}) :?>
+     background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
+     <?php else :?>
+     background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
+     <?php endif :?>
+       
        z-index:10;
  }
 </style>
@@ -63,8 +72,7 @@
           
             <a class="btn" href="/attendee/social/auth/facebook">Sign-in with Facebook</a>
             <br>
-            <a class="btn" href="/attendee/social/auth/twitter">Sign-in with Twitter</a><br />  
-
+           
         </fieldset>
 			<fieldset>
                 <legend>Customer Info </legend><br>
