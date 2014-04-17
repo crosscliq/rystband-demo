@@ -90,6 +90,10 @@ class Selfregister extends Base
                 $tag->save();
             }
 
+            \Base::instance()->set('SESSION.user', $this->item);
+            
+            $f3->reroute('/band/'.$tag->tagid);
+           
 
         }
         catch (\Exception $e) {
