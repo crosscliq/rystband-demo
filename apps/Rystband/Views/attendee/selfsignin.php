@@ -12,23 +12,7 @@
 
 <style type="text/css">
 
- #background {
-     margin-left:-20px;
-     margin-top:-20px;
-     padding-right:30px;
-     padding-bottom:30px;
-     height:100%;
-     width:100%;
-     background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
-     background-size:cover;
-     
-    -moz-filter: blur(14px);
-    -o-filter: blur(14px);
-    -ms-filter: blur(14px);
-     filter: blur(14px);
-     opacity: 0.6;
-     z-index:-10000;
- }
+
  #photo {
 
 	opacity:0;
