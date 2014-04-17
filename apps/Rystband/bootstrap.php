@@ -38,6 +38,10 @@ switch ($global_app_name)
         $f3->route('POST /band/@tagid/selfsignup', '\Rystband\Controllers\Selfregister->add');
         $f3->route('GET /band/@id/registerconfirm', '\Rystband\Controllers\Selfregister->registerconfirm');
         $f3->route('GET /band/@tagid/alreadyregistered', '\Rystband\Controllers\Selfregister->alreadyregistered');
+        $f3->route('GET /band/@tagid/credits', '\Rystband\Controllers\Checkout->buycredits');
+
+
+
         $f3->route('GET /empty', '\Rystband\Controllers\Tags->displayEmpty');
 
          $f3->route('POST /self/assign/tag/@tagid', '\Rystband\Controllers\Selfregister->assign');
@@ -105,6 +109,9 @@ switch ($global_app_name)
         $f3->route('GET /checkout/success', '\Rystband\Controllers\Checkout->success');
         $f3->route('POST /addproduct', '\Rystband\Controllers\Checkout->addProduct');
         $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
+
+        $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
+
         $f3->route('POST /display/cart', '\Rystband\Controllers\Checkout->external');
         $f3->route('GET|POST /logout', function() {
              \Base::instance()->clear('SESSION');

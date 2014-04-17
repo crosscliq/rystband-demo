@@ -30,6 +30,18 @@ class Checkout extends Base
         $f3 = \Base::instance();
        
         $view = new \Dsc\Template;
+        
+        $tagid = $f3->get('PARAMS.tagid');
+        $tags = new \Rystband\Models\Tags;
+        $tags->setState('filter.tagid', $tagid);
+        $tag = $tags->getItem();
+
+        $attendees = new \Rystband\Models\Attendees;
+        $attendees->setState('filter.id', $tag->{'attendee.id'});
+        $attendee = $attendees->getItem();
+         $f3->set('tag', $tag);
+         $f3->set('attendee', $attendee);
+
         $view->setLayout('content.php');
         $f3->set('channel', 'cart');
         echo $view->render('checkout/buycredits.php');
