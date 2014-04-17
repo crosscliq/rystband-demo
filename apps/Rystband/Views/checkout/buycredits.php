@@ -11,8 +11,8 @@
   </head>
   <body>
   <div style="wrapper"><br/><br/>
-<h1 class="callout total">Ian</h1>
-<h3 class="sub">Available Credits: <span class="total">82</span></h3>
+<h1 class="callout total"><?php echo @$attendee->first_name ?></h1>
+<h3 class="sub">Available Credits: <span class="total"><?php echo @$attendee->credits ?></span></h3>
 <h4 class="total">Purchase Credits:</h4>
 <ul class="items">
 <li><input type="radio">50 Credits</li>
