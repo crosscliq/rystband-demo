@@ -36,6 +36,7 @@
 		<li><a href="#home" class="active">Home</a></li>
 		<li><a href="#about">About</a></li>
 		<li><a href="#features">Platform</a></li>
+		<li><a href="#usage">Where to use</a></li>
 		<li><a href="#more">How it Works</a></li>
 		<!-- <li><a href="#gallery">Gallery</a></li> -->
 		<li><a href="#signup">Sign Up</a></li>
@@ -108,6 +109,45 @@
 			</div>
 		</section>
 		<!-- End Features -->
+
+		<!-- Start Usage -->
+		<section>
+			<a id="usage"></a>
+			<h2>Where to use It</h2>
+	<div class="features-wrapper">
+				<div class="feature">
+					<div data-icon="&#xe036;" class="icon"></div>
+					<h3>Golf Tournaments</h3>
+				</div>
+				<div class="feature">
+					<div data-icon="&#xe041;" class="icon"></div>
+					<h3>Music Festivals</h3>
+				</div>
+				<div class="feature">
+					<div data-icon="&#xe046;" class="icon"></div>
+					<h3>Resorts</h3>
+				</div>
+	</div>
+	<div class="features-wrapper">
+
+				<div class="feature">
+					<div data-icon="&#xe082;" class="icon"></div>
+					<h3>Conventions</h3>
+				</div>
+				<div class="feature">
+					<div data-icon="&#xe040;" class="icon"></div>
+					<h3>Brand Events</h3>
+				</div>
+				<div class="feature">
+					<div data-icon="&#xe090;" class="icon"></div>
+					<h3>Grand Openings</h3>
+				</div>
+
+			</div>
+
+		</section>
+		<!-- End Usage -->
+
 
 		<!-- Start More -->
 		<section class="black-bg">

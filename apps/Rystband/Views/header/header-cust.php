@@ -1,4 +1,4 @@
-<div class="navigation-bar dark cust-nav">
+<!--<div class="navigation-bar dark cust-nav">
     <div class="navigation-bar-content container">
         <a href="/home" class="element"><img src="images/logo.png"></a>
         <span class="element-divider"></span>
@@ -8,3 +8,4 @@
 
     </div>
 </div>
+-->

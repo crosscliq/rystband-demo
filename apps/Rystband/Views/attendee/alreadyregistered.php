@@ -3,11 +3,11 @@
     <div class="container">
   
 	<div class="grid"><br>
-	  <div class="row">
+	<!--  <div class="row">
 	    <div class="span12 text-center">
 		     <img src="/site/images/tap.png" class="span12">
 	    </div>
-	  </div>
+	  </div> -->
 	  <div class="row">
 	    <div class="span12 text-center">
 <div class="notice marker-on-top bg-red">

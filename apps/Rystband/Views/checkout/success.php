@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="/carts/css/style.css" />
   </head>
   <body>
-  <div style="wrapper">
-	Success Page
+  <div style="wrapper"><br/><br/>
+<h1 class="callout total">Thanks!, <br/>Your Transaction<br/> Is Complete!</h1>
 	</div>
 
   <script type="text/javascript">

@@ -591,9 +591,9 @@ a.social.twitter {
 	margin: 50px auto 0px auto;
 }
 .feature {
-	display: inline-block;
+	display: table-cell;
 	width: 270px;
-	height: 250px;
+	height: 280px!important;
 	margin: 10px;
 }
 h2.dots {

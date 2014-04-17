@@ -20,6 +20,14 @@ switch ($global_app_name)
         });
 
         
+        $f3->route('GET /features/golf', function($f3) {
+
+            
+        $view = new \Dsc\Template;
+        echo $view->render('features/golf.php');
+        });
+
+
         // TODO set some app-specific settings, if desired
         // append this app's UI folder to the path
         $ui = $f3->get('UI');

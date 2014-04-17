@@ -1,4 +1,5 @@
 body {
+	overflow-x:hidden;
 	padding:10px 0px 0px 0px;
 	margin:0px;
 	background: rgb(0,0,0); /* Old browsers */
@@ -128,8 +129,9 @@ body {
 	position: absolute;
 	bottom: 10;
 }
-.total { text-align:center; color:#00ff00; }
+.total { text-align:center; color:#72f183; }
 .sum { margin:auto; width:92%; list-style:none; margin:0px;padding:10px;}
 .sum li { padding:5px; border-bottom:1px solid #666;  list-style:none;}
 .sum li span { float:right; }
 .callout { text-align:center; width:80%; margin:auto; padding:20px;}
+.sub { width:100%; text-align:center; border-bottom:1px solid #666; padding-bottom:10px;}

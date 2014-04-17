@@ -36,7 +36,7 @@
      </li>
    </ul>
    <div class="bottom">
-    <a href="#" class="confirm btn green lrg">Confirm Order</a>
+    <a href="/cart" class="confirm btn green lrg">Confirm Order</a>
    </div>
   </div>
 <form action="" method="POST" enctype="multipart/form-data" id="frm">
