@@ -91,7 +91,7 @@
 </div>
 <div id="hidden" style="display:none;"></div>
 <div id="settings" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
-<div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
+<div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody"><a href="<?php echo $PARAMS[0] ?>/credits" class="fb">Manage Credits / Buy Credits</a></div></div>
 <div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody"><a href="http://google.com" class="fb">Share to Facebook</a></div></div>
 <div id="glass"><p class="logo">RYST</p>
 <p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?></small></p>
