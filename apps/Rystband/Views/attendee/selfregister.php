@@ -23,7 +23,7 @@
      background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
      <?php else :?>
      background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat; 
-     <?php endif :?>
+     <?php endif ;?>
      background-size:cover;
      
     -moz-filter: blur(14px);
@@ -55,7 +55,7 @@
      background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
      <?php else :?>
      background:url('<?php echo(str_replace("150","250",@$user->{'social.facebook.profile.photoURL'}));?>') no-repeat;
-     <?php endif :?>
+    <?php endif ;?>
        
        z-index:10;
  }
