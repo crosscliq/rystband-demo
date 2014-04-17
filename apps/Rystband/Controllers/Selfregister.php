@@ -390,8 +390,9 @@ class Selfregister extends Base
 
     	
     	if(!empty($tag->attendee)) {
-    		$f3->reroute('/band/'.$f3->get('PARAMS.tagid').'/alreadyregistered');
+    		$f3->reroute('/band/'.$f3->get('PARAMS.tagid'));
     	}
+        
          $flash = \Dsc\Flash::instance();
          $f3->set('flash',$flash );
 
