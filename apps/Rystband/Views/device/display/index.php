@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Rystband-TV Autoshow Demo</title>
+  <title>Rystband Display</title>
   <link rel="stylesheet" href="/display/css/superslides.css">
   <link rel="stylesheet" href="/display/css/jquery.toastmessage.css" />
 
 </head>
-<body id="car">
+<body id="" style="background:url('../../photo/assets/img/bg2.jpg') no-repeat; background-size:cover; background-position:top center;">
 
   <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
   <script src="/display/javascripts/jquery.easing.1.3.js"></script>
@@ -24,7 +24,7 @@
 	var channel = pusher.subscribe("<?php echo $item->{'pusher.channel'}; ?>");
 	  channel.bind('index', function(data) {
 	    console.log(data);
-	    str = data.attendee.first_name + ' ' + data.attendee.last_name + '<p class="bottom"> Has checked in.<p>';
+	    str = data.attendee.first_name + ' ' + data.attendee.last_name + ' <br/>Has checked in.';
 
         	$().toastmessage('showToast', {
      	        	text     : str,

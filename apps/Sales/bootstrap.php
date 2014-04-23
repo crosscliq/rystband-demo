@@ -27,6 +27,12 @@ switch ($global_app_name)
         echo $view->render('features/golf.php');
         });
 
+        $f3->route('GET /tellus', function($f3) {
+
+            
+        $view = new \Dsc\Template;
+        echo $view->render('features/tellus.php');
+        });
 
         // TODO set some app-specific settings, if desired
         // append this app's UI folder to the path

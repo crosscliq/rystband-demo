@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/own/profile/css/profile.css">
 
 <style type="text/css">
-
+body {overflow:auto!important; }
  #background {
      margin-left:-20px;
      margin-top:-20px;
@@ -63,13 +63,13 @@
 
 
 </head>
-<body style="">
- <div class="pushdown" style="padding:10px;margin-top:10px;">
+<body style="height:100%!important; overflow-x:scroll!important;padding-bottom:200px!important;">
+ <div class="">
 
 		<form method="post" action="<?php echo $PARAMS[0]; ?>">
         <fieldset>
             <legend>Use service</legend>
-          
+          <br/>
             <a class="btn" href="/attendee/social/auth/facebook">Sign-in with Facebook</a>
             <br>
            
@@ -103,6 +103,7 @@
                     
         <br/><br/>
                                         </div>
+
                                          <legend></legend>
           
 
@@ -126,4 +127,4 @@
         </div>
     </div>
 
-</div><div id="glass"><p class="logo">RYST</p>   
+</div><!--<div id="glass"><p class="logo">RYST</p>   -->

@@ -26,7 +26,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: "Lato", Verdana, Arial, sans-serif;
 	vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -458,11 +458,11 @@ ul.slider-items li .caption {
 	padding: 0% 10%;
 }
 .arrow-wrapper {
-	position: absolute;
-	width: 90%;
-	top: 45%;
+	position: relative;
+	width: 100%;
+	top: 25%;
 	height: 122px;
-	margin-left: 5%;
+	margin-left: 0%;
 	z-index: 5;
 }
 .slider-wrapper div.arrow {
@@ -485,7 +485,7 @@ ul.slider-items li .caption {
 	Mockup Slider
 ******************************************************************/
 .slider-wrapper.mockup {
-	position: absolute;
+
 	width: 60%;
 	margin-left: 20%;
 	height: auto;
@@ -634,6 +634,67 @@ h2.dots {
 /******************************************************************
 	Sign Up
 ******************************************************************/
+#you {
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all  0.3s;
+	transition: all 0.3s;
+
+}
+.input{
+	width: 215px;
+	height: 25px;
+	border: 1px solid #FFF;
+	outline: none;
+	background-color: transparent;
+	line-height: 25px;
+	font-family: "Lato", Verdana, Arial, sans-serif;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+option { color:#666;}
+option:hover { color:#fff;background:#666; }
+.select{
+	width: 247px;
+	height: 35px;
+	border: 1px solid #FFF;
+	outline: none;
+	background-color: transparent;
+	line-height: 25px;
+	font-family: "Lato", Verdana, Arial, sans-serif;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px;
+	text-align: center;
+	margin: 10px 0px 0px 4px;
+}
+.btn {
+	margin: 10px 0px 0px 0px;
+	padding: 10px 20px;
+	border: 1px solid #FFF;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 300;
+	width: 250px;
+	height: 60px;
+	background:rgba(255,255,255,0.1);
+	line-height: 60px;
+	padding: 0px;
+	-webkit-transition: all 0.3s;
+}
+.btn:hover {
+	color: #999;
+	background-color: #FFF;
+}
+
 .signup {
 	width: 460px;
 	margin-left: auto;
@@ -708,6 +769,8 @@ a.button:hover {
 	color: #999;
 	background-color: #FFF;
 }
+
+
 
 /******************************************************************
 	jQuery UI
@@ -792,13 +855,13 @@ a.button:hover {
 		background-image: url(../img/logo-small.png)!important; 
 		left:30px;
 		height:44px;
-		width:150px;
+		width:120px;
 	}
 	.logo2 { 
 		background-image: url(../img/logo2-small.png)!important; 
 		left:30px;
 		height:44px;
-		width:150px;
+		width:120px;
 	}
 	section img {
 		margin-left: auto;

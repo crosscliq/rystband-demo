@@ -13,23 +13,7 @@
   <link rel="stylesheet" href="/own/fancybox/jquery.fancybox.css">
 <style type="text/css">
  .pop { color:#000!important; }
- #background {
-     margin-left:-20px;
-     margin-top:-20px;
-     padding-right:30px;
-     padding-bottom:30px;
-     height:100%;
-     width:100%;
-     background:url(<?php echo(@$user->{'social.facebook.profile.photoURL'}); ?>) no-repeat;
-     background-size:cover;
-     
-    -moz-filter: blur(14px);
-    -o-filter: blur(14px);
-    -ms-filter: blur(14px);
-     filter: blur(14px);
-     opacity: 0.6;
-     z-index:0;
- }
+
  #photo {
 
 	opacity:0;
@@ -55,7 +39,7 @@
 
 
 </head>
-<body>
+<body style="margin:0px!important;">
 
     <?php if(@$SESSION['user']) :?>
 
@@ -90,17 +74,16 @@
 </div>
 </div>
 <div id="hidden" style="display:none;"></div>
-<div id="settings" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
-<div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody"><a href="<?php echo $PARAMS[0] ?>/credits" class="fb">Manage Credits / Buy Credits</a></div></div>
+<div id="settings" class="modal"><a href="/credits" class="navico"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
+<div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
 <div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody"><a href="http://google.com" class="fb">Share to Facebook</a></div></div>
-<div id="glass"><p class="logo">RYST</p>
-<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?></small></p>
+<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?><br/><a style="color:#fff; text-decoration:none; " href="/logout">logout</a></p>
 
 </div>
 <div id="photo">
 	<div id="icons">
 		<img src="/own/profile/images/media.png" class='icon itop' tar="#media">
-		<img src="/own/profile/images/settings.png" class='icon ibottom' tar="#settings">
+		<img src="/own/profile/images/settings.png" class='icon ibottom' onClick="window.location.href='<?php echo $PARAMS[0] ?>/credits'">
 		<img src="/own/profile/images/connections.png" class='icon ileft' tar="#connections">
 		<img src="/own/profile/images/profile.png" class='icon iright' tar="#profile">
 	</div>
@@ -123,11 +106,6 @@
  <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
   
 <script type="text/javascript">
-
-
-				
-
-
 
 
 		$(window).load(function() {
@@ -274,7 +252,7 @@ function goAway() {
     });
 
     channel.bind('social', function(data) {
-      $.fancybox('You shared this on Facebook!');
+      $.fancybox('You shared this on !');
 
     });
 
@@ -294,9 +272,9 @@ function goAway() {
             <a href="/self/signin/<?php echo$tagid; ?>" class="btn" style="">Already Registered?</a>
             </div>
 </div>
- <div id="glass"><p class="logo">RYST</p>            
+ <!--div id="glass"><p class="logo">RYST</p>     -->       
 <?php else : ?>
-
+<div style="height:100px;!important;">&nbsp;</div>
 
  <fieldset>
             This Band has been activated but you are not logged in.<br/><br/>
