@@ -34,6 +34,18 @@ switch ($global_app_name)
         echo $view->render('features/tellus.php');
         });
 
+        $f3->route('POST /tellus', function($f3) {
+
+            $post = $f3->get('POST');
+            $f3->set('posted', $post);
+
+            $html = \Dsc\System::instance()->get( 'theme' )->renderView( 'Sales/Views::email/tellus.php' );
+
+            \Dsc\System::instance()->get('mailer')->send('chris@ammonitenetworks.com', 'New Rystband Tell Us', array($html) );
+
+        });
+
+
         // TODO set some app-specific settings, if desired
         // append this app's UI folder to the path
         $ui = $f3->get('UI');
