@@ -35,15 +35,15 @@
 				
 					<form  method="post">
 						<div id="you">
-						<input type="text" class="input" placeholder="Your Name"></br>
-						<input type="email" class="input" placeholder="Your@email"></br>
-						<input type="text" class="input" placeholder="Your Company Name"></br>
-						<input type="tel" class="input" placeholder="Your Phone #"></br>
+						<input type="text" class="input" name="name" placeholder="Your Name"></br>
+						<input type="email" class="input" name="email" placeholder="Your@email"></br>
+						<input type="text" class="input" name="company" placeholder="Your Company Name"></br>
+						<input type="tel" class="input" name="phone" placeholder="Your Phone #"></br>
 						<input type="submit" class="btn" value="Next">			
 						</div>
 						<div id="event" style="display:none;">
-						<input type="text" class="input" placeholder="Event Name"></br>
-						<select name="type" class="select">
+						<input type="text" class="input" name="event_name" placeholder="Event Name"></br>
+						<select name="event_type" class="select">
 							<option>Event Type</option>
 							<option>Festival</option>
 							<option>Race (running)</option>
@@ -55,11 +55,11 @@
 						</select>
 						</br>
 
-						<input type="datetime" class="input" id="date" placeholder="Event Date"></br>
-						<input type="number" class="input" placeholder="# of Attendees ( Estimated )"></br>
-						<input type="text" class="input" placeholder="Venue Name"></br>
-						<input type="number" class="input" placeholder="# of locations"></br>
-						<select name="type" class="select">
+						<input type="datetime" name="event_date" class="input" id="date" placeholder="Event Date"></br>
+						<input type="number" name="attendees" class="input" placeholder="# of Attendees ( Estimated )"></br>
+						<input type="text" name="venue_name" class="input" placeholder="Venue Name"></br>
+						<input type="number" name="number_locations" class="input" placeholder="# of locations"></br>
+						<select name="supprt" class="select">
 							<option>On-site Support Required?</option>
 							<option>Yes</option>
 							<option>No</option>
