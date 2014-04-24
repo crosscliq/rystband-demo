@@ -38,7 +38,8 @@ switch ($global_app_name)
 
             $post = $f3->get('POST');
             $f3->set('posted', $post);
-
+            \Dsc\System::instance()->get('theme')->setTheme('Theme', $f3->get('PATH_ROOT') . 'apps/Theme/' );
+            \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Sales/Views/', 'Sales/Views' );
             $html = \Dsc\System::instance()->get( 'theme' )->renderView( 'Sales/Views::email/tellus.php' );
 
             \Dsc\System::instance()->get('mailer')->send('chris@ammonitenetworks.com', 'New Rystband Tell Us', array($html) );
