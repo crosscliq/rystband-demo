@@ -44,6 +44,9 @@ switch ($global_app_name)
 
             \Dsc\System::instance()->get('mailer')->send('chris@ammonitenetworks.com', 'New Rystband Tell Us', array($html) );
 
+             $view = new \Dsc\Template;
+             echo $view->render('features/success.php');
+
         });
 
 
