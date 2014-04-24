@@ -25,7 +25,8 @@
 		<section>
 
 			<!-- Text -->
-			<h2>First, Tell us about <b>you</b>...</h2>
+
+			<h2><span class="color">Interested in pricing?<br/></span>First, Tell us about <b>you</b>...</h2>
 			<br>
 			
 			<div class="width-wrapper">

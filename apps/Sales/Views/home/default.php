@@ -20,7 +20,9 @@
 </head>
 <!-- Start Body -->
 <body>
-	
+	<div id="slideout">
+		<a href="/tellus" class="social pricing" alt="pricing"></a/>
+	</div>
 	<!-- Start Logo -->
 	<div class="logo"><div class="logo2"></div></div>
 	<!-- End Logo -->
@@ -49,8 +51,8 @@
 			<a id="home"></a>
 			<div class="herowrapper">
 				<div class="herocap black-bg">Introducing</div>
-				<div class="herocap black-bg highlight rotate color">the future </div>
-				<div class="herocap black-bg rotate">of event marketing.</div>
+				<div class="herocap black-bg highlight color">the future of</div>
+				<div class="herocap black-bg ">event marketing.</div>
 			</div>
 		</section>
 		<!-- End Home -->

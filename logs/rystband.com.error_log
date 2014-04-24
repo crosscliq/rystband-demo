@@ -8766,3 +8766,137 @@ PHP message: - index.php:128 Base->run()" while reading response header from ups
 PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 72.37.249.188, server: rystband.com, request: "GET /sales/fonts/dripicons.woff HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
 2014/04/23 00:32:51 [error] 4146#0: *4767 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
 PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.35.42, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/23 05:35:47 [error] 4146#0: *4785 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.32.56, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 11:43:56 [error] 4146#0: *4827 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.35.81, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/23 12:13:29 [error] 4146#0: *4831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 70.208.22.185, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com"
+2014/04/23 12:13:29 [error] 4146#0: *4831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon-precomposed.png)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 70.208.22.185, server: rystband.com, request: "GET /apple-touch-icon-precomposed.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com"
+2014/04/23 12:13:30 [error] 4146#0: *4831 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /apple-touch-icon.png)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 70.208.22.185, server: rystband.com, request: "GET /apple-touch-icon.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "event1.rystband.com"
+2014/04/23 14:51:46 [error] 4146#0: *4871 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /admin)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /admin HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 14:51:52 [error] 4146#0: *4871 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dashboard)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dashboard HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 14:51:56 [error] 4146#0: *4871 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /dashboard/)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /dashboard/ HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 14:52:09 [error] 4146#0: *4883 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "dashboard.rystband.com"
+2014/04/23 18:00:47 [error] 4146#0: *4920 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 18:00:48 [error] 4146#0: *4920 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 18:01:07 [error] 4146#0: *4920 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 18:14:53 [error] 4146#0: *4931 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 19:01:34 [error] 4146#0: *4940 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 19:02:06 [error] 4146#0: *4940 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 19:14:02 [error] 4146#0: *4947 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 20:38:59 [error] 31012#0: *127 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/23 22:55:22 [error] 31012#0: *396 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 54.237.176.214, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/23 23:12:59 [error] 31012#0: *401 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.34.74, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 05:10:58 [error] 31012#0: *423 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.33.120, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/24 08:47:57 [error] 31012#0: *438 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 180.76.5.27, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com"
+2014/04/24 10:52:22 [error] 31012#0: *445 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /robots.txt)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 157.55.34.166, server: rystband.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 15:43:14 [error] 31012#0: *463 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/24 16:36:27 [error] 31012#0: *507 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/tellus"
+2014/04/24 17:58:25 [error] 31012#0: *551 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 17:59:32 [error] 31012#0: *558 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 17:59:37 [error] 31012#0: *553 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 17:59:53 [error] 31012#0: *556 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 18:00:15 [error] 31012#0: *555 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 18:00:47 [error] 31012#0: *559 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "rystband.com", referrer: "http://rystband.com/"
+2014/04/24 18:01:01 [error] 31012#0: *579 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:01:25 [error] 31012#0: *596 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 18:03:01 [error] 31012#0: *702 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:03:01 [error] 31012#0: *702 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 18:04:31 [error] 31012#0: *707 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:04:40 [error] 31012#0: *713 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:04:58 [error] 31012#0: *707 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:05:13 [error] 31012#0: *713 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:05:35 [error] 31012#0: *711 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:05:52 [error] 31012#0: *712 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:14:55 [error] 31012#0: *727 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:15:32 [error] 31012#0: *731 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:15:38 [error] 31012#0: *734 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:16:12 [error] 31012#0: *727 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:16:40 [error] 31012#0: *732 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:16:49 [error] 31012#0: *734 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:16:52 [error] 31012#0: *730 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:16:59 [error] 31012#0: *732 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:17:18 [error] 31012#0: *733 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:18:27 [error] 31012#0: *754 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:18:41 [error] 31012#0: *754 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:18:47 [error] 31012#0: *755 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:19:25 [error] 31012#0: *754 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:19:33 [error] 31012#0: *754 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 18:22:44 [error] 31012#0: *769 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:25:23 [error] 31012#0: *774 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:27:27 [error] 31012#0: *773 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:27:38 [error] 31012#0: *777 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:27:44 [error] 31012#0: *775 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:27:50 [error] 31012#0: *775 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:28:20 [error] 31012#0: *775 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:28:59 [error] 31012#0: *774 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/tellus"
+2014/04/24 18:28:59 [error] 31012#0: *774 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /favicon.ico)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com"
+2014/04/24 18:39:53 [error] 31012#0: *809 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:40:31 [error] 31012#0: *809 FastCGI sent in stderr: "PHP message: HTTP 404 (GET /sales/js/jquery.min.map)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "GET /sales/js/jquery.min.map HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/"
+2014/04/24 18:48:43 [error] 31012#0: *830 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/tellus"
+2014/04/24 19:42:39 [error] 31012#0: *867 FastCGI sent in stderr: "PHP message: HTTP 405 (POST /tellus)
+PHP message: - index.php:128 Base->run()" while reading response header from upstream, client: 69.27.7.162, server: rystband.com, request: "POST /tellus HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "www.rystband.com", referrer: "http://www.rystband.com/tellus"

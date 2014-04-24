@@ -173,7 +173,7 @@ h6 {
 	color: #FFF;
 }
 .color {
-	color: #85e590;
+	color: #fb038f;
 }
 .color-bg {
 	background-color: rgba(133, 229, 144, 0.4);
@@ -555,6 +555,9 @@ a.social.facebook {
 a.social.twitter {
 	background-position: 0px -100px;
 }
+a.social.pricing {
+	background-position: 0px -150px;
+}
 
 /******************************************************************
 	Home
@@ -911,4 +914,14 @@ a.button:hover {
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+#slideout {
+	z-index:9999;
+	position:fixed;
+	left:0px;
+	bottom:40px;
+	width: 50px;
+	height:70px;
+	background-color: rgba(214, 133, 229, 0.4);
 }
