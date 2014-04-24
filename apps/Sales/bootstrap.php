@@ -41,11 +41,10 @@ switch ($global_app_name)
             \Dsc\System::instance()->get('theme')->setTheme('Theme', $f3->get('PATH_ROOT') . 'apps/Theme/' );
             \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Sales/Views/', 'Sales/Views' );
             $html = \Dsc\System::instance()->get( 'theme' )->renderView( 'Sales/Views::email/tellus.php' );
-
-            \Dsc\System::instance()->get('mailer')->send('chris@ammonitenetworks.com', 'New Rystband Tell Us', array($html) );
-
-             $view = new \Dsc\Template;
-             echo $view->render('features/success.php');
+            \Dsc\System::instance()->get('mailer')->send('ian@crosscliq.com', 'Hi Ian! New Rystband Tell Us', array($html) );
+            \Dsc\System::instance()->get('mailer')->send('gordon@crosscliq.com', 'Hi Gordon! New Rystband Tell Us', array($html) );
+            $view = new \Dsc\Template;
+            echo $view->render('features/success.php');
 
         });
 
