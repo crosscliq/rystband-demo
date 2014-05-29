@@ -3,7 +3,7 @@
 <head>
 <meta name=viewport content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Rystbands by Crosscliq | NFC and RFID Event Wristbands</title>
+<title>Rystbands | NFC and RFID Event Wristbands</title>
 <!-- Load CSS -->
 <link href="/sales/css/style.css" rel="stylesheet" type="text/css" />
 <link href="/sales/css/green.css" rel="stylesheet" type="text/css" />
@@ -107,7 +107,8 @@
 			</div>
 			<h2 class="dots">...</h2>
 			<div class="button-wrapper bottom">
-				<a class="button download" target="_blank" href="features">MORE FEATURES</a>
+				<a class="button download"  href="features">MORE FEATURES</a>
+				<a class="button download"  href="tellus">GET PRICING</a>
 			</div>
 		</section>
 		<!-- End Features -->
@@ -158,11 +159,12 @@
 				<div class="left">
 					<h2>How does it work?</h2>
 					<p>Ryst&trade;bands use NFC (Near Field Communication) to communicate with your staff's smartphones or with our Ryst&trade; kiosks.   We offer a variety of bands, some removable (as souvenir schwag) and some that are more permanent (for secure venue access).   Our bands are fully customizable and inexpensive.</p>
-					<img alt="image" src="/sales/img/image1.png">
+					<img alt="image" src="/sales/img/box.png">
 				</div>
 				<div class="right">
 					<img alt="image" src="/sales/img/image2.png">
-					<p>Use smartphones or our fully brandable Ryst&trade;kiosks for attendee registration, data collection, or gamification.  Kiosks may be leased and easily breakdown for transportation and shipping to your venue.   The Ryst&trade; software platform and dashboard allows full control of your event staff's roles,  games, ticketing rules, social media management and real-time activity monitoring.</p>
+					<p>Use smartphones or our SmartBox for attendee registration, data collection, or gamification.  SmartBox's may be leased and easily breakdown for transportation and shipping to your venue.   The Ryst&trade; software platform and dashboard allows full control of your event staff's roles,  games, ticketing rules, social media management and real-time activity monitoring.</p>
+
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -175,9 +177,9 @@
 
 	<!-- Start Social -->
 	<div class="social-wrapper">
-		<a href="mailto:info@crosscliq.com" class="social color-bg mail"></a>
-		<a href="http://facebook.com/crosscliq" class="social color-bg facebook"></a>
-		<a href="http://twitter.com/crosscliq" class="social color-bg twitter"></a>
+		<a href="mailto:ian@rystband.com" class="social color-bg mail"></a>
+		<a href="http://facebook.com/ryst" class="social color-bg facebook"></a>
+		<a href="http://twitter.com/ryst" class="social color-bg twitter"></a>
 	</div>
 	<!-- End Social -->
 	

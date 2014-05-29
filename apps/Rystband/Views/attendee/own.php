@@ -77,7 +77,7 @@
 <div id="settings" class="modal"><a href="/credits" class="navico"><img src="/own/profile/images/home.png"></a><p class="title">Settings</p><div class="modalbody">this is settings</div></div>
 <div id="profile" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Profile</p><div class="modalbody">this is the profile</div></div>
 <div id="connections" class="modal"><a href="#" class="navicon"><img src="/own/profile/images/home.png"></a><p class="title">Connections</p><div class="modalbody"><a href="http://google.com" class="fb">Share to Facebook</a></div></div>
-<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?><br/><a style="color:#fff; text-decoration:none; " href="/logout">logout</a></p>
+<p class="name"><?php echo(strtoupper(@$user->{'social.facebook.profile.firstName'})); ?> <?php echo(strtoupper(@$user->{'social.facebook.profile.lastName'})); ?><br/><small><?php echo(@$user->{'social.facebook.profile.region'});?><br/><a style="color:#fff; text-decoration:none; " href="/do/logout">logout</a></p>
 
 </div>
 <div id="photo">

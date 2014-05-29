@@ -21,4 +21,15 @@ class Home extends Base
         $view = new \Dsc\Template;
         echo $view->render('attendee/own.php');
     }
+
+   public function welcome($f3)
+    {
+        \Base::instance()->set('pagetitle', 'Welcome');
+        \Base::instance()->set('subtitle', '');
+
+
+        $view = new \Dsc\Template;
+        echo $view->render('attendee/welcome.php');
+    }	
+
 }

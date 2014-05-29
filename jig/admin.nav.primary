@@ -1,5 +1,5 @@
 {
-    "5335afaaea55d7.19789101": {
+    "53597c253c9b33.44896670": {
         "title": "Activity",
         "route": "",
         "icon": "fa fa-activiy",
@@ -12,7 +12,7 @@
         ],
         "priority": 30
     },
-    "5335afaaea9e04.15879587": {
+    "53597c253cc4e2.59825615": {
         "priority": 30,
         "key": "fa-customer",
         "title": "Customers",
@@ -31,7 +31,7 @@
             }
         ]
     },
-    "5335afaaead008.74690404": {
+    "53597c253ce747.85311408": {
         "priority": 40,
         "key": "f3-assets",
         "title": "Media Assets",
@@ -50,7 +50,7 @@
             }
         ]
     },
-    "5335afaaeb0a03.73195731": {
+    "53597c253d0d27.38640357": {
         "priority": 30,
         "key": "f3-blog",
         "title": "Blog",
@@ -79,50 +79,31 @@
             }
         ]
     },
-    "5335afaaeb4818.17532852": {
+    "53597c253d35c1.43967462": {
         "priority": 50,
-        "key": "fa-mailer",
         "title": "Emails",
+        "base": "\/admin\/mailer",
         "route": "",
         "icon": "fa fa-envelope",
         "children": [
             {
+                "title": "Dashboard",
+                "route": "\/admin\/mailer",
+                "icon": "fa fa-dashboard"
+            },
+            {
                 "title": "List",
-                "route": "\/admin\/emails",
-                "icon": "fa fa-list"
-            },
-            {
-                "title": "Add New User",
-                "route": "\/admin\/email\/create",
-                "icon": "fa fa-plus"
-            },
-            {
-                "title": "Detail",
-                "route": "\/admin\/email\/view",
-                "hidden": true
-            }
-        ]
-    },
-    "5335afaaeb8ac3.73745207": {
-        "priority": 40,
-        "key": "f3-redirect",
-        "title": "Mass Update",
-        "route": "",
-        "icon": "fa fa-signal",
-        "children": [
-            {
-                "title": "List Updaters",
-                "route": "\/admin\/massupdate\/updaters",
+                "route": "\/admin\/mailer\/emails",
                 "icon": "fa fa-list"
             },
             {
                 "title": "Settings",
-                "route": "\/admin\/massupdate\/settings",
+                "route": "\/admin\/mailer\/settings",
                 "icon": "fa fa-cogs"
             }
         ]
     },
-    "5335afaaebd3b1.63635190": {
+    "53597c253d6357.72069692": {
         "priority": 40,
         "key": "f3-modules",
         "title": "Modules",
@@ -141,56 +122,7 @@
             }
         ]
     },
-    "5335afaaec24c0.14468861": {
-        "priority": 20,
-        "title": "Shop",
-        "route": "",
-        "icon": "fa fa-ticket",
-        "children": [
-            {
-                "title": "Products",
-                "route": "\/admin\/shop\/products",
-                "icon": "fa fa-list"
-            },
-            {
-                "title": "Collections",
-                "route": "\/admin\/shop\/collections",
-                "icon": "fa fa-hdd"
-            },
-            {
-                "title": "Categories",
-                "route": "\/admin\/shop\/categories",
-                "icon": "fa fa-folder"
-            },
-            {
-                "title": "Manufacturers",
-                "route": "\/admin\/shop\/manufacturers",
-                "icon": "fa fa-barcode"
-            },
-            {
-                "title": "Media Assets",
-                "route": "\/admin\/shop\/assets",
-                "icon": "fa fa-list"
-            },
-            {
-                "title": "Countries",
-                "route": "\/admin\/shop\/countries",
-                "icon": "fa fa-list"
-            },
-            {
-                "title": "Regions",
-                "route": "\/admin\/shop\/regions",
-                "icon": "fa fa-list"
-            },
-            {
-                "title": "Settings",
-                "route": "\/admin\/shop\/settings",
-                "icon": "fa fa-cogs"
-            }
-        ],
-        "base": "\/admin\/shop"
-    },
-    "5335afaaec82e7.34565309": {
+    "53597c253d9246.80655673": {
         "priority": 30,
         "key": "fa-user",
         "title": "Users",
@@ -219,7 +151,7 @@
             }
         ]
     },
-    "5335afaaece3f1.33238576": {
+    "53597c253dc530.15063226": {
         "priority": 99,
         "title": "Navigation",
         "route": "",
@@ -250,7 +182,7 @@
             }
         ]
     },
-    "5335afaaed4290.69585241": {
+    "53597c253df809.35681445": {
         "priority": 100,
         "title": "System",
         "route": "",
@@ -275,21 +207,6 @@
                 "title": "Logs",
                 "route": "\/admin\/logs",
                 "icon": "fa fa-list"
-            },
-            {
-                "title": "Log Detail",
-                "route": "\/admin\/log",
-                "hidden": true
-            },
-            {
-                "title": "Queue",
-                "route": "\/admin\/queue",
-                "icon": "fa fa-refresh"
-            },
-            {
-                "title": "Queue Detail",
-                "route": "\/admin\/queueitem",
-                "hidden": true
             }
         ]
     }

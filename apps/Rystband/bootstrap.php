@@ -29,7 +29,6 @@ switch ($global_app_name)
         //$f3->route('POST /login', '\Rystband\Controllers\Auth->doLogin');
         $f3->route('GET /signup', '\Rystband\Controllers\Auth->showSignup');
         $f3->route('POST /signup', '\Rystband\Controllers\Auth->doSignup');
-        $f3->route('GET|POST /logout', '\Users\Rystband\Controllers\User->logout');     
         $f3->route('GET /roles', '\Rystband\Controllers\Users->roles');
         $f3->route('GET /active/role/@roleid', '\Rystband\Controllers\Users->role');
         //Tag Parser
@@ -113,7 +112,7 @@ switch ($global_app_name)
         $f3->route('GET /credits/buy', '\Rystband\Controllers\Checkout->buycredits');
 
         $f3->route('POST /display/cart', '\Rystband\Controllers\Checkout->external');
-        $f3->route('GET|POST /logout', function() {
+        $f3->route('GET|POST /do/logout', function() {
              \Base::instance()->clear('SESSION');
              \Base::instance()->clear('COOKIE');
              setcookie('id','',time()-3600);
@@ -128,7 +127,7 @@ switch ($global_app_name)
         \Dsc\System::instance()->get('theme')->registerViewPath( $f3->get('PATH_ROOT') . 'apps/Rystband/Views/', 'Rystband/Views/' );
         
         $f3->route('POST /sysauth', '\Rystband\Controllers\Login->sysauth'); 
-        $f3->route('GET /welcome', '\Rystband\Controllers\Home->own');
+        $f3->route('GET /welcome', '\Rystband\Controllers\Home->welcome');
         $f3->route('GET /share/facebook', '\Rystband\Controllers\Devices\Box\Social->routeFacebook');
         $f3->route('GET /share/twitter', '\Rystband\Controllers\Devices\Box\Social->twitter');
         $f3->route('GET /device/@name', '\Rystband\Controllers\Device->route'); 

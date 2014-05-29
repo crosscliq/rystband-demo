@@ -8,10 +8,12 @@
 <!-- Load Icon Font -->
 <link rel="shortcut icon" type="image/x-icon" href="/sales/img/favicon.ico">
 <link href="/sales/css/webfont.css" rel="stylesheet" type="text/css" />
+<link href="/sales/css/tooltipster.css" rel="stylesheet" type="text/css" />
 <!-- Load jQuery library -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <!-- Load js -->
+<script type="text/javascript" src="/sales/js/jquery.tooltipster.min.js"></script>
 <script type="text/javascript" src="/sales/js/custom.js"></script>
 </head>
 <!-- Start Body -->
@@ -44,14 +46,44 @@
 			</div>
 			<div class="clear"></div>
 
+			<h2>The <b>Package</b>.</h2>
+			<br><br><br>
+			
+			<div class="width-wrapper">
+				<div class="full">
+				  <div class="map">
+					<span class="marker" style="top:310px;left:230px" title="HDMI Converter"></span>
+					<span class="marker" style="top:280px;left:280px" title="Display Input Device"></span>
 
+					<span class="marker" style="top:460px;left:250px" title="Check-in Station"></span>
+					<span class="marker" style="top:500px;left:270px" title="Gamification Station"></span>
+					<span class="marker" style="top:560px;left:300px" title="Social Station"></span>
+					<span class="marker" style="top:610px;left:330px" title="Photobooth Station"></span>
 
+					<span class="marker" style="top:580px;left:440px" title="Brandable Ryst&trade;band"></span>
+
+					<span class="marker" style="top:660px;left:330px" title="Photobooth Camera"></span>
+
+					<img src="/sales/images/ryst_platform.png">
+				  </div>
+				</div>
+			</div>
+
+			<h2 class="dots">...</h2>
+			<div class="button-wrapper bottom">
+
+				<a class="button download"  href="tellus">GET PRICING</a>
+			</div>
 		</section>
 		<!-- End Elements -->
 
 	</div>
 	<!-- End Content -->
-
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.marker').tooltipster();
+		});
+	</script>
 </body>
 <!-- End Body -->
 </html>
